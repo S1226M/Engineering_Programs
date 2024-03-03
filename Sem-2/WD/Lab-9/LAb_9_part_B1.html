@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,.two,.three,.foure,.five,.six,.seven{
+            animation-name: circle;
+            animation-duration: 25s;
+            height: 50px;
+            width: 50px;
+            float: left;
+            animation-iteration-count: infinite;
+        }
+        .one{
+            animation-delay: 0s;
+            background-color: purple;
+            animation-timing-function: ease;
+        }
+        .two{
+            animation-delay: 2s;
+            background-color: aqua;
+            animation-timing-function: ease;
+        }
+        .three{
+            animation-delay: 4s;
+            background-color: brown;
+            animation-timing-function: ease;
+        }
+        .foure{
+            animation-delay: 6s;
+            background-color: burlywood;
+            animation-timing-function: ease;
+        }
+        .five{
+            animation-delay: 8s;
+            background-color: cadetblue;
+            animation-timing-function: ease;
+        }
+        .six{
+            animation-delay: 10s;
+            background-color: red;
+            animation-timing-function: ease;
+        }
+        .seven{
+            animation-delay: 12s;
+            background-color: orangered;
+            animation-timing-function: ease;
+        }
+        @keyframes circle{
+            from{
+                margin-top: 0%;
+                border-radius: 0%;
+            }
+            to{
+                margin-top: 50%;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="foure"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+</body>
+</html>
