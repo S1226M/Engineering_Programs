@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter the number a"))
+        let b = parseInt(prompt("Enter the number b"))
+        while(a>0 && b>0){
+            if(a>b){
+                a=a%b
+            }
+            else{
+                b=b%a
+            }
+        }
+        if(a==0){
+            alert("gcd is b")
+        }
+        else{
+            alert("gcd is a")
+        }
+    </script>
+</body>
+</html>
