@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enger the number"))
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                document.write(' &nbsp')   
+            }
+            for(let k=1;k<=2*i-1;k++){
+                document.write('*')
+            }
+            document.write('<br>')
+        }
+    </script>
+</body>
+</html>
