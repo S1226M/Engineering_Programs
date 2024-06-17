@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Enter the two digit number"))
+        var lastDigite = a%10
+        if(lastDigite==0){
+            alert("answer is not rigght")
+        }
+        a = Math.floor(a/10)
+        console.log(a)
+        var firstDigit =  a
+        let ans = 1
+        for(let i=1 ; i<=lastDigite ; i++){
+            ans = ans*a
+        }
+        alert("Ans is = "+ans)
+    </script>
+</body>
+</html>
