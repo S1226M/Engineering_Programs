@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Student1 = {
+            name : 'abc',
+            roll : 302,
+            std : 12,
+            mobile : 123456789
+        }
+        Student2 = {
+            name : 'def',
+            roll : 304,
+            std : 14,
+            mobile : 123455864789
+        }
+        Student3 = {
+            name : 'abc',
+            roll : 302,
+            std : 12,
+            mobile : 123456789
+        }
+        Student4 = {
+            name : 'def',
+            roll : 304,
+            std : 14,
+            mobile : 123455864789
+        }
+        Student = [Student1,Student2,Student3,Student4]
+        document.write("<table border=1>")
+                for(let i=0;i<Student.length;i++){
+                    document.write("<tr>")
+                        document.write("<td>"+Student[i].name+"</td>")
+                        document.write("<td>"+Student[i].roll+"</td>")
+                        document.write("<td>"+Student[i].std+"</td>")
+                        document.write("<td>"+Student[i].mobile+"</td>")
+                    document.write("</tr>")
+                }
+        document.write("</table>")
+    </script>
+</body>
+</html>
