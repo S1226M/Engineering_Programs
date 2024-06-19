@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [2,50,35,38,29,46,19]
+
+        let Position_Large = 0
+        let Position_Small = 0
+        let Largest = arr[0];
+        let Smallest = arr[0];
+
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]>Largest){
+                Largest = arr[i]
+                Position_Large = i
+            }
+            if(arr[i]<Smallest){
+                Smallest = arr[i]
+                Position_Small = i
+            }
+        }
+        document.write("Largest: " + Largest + "<br>")
+        document.write("Position of Largest: " + Position_Large + "<br>")
+        document.write("Smallest: " + Smallest + "<br>")
+        document.write("Position of Smallest: " + Position_Small + "<br>")
+    </script>
+</body>
+</html>
