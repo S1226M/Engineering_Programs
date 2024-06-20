@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter the number : "))
+        if(a===0 || a===''){
+            document.write("Please enter the  number")
+        }
+        if(a<0 || a>999){
+            document.write("Please enter the number in range")
+        }
+        let ones = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten']
+        let teens = ['Ten','Eleven','Twelv','Thurteen','Forteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenteen']
+        let tens = ['','','Twenty','Thurty','Forty','Fifty','Seventy','Eighty','Ninety','Hundred']
+        let result = ''
+        if(a>=100){
+            result = result + ones[Math.floor(a/100)] + 'Hundred'
+            a=a%100
+        }
+        if(a>=20){
+            result = result + tens[Math.floor(a/10)] + ''
+            a = a % 10
+        }
+        else if(a>=10){
+            result = result + teens[a-10] + ''
+            a=0
+        }
+        if(a>0){
+            result=result+ones[a] + ''
+        }
+        console.log(result.trim())
+    </script>
+</body>
+</html>
