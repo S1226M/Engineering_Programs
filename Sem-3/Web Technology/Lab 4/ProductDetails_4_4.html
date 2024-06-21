@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Product1 = {
+            name : 'abc',
+            price : 120
+        }
+        Product2 = {
+            name : 'abc',
+            price : 120
+        }
+        Product3 = {
+            name : 'abc',
+            price : 120
+        }
+        Product = [Product1,Product2,Product3]
+
+        document.write("<table border=1>")
+                for(let i=0;i<Product.length;i++){
+                    document.write("<tr>")
+                        document.write("<td>"+Product[i].name+"</td>")
+                        document.write("<td>"+Product[i].price+"</td>")
+                    document.write("</tr>")
+                }
+        document.write("</table>")
+    </script>
+</body>
+</html>
