@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Operation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Operation</h1>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <button id="addButton">Add</button>
+    <table id="nameTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Names will be added here dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.getElementById('addButton').addEventListener('click', addName);
+
+    function addName() {
+      const nameInput = document.getElementById('nameInput');
+      const name = nameInput.value.trim();
+
+      if (name === '') {
+        alert('Please enter a name');
+        return;
+      }
+
+      const table = document.getElementById('nameTable').getElementsByTagName('tbody')[0];
+      const newRow = table.insertRow();
+
+      const nameCell = newRow.insertCell(0);
+      nameCell.textContent = name;
+
+      const actionsCell = newRow.insertCell(1);
+
+      const editButton = document.createElement('button');
+      editButton.textContent = 'Edit';
+      editButton.addEventListener('click', () => editName(newRow));
+
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete';
+      deleteButton.addEventListener('click', () => deleteName(newRow));
+
+      actionsCell.appendChild(editButton);
+      actionsCell.appendChild(deleteButton);
+
+      nameInput.value = '';
+    }
+
+    function deleteName(row) {
+      row.parentNode.removeChild(row);
+    }
+
+    function editName(row) {
+      const nameCell = row.cells[0];
+      const currentName = nameCell.textContent;
+      const newName = prompt('Edit name:', currentName);
+
+      if (newName !== null && newName.trim() !== '') {
+        nameCell.textContent = newName.trim();
+      }
+    }
+  </script>
+</body>
+</html>
