@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Student = [
+            Student1 = {
+                name : 'abc',
+                age : 18,
+                roll : 329,
+                sub : ['ds','dbms','wt']
+            },
+            Student2 = {
+                name : 'abc',
+                age : 18,
+                roll : 330,
+                sub : ['ds','dbms','wt']
+            },
+            Student3 = {
+                name : 'abc',
+                age : 18,
+                roll : 331,
+                sub : ['ds','dbms','wt']
+            }
+        ]
+        // document.write(Student[0].sub[1])
+
+        document.write("<table border=1>")
+               for(let i=0;i<Student.length;i++){
+                    document.write("<tr>")
+                        document.write("<td>"+Student[i].name+"</td>")
+                        document.write("<td>"+Student[i].age+"</td>")
+                        document.write("<td>"+Student[i].roll+"</td>")
+                        document.write("<td>"+Student[i].sub+"</td>")
+                    document.write("</tr>")
+                }
+        document.write("</table>")
+    </script>
+</body>
+</html>
