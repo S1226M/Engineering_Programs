@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calculater {
+            background-color: antiquewhite;
+            width: 15%;
+            padding-left: 12px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .calculater h1 {
+            margin-left: 25px;
+            margin-top: 11px;
+        }
+        input[type="text"] {
+            width: 62%;
+            margin-right: 18px;
+            height: 25px;
+            margin-top: 5px;
+            font-size: 18px;
+            text-align: right;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            height: 35px;
+            width: 35px;
+            margin-top: 7px;
+            margin-right: 18px;
+            font-size: 16px;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        button:active {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculater">
+        <h1>Calculator</h1>
+        <input type="text" id="myid" readonly>
+        <button type="button" onclick="clearALL('C')" style="margin-left: 3%;">C</button>
+        <div>
+            <button type="button" onclick="display('7')">7</button>
+            <button type="button" onclick="display('8')">8</button>
+            <button type="button" onclick="display('9')">9</button>
+            <button type="button" onclick="display('/')">/</button>
+            <br>
+            <button type="button" onclick="display('4')">4</button>
+            <button type="button" onclick="display('5')">5</button>
+            <button type="button" onclick="display('6')">6</button>
+            <button type="button" onclick="display('*')">*</button>
+            <br>
+            <button type="button" onclick="display('1')">1</button>
+            <button type="button" onclick="display('2')">2</button>
+            <button type="button" onclick="display('3')">3</button>
+            <button type="button" onclick="display('-')">-</button>
+            <br>
+            <button type="button" onclick="display('0')">0</button>
+            <button type="button" onclick="display('.')">.</button>
+            <button type="button" onclick="solve('=')">=</button>
+            <button type="button" onclick="display('+')">+</button>
+        </div>
+    </div>
+
+    <script>
+        let append = document.getElementById('myid');
+        
+        function display(value) {
+            append.value += value;
+        }
+        
+        function solve(value) {
+            append.value = eval(append.value);
+        }
+        
+        function clearALL(value) {
+            append.value = "";
+        }
+    </script>
+</body>
+</html>
