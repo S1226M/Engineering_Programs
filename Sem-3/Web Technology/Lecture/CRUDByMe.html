@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="name" style="float: left;">
+        Enter Name : <input type="text" id="name">
+        <button type="button" onclick="ADDSTUDENT()" id="ADD">Add</button>
+    </div>
+    <table id="studentTable" style="float: right; margin-right: 50%; border: 2px solid;">
+        <thead>
+            <tr style="border: 2;">
+                <th>Student Name</th>
+                <th></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        function ADDSTUDENT() {
+            var nameInput = document.getElementById('name').value;
+            if (nameInput.trim() === '') {
+                alert('Please enter a name.');
+                return;
+            }
+
+            var tableBody = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+            var newRow = tableBody.insertRow();
+            
+            var nameCell = newRow.insertCell(0);
+            nameCell.textContent = nameInput;
+
+            var actionsCellEdit = newRow.insertCell(1);
+            var editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.onclick = function() {
+                editName(newRow);
+            };
+            actionsCellEdit.appendChild(editButton);
+
+            var actionsCellDelete = newRow.insertCell(2);
+            var deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.onclick = function() {
+                deleteName(newRow);
+            };
+            actionsCellDelete.appendChild(deleteButton);
+
+            document.getElementById('name').value = '';
+        }
+
+        function editName(row) {
+            var nameCell = row.cells[0];
+            var newName = prompt('Edit name:', nameCell.textContent);
+            if (newName !== null && newName.trim() !== '') {
+                nameCell.textContent = newName;
+            }
+        }
+
+        function deleteName(row) {
+            var tableBody = row.parentNode;
+            tableBody.removeChild(row);
+        }
+    </script>
+</body>
+</html>
