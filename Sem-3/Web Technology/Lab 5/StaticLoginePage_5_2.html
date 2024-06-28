@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    User Name: <input type="text" id="myname" placeholder="Enter User Name">
+    <br>
+    Email: <input type="text" id="myemail" style="margin-top: 10px;">
+    <br>
+    Password: <input type="password" id="mypass">
+    <br>
+    Age: <input type="date" id="dob">
+    <span id="errMsg3"></span>
+    <br>
+    <button style="margin-top: 10px;" onclick="logBtn(); calcAge();">Submit</button>
+    <button style="margin-top: 10px; margin-left: 5px;">Cancel</button>
+    <script>
+        function logBtn() {
+            let name = document.getElementById('myname').value;
+            let namePattern = /^[a-zA-Z0-9_]{8,30}$/;
+            if (namePattern.test(name)) {
+                alert("Valid User name");
+            } else {
+                alert("Invalid User name");
+            }
+
+            let email = document.getElementById('myemail').value;
+            let emailPattern = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,7}$/;
+            if (emailPattern.test(email)) {
+                alert("Valid Email");
+            } else {
+                alert("Invalid Email");
+            }
+
+            let password = document.getElementById('mypass').value;
+            let passPattern = /^[a-zA-Z0-9_]{8,}[!@#$%*^]{1,}[0-9]{1,}$/;
+            if (passPattern.test(password)) {
+                alert("Valid Password");
+            } else {
+                alert("Invalid Password");
+            }
+        }
+
+        function calcAge() {
+            let dob = document.getElementById('dob').value;
+            let birthDate = new Date(dob);
+            let today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let monthDiff = today.getMonth() - birthDate.getMonth();
+
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            alert("Age: " + age);
+        }
+    </script>
+</body>
+</html>
