@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        a = 10//globel variable
+        function abc(){
+            var a = 20//this variable scope is only fore function
+            if(true){
+                let a = 30//this variable scope is fore only in block level
+                console.log(a)
+            }
+            console.log(a)
+        }
+        abc();
+        console.log(a)
+    </script> -->
+    <script>
+        const a = 10
+        function abc(){
+            var a = 20
+            if(true){
+                let a = 30
+                console.log(a)
+            }
+            console.log(a)
+        }
+        abc();
+        console.log(a)
+        //here const a , var a , let a all three are different
+    </script>
+</body>
+</html>
