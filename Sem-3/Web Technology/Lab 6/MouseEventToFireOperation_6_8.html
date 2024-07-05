@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseover="colorChange()" onmouseout="colorSet()" id="abc"> Hello! </h1>
+    <br>
+    <button onclick="showTime()" id="time">Time Stop</button>
+    <button onclick="backChangeToRed()"> Red </button>
+    <button onclick="backChangeToGreen()"> green </button>
+    <script>
+        function colorChange(){
+            document.getElementById('abc').style.color="yellow"
+        }
+        function colorSet(){
+            document.getElementById('abc').style.color="black"
+        }
+        function backChangeToRed(){
+            document.body.style.backgroundColor="red"
+        }
+        function backChangeToGreen(){
+            document.body.style.backgroundColor="green"
+        }
+            let findbtn = document.getElementById('time')
+            findbtn.addEventListener('click',()=>{
+                const date = new Date()
+                alert(date.toLocaleString())
+            })
+    </script>
+</body>
+</html>
