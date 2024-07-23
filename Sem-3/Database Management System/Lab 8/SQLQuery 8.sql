@@ -80,8 +80,6 @@ HAVING AVG(SALES_AMOUNT) BETWEEN 1000 AND 2000
 ORDER BY PRODUCT
 
 --2. Display Years with More Than 5 Orders from Each Region 
-SELECT YEAR,REGION FROM SALES_SATA GROUP BY REGION HAVING COUNT(REGION)>5
-
 --3. Display Regions with Average Sales Amount Above 1500 in Year 2023 sort by amount in descending. 
 --4. Find out region wise duplicate product. 
 --5. Find out region wise highest sales amount.
