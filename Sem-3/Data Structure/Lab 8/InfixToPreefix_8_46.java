@@ -1,83 +1,84 @@
 import java.util.*;
-import java.util.Stack;
 
 class valueOfChar {
-    public static int inputPS(char next) {
-        if (next == '+' || next == '-') {
-            return 1;
-        } else if (next == '*' || next == '/') {
-            return 3;
-        } else if (next == '^') {
-            return 6;
-        } else if (Character.isLetter(next)) {
-            return 7;
-        } else if (next == '(') {
-            return 9;
-        } else if (next == ')') {
-            return 0;
+
+    public static int precedence(char ch) {
+        switch (ch) {
+            case '+':
+            case '-':
+                return 1;
+            case '*':
+            case '/':
+                return 2;
+            case '^':
+                return 3;
         }
         return -1;
     }
 
-    public static int stackPS(char next) {
-        if (next == '+' || next == '-') {
-            return 2;
-        } else if (next == '*' || next == '/') {
-            return 4;
-        } else if (next == '^') {
-            return 5;
-        } else if (Character.isLetter(next)) {
-            return 8;
-        } else if (next == '(') {
-            return 0;
-        }
-        return -1;
-    }
+    public static String infixToPostfix(String expression) {
+        StringBuilder result = new StringBuilder();
+        Stack<Character> stack = new Stack<>();
+        
+        for (int i = 0; i < expression.length(); i++) {
+            char c = expression.charAt(i);
 
-    public static int renk(char next) {
-        if (next == '+' || next == '-' || next == '/' || next == '*') {
-            return -1;
-        }
-        return 1;
-    }
-
-    public static String stringPost(String a) {
-        Stack<Character> st = new Stack<>();
-        StringBuilder police = new StringBuilder();
-        st.push('(');
-        a += ")";
-        int renk = 0;
-
-        for (int i = 0; i < a.length(); i++) {
-            char current = a.charAt(i);
-            if (st.isEmpty()) {
-                return "Invalid";
+            if (Character.isLetterOrDigit(c)) {
+                result.append(c);
+            } else if (c == '(') {
+                stack.push(c);
+            } else if (c == ')') {
+                while (!stack.isEmpty() && stack.peek() != '(') {
+                    result.append(stack.pop());
+                }
+                if (!stack.isEmpty() && stack.peek() != '(')
+                    return "Invalid Expression"; // Invalid expression
+                else
+                    stack.pop();
             } else {
-                while (stackPS(st.peek()) < inputPS(current)) {
-                    char temp = st.pop();
-                    police.append(temp);
-                    renk += renk(temp);
-                    if (renk < 1) {
-                        return "Invalid";
-                    }
+                while (!stack.isEmpty() && precedence(c) <= precedence(stack.peek())) {
+                    result.append(stack.pop());
                 }
-                if (stackPS(st.peek()) != inputPS(current)) {
-                    st.push(current);
-                } else {
-                    st.pop();
-                }
+                stack.push(c);
             }
         }
-        return police.toString();
-    }
-}
 
-public class InfixToPreefix_8_46 {
+        while (!stack.isEmpty()) {
+            if (stack.peek() == '(')
+                return "Invalid Expression"; // Invalid expression
+            result.append(stack.pop());
+        }
+        return result.toString();
+    }
+
+    public static String reverseExpression(String expression) {
+        StringBuilder reversed = new StringBuilder();
+        for (int i = expression.length() - 1; i >= 0; i--) {
+            char c = expression.charAt(i);
+            if (c == '(') {
+                reversed.append(')');
+            } else if (c == ')') {
+                reversed.append('(');
+            } else {
+                reversed.append(c);
+            }
+        }
+        return reversed.toString();
+    }
+
+    public static String infixToPrefix(String expression) {
+        String reversedInfix = reverseExpression(expression);
+        String postfix = infixToPostfix(reversedInfix);
+        if (postfix.equals("Invalid Expression")) return "Invalid Expression";
+        return new StringBuilder(postfix).reverse().toString();
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the infix expression : ");
-        String a = sc.next();
-        String postfix = valueOfChar.stringPost(a);
-        System.out.println("Postfix expression = " + postfix);
+        System.out.print("Enter the infix expression: ");
+        String infixExpression = sc.next();
+        String prefixExpression = infixToPrefix(infixExpression);
+        System.out.println("Prefix expression: " + prefixExpression);
+        sc.close();
     }
 }
