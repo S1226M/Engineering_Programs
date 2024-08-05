@@ -73,13 +73,30 @@ SELECT YEAR,SUM(SALES_AMOUNT) FROM SALES_DATA GROUP BY YEAR ORDER BY YEAR DESC
 SELECT TOP 3 REGION,SUM(SALES_AMOUT) FROM SALES_DATA WHERE YEAR = 2024 GROUP BY REGION
 
 -------------------------------PART C------------------------------------------
---1. Display Products with Average Sales Amount Between 1000 and 2000, Ordered by Product Name 
-SELECT PRODUCT,AVG(SALES_AMOUNT) FROM SALES_DATA
-GROUP BY PRODUCT 
+--1. Display Products with Average Sales Amount Between 1000 and 2000, Ordered by Product Name
+SELECT PRODUCT, AVG(SALES_AMOUNT) FROM SALES_DATA
+GROUP BY PRODUCT
 HAVING AVG(SALES_AMOUNT) BETWEEN 1000 AND 2000
 ORDER BY PRODUCT
 
---2. Display Years with More Than 5 Orders from Each Region 
---3. Display Regions with Average Sales Amount Above 1500 in Year 2023 sort by amount in descending. 
---4. Find out region wise duplicate product. 
+
+--2. Display Years with More Than 5 Orders from Each Region
+SELECT YEAR, COUNT(PRODUCT),REGION FROM SALES_DATA
+GROUP BY YEAR, REGION
+HAVING COUNT(PRODUCT) < 5
+
+--3. Display Regions with Average Sales Amount Above 1500 in Year 2023 sort by amount in descending.
+SELECT REGION ,AVG(SALES_AMOUNT) FROM SALES_DATA
+WHERE YEAR = 2023
+GROUP BY REGION
+HAVING AVG(SALES_AMOUNT) > 1500
+ORDER BY AVG(SALES_AMOUNT) DESC
+
+--4. Find out region wise duplicate product.
+SELECT COUNT(REGION) ,PRODUCT FROM SALES_DATA
+GROUP BY PRODUCT
+HAVING COUNT(REGION) >= 2
+
 --5. Find out region wise highest sales amount.
+SELECT REGION , MAX(SALES_AMOUNT) FROM SALES_DATA
+GROUP BY REGION

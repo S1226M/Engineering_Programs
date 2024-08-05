@@ -90,4 +90,4 @@ SELECT COUNT(EID) AS NO_OF_EMP FROM EMP WHERE JOININGDATE < '01-JAN-1991' AND DE
 SELECT SUM(SALARY) AS SALARY ,JOININGDATE FROM EMP GROUP BY JOININGDATE
 
 --4. Find the Maximum salary department & city wise in which city name starts with ‘R’. 
-SELECT department,city,MAX(salary) AS max_salary FROM emp WHERE city LIKE 'R%' GROUP BY department,city;
+  SELECT department,city,MAX(salary) AS max_salary FROM emp WHERE city LIKE 'R%' GROUP BY department,city;
