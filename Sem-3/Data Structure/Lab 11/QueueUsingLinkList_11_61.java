@@ -51,7 +51,7 @@ public class QueueUsingLinkList_11_61 {
         list.insertAtEnd(20);
         list.insertAtEnd(30);
         list.insertAtEnd(40);
-        list.insertAtEnd(50);
+        list.insertAtEnd(2000);
         list.display();
         list.deleteAtFirst();
         list.display();
