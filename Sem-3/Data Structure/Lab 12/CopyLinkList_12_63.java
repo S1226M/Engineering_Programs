@@ -17,7 +17,7 @@ class ll{
             first = newNode;
         } else {
             newNode.link = first;
-            first = newNode;
+            first = newNode; 
         }
     }
 
@@ -47,7 +47,7 @@ class ll{
                 tail = tail.link;
                 System.out.print(tail.info+" ");
             }
-            temp=temp.link;
+            temp=temp.link;  
         }
     }
 }
