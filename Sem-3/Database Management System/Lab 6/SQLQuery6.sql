@@ -1,5 +1,5 @@
 --Math functions 
---Part – A: 
+--Part ï¿½ A: 
 --1. Display the result of 5 multiply by 30. 
 SELECT  5*30 AS MULTIPLICATION
 
@@ -43,3 +43,155 @@ SELECT SIN(3.1415),COS(3.1415),TAN(3.1415)
 
 --15.  Find sign of -25, 0 and 25.
 SELECT SIGN(-25),SIGN(0),SIGN(25)
+
+--16. Generate random number using function.
+SELECT RAND()
+
+--String functions 
+--Part ï¿½ A:
+
+--1. Find the length of following. (I) NULL    (II) ï¿½   hello     ï¿½   (III)  Blank 
+SELECT LEN(NULL),LEN('   hello     '),LEN('')
+
+--2. Display your name in lower & upper case. 
+SELECT UPPER('SMIT'),LOWER('SMIT')
+
+--3. Display first three characters of your name. 
+SELECT LEFT('SMIT',3)
+
+--4. Display 3rd to 10th character of your name. 
+SELECT SUBSTRING('SMIT',3,10)
+
+--5. Write a query to convert ï¿½abc123efgï¿½ to ï¿½abcXYZefgï¿½ & ï¿½abcabcabcï¿½ to ï¿½ab5ab5ab5ï¿½ using REPLACE. 
+SELECT REPLACE('ABC123EFG','123','XYZ'),REPLACE('ABCABCABC','C','5')
+
+--6. Write a query to display ASCII code for ï¿½aï¿½,ï¿½Aï¿½,ï¿½zï¿½,ï¿½Zï¿½, 0, 9. 
+SELECT ASCII('a'),ASCII('A'),ASCII('z'),ASCII('Z'),ASCII('0'),ASCII('9')
+
+--7. Write a query to display character based on 
+--number 97, 65,122,90,48,57.
+SELECT CHAR(97)  
+SELECT CHAR(65) 
+SELECT CHAR(122) 
+SELECT CHAR(90) 
+SELECT CHAR(48) 
+SELECT CHAR(57) 
+
+--8. Write a query to remove spaces from 
+--left of a given string ï¿½hello world ï¿½.
+SELECT LTRIM('HELLO WORLD') 
+
+--9. Write a query to remove spaces 
+--from right of a given string ï¿½ hello world ï¿½.
+SELECT RTRIM('HELLO WORLD') 
+
+--10. Write a query to display first 4 & 
+--Last 5 characters of ï¿½SQL Serverï¿½.
+SELECT LEFT('SQL SERVER',4)
+SELECT RIGHT('SQL SERVER',5) 
+
+--11. Write a query to convert a string ï¿½1234.56ï¿½ 
+--to number (Use cast and convert function).
+SELECT CAST(1234.56 AS INT)
+SELECT CONVERT(INT, 1234.56)
+
+--12. Write a query to convert a float 10.58 to 
+--integer (Use cast and convert function).
+SELECT CAST(10.58 AS INT) 
+SELECT CONVERT(INT, 10.58) 
+
+--13. Put 10 space before your name using function.
+SELECT SPACE(10) + 'SMIT' 
+ 
+--14. Combine two strings using + sign as well as CONCAT ().
+SELECT 'SMIT' + SPACE(2) + 'MARU'
+SELECT CONCAT('SMIT','MARU') 
+
+--15. Find reverse of ï¿½Darshanï¿½.
+SELECT REVERSE('DARSHAN') 
+
+--16. Repeat your name 3 times.
+SELECT REPLICATE('SMIT MARU',3) 
+
+--> PART - B
+
+--1. Find the length of FirstName and LastName columns
+SELECT LEN(FIRSTNAME) FROM STUDENT
+SELECT LEN(LASTNAME) FROM STUDENT
+
+--2. Display FirstName and LastName columns in 
+--lower & upper case.
+SELECT LOWER(FIRSTNAME) FROM STUDENT
+SELECT UPPER(FIRSTNAME) FROM STUDENT
+SELECT LOWER(LASTNAME) FROM STUDENT
+SELECT UPPER(LASTNAME) FROM STUDENT
+
+--3. Display first three characters of FirstName column.
+SELECT SUBSTRING(FIRSTNAME,1,3) FROM STUDENT
+
+--4. Display 3rd to 10th character of Website column.
+SELECT SUBSTRING(WEBSITE,3,10) FROM STUDENT
+
+--5. Write a query to display first 4 & Last 5 characters 
+--of Website column.
+SELECT SUBSTRING(WEBSITE,1,3) FROM STUDENT
+SELECT SUBSTRING(WEBSITE,6,5) FROM STUDENT
+
+
+--> DATE FUNCTIONS 
+--> PART - A
+
+--1. Write a query to display the current date & time. 
+--Label the column Today_Date.
+SELECT GETDATE() 
+
+--2. Write a query to find new date after 365 day with 
+--reference to today.
+SELECT DATEADD(DAY , 365 , GETDATE()) 
+
+--3. Display the current date in a format that appears as 
+--may 5 1994 12:00AM.
+SELECT FORMAT(GETDATE(), 'MMM d yyyy hh:mm tt')
+
+--4. Display the current date in a format that appears as 
+--03 Jan 1995.
+SELECT FORMAT(GETDATE(), 'dd MMM yyyy')
+
+--5. Display the current date in a format that appears as 
+--Jan 04, 96.
+SELECT FORMAT(GETDATE(), 'MMM dd, yy')
+
+--6. Write a query to find out total number of months between 
+--31-Dec-08 and 31-Mar-09.
+SELECT DATEDIFF(month, '2008/12/31', '2009/12/31');
+
+--7. Write a query to find out total number of years between 
+--25-Jan-12 and 14-Sep-10.
+SELECT DATEDIFF(year, '2010/09/14', '2012/01/25') ;
+
+--8. Write a query to find out total number of hours between 
+--25-Jan-12 7:00 and 26-Jan-12 10:30.
+SELECT DATEDIFF(hour, '2012/01/25 07:00', '2012/01/26 10:30') 
+;
+
+--9. Write a query to extract Day, Month, Year from given 
+--date 12-May-16.
+SELECT DATEFROMPARTS(2016, 05, 12) ;
+
+--10. Write a query that adds 5 years to current date.
+SELECT DATEADD(year, 5, GETDATE()) ;
+
+--11. Write a query to subtract 2 months from current date.
+
+
+--12. Extract month from current date using datename () 
+--and datepart () function.
+SELECT DATENAME(MONTH, GETDATE()) ;
+SELECT DATEPART(MONTH, GETDATE()) ;
+
+--13. Write a query to find out last date of current month.
+SELECT EOMONTH(GETDATE()) ;
+
+--14. Calculate your age in years and months.
+SELECT DATEDIFF(YEAR, '2005/11/17' ,GETDATE())
+SELECT DATEDIFF(MONTH, '2005/11/17' ,GETDATE())
