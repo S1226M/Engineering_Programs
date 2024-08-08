@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CopyLinkList_12_63",
+            "request": "launch",
+            "mainClass": "CopyLinkList_12_63",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "InfixToPostfix_8_45",
+            "request": "launch",
+            "mainClass": "InfixToPostfix_8_45",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "Bank_6_37",
+            "request": "launch",
+            "mainClass": "Bank_6_37",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "Pattern_6",
+            "request": "launch",
+            "mainClass": "Pattern_6",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "Pattern_4",
+            "request": "launch",
+            "mainClass": "Pattern_4",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "PascalTriangle_3_19",
+            "request": "launch",
+            "mainClass": "PascalTriangle_3_19",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "InsertANumberAtGivenLocationOfArray_4_21",
+            "request": "launch",
+            "mainClass": "InsertANumberAtGivenLocationOfArray_4_21",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "java",
+            "name": "AverageOfNNumber_3_15",
+            "request": "launch",
+            "mainClass": "AverageOfNNumber_3_15",
+            "projectName": "Engineering-Programs_70bd5422"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Patern_2_3_2.html",
+            "file": "d:\\Engineering-Programs\\Sem-3\\WT\\Lab 2\\Patern_2_3_2.html"
+        }
+    ]
+}
