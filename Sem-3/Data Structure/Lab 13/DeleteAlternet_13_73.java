@@ -11,7 +11,7 @@ class ll {
         }
     }
 
-    private Node first = null;
+    Node first = null;
 
     void DLLIF(int x) {
         Node newNode = new Node(x);
@@ -61,15 +61,6 @@ class ll {
                 save = save.rptr.rptr;
             }
         }
-
-        void display() {
-            Node temp = first;
-            while (temp != null) {
-                System.out.print(temp.info + " ");
-                temp = temp.rptr;
-            }
-            System.out.println();
-        }
     }
 }
 
@@ -82,6 +73,6 @@ public class DeleteAlternet_13_73 {
         list.DLLIF(20);
         list.DLLIF(10);
         list.deleteAtAlternet();
-        list.display();
+        // list.display();
     }
 }

@@ -82,7 +82,7 @@ public class InsertAtFruntAndRareInDEQueue_9_52 {
         q.display();
         // q.DEQInsertR(50);
         // q.display();
-?        q.display();
+        q.display();
         q.DEQInsertF(10);
 
     }
