@@ -29,7 +29,7 @@ class Queue{
     int dequeue(){
         if(f==0){
             System.out.println("Under flow");
-            return;
+            return 0;
         }
         else{
             int y = arr[f];

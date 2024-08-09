@@ -51,10 +51,8 @@ class LL {
         int count = 1;
         if (first == null) {
             System.out.println("LL not found");
-            return;
         } else if (first.link == null) {
             System.out.println(first.info);
-            return;
         } else {
             while (last.link != null) {
                 last = last.link;
@@ -104,9 +102,9 @@ public class StackUsingLinkList_11_60 {
         list.insertAtEnd(20);
         list.insertAtEnd(10);
         list.insertAtEnd(5);
-        // list.deleteAtLast();
-        // list.display();
-        // list.findTheElement(5);
+        list.deleteAtLast();
+        list.display();
+        list.findTheElement(5);
         list.changeTheElement(15, 0);
         list.display();
     }
