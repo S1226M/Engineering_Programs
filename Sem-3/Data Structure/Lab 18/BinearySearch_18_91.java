@@ -22,5 +22,6 @@ public class BinearySearch_18_91 {
                 last = mid - 1;
             }
         }
+        sc.close();
     }
 }
