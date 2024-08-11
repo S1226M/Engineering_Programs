@@ -15,7 +15,6 @@ class LL {
         Node newNode = new Node(x);
         if (first == null) {
             first = newNode;
-            return;
         } else {
             newNode.link = first;
             first = newNode;
