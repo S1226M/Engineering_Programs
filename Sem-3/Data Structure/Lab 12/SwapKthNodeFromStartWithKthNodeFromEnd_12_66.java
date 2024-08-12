@@ -55,6 +55,32 @@ class LL {
         }
     }
 
+    void swapkth(int k){
+        int count = 1;
+        Node countNode = first;
+        Node temp = first;
+        Node save = first;
+
+        for(int i = 1 ; i < k ; i++){
+            temp = temp.link;
+        }
+        while(countNode.link != null){
+            countNode = countNode.link;
+            count++;
+        }
+        int ke = (count-k+1);
+        for(int i=1 ; i < ke ; i++){
+            save = save.link;
+        }
+        if(ke > k){
+            int a = temp.info;
+            temp.info = save.info;
+            save.info = a;
+        } else{
+            System.out.println("Link list have only "+count+" Node so,enter valid number");
+        }
+    }
+
     void displayList() {
         Node temp = first;
         if (temp == null) {
@@ -73,8 +99,8 @@ public class SwapKthNodeFromStartWithKthNodeFromEnd_12_66 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter from kth");
         int ks = sc.nextInt();
-        System.out.println("Enter kth from end");
-        int ke = sc.nextInt();
+        // System.out.println("Enter kth from end");
+        // int ke = sc.nextInt();
         LL list = new LL();
         list.insertAtEnd(1);
         list.insertAtEnd(2);
@@ -83,7 +109,8 @@ public class SwapKthNodeFromStartWithKthNodeFromEnd_12_66 {
         list.insertAtEnd(5);
         list.insertAtEnd(6);
         list.displayList();
-        list.Swap(ks,ke);
+        // list.Swap(ks,ke);
+        list.swapkth(ks);
         list.displayList();
         sc.close();
     }
