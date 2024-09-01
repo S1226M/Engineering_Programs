@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const Student = require('./Student')
-const conectionString = ''
+const conectionString = 'mongodb+srv://smitmaru1226:Smit%401226@cluster0.nr60d.mongodb.net/Collage_Smit_Sem_3'
 mongoose.connect(conectionString).then(()=>{
     const app = express();
     app.use(bodyParser.urlencoded())
@@ -33,7 +33,7 @@ mongoose.connect(conectionString).then(()=>{
 
     //add
     app.post('/student' , async (req , res) => {
-        const stu = new Student(...req.body)
+        const stu = new Student({...req.body})
         const ans = await stu.save()
         res.send(ans)
     })
