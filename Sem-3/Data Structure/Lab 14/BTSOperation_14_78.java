@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class BinaryTree {
     class Node {
         int info;
@@ -51,41 +53,41 @@ class BinaryTree {
         preOrder(root);
     }
 
-    boolean searchNode(int x) {
-        Node temp = root;
-        while (temp != null) {
-            if (x == temp.info) {
-                return true;
-            } else if (x < temp.info) {
-                temp = temp.lptr;
-            } else {
-                temp = temp.rptr;
-            }
-        }
-        return false;
-    }
 }
 
-public class BST {
+public class BTSOperation_14_78 {
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
-        tree.insertInBTS(20);
-        tree.insertInBTS(8);
-        tree.insertInBTS(4);
-        tree.insertInBTS(12);
-        tree.insertInBTS(10);
-        tree.insertInBTS(14);
-        tree.insertInBTS(22);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Pre-order traversal of the BST: ");
-        tree.preOrder();
-        System.out.println();
+        while (true) {
+            System.out.println("Choose an option:");
+            System.out.println("1. Insert a node");
+            System.out.println("2. Perform pre-order traversal");
+            System.out.println("3. Exit");
 
-        int searchValue = 10;
-        if (tree.searchNode(searchValue)) {
-            System.out.println("Node " + searchValue + " is found.");
-        } else {
-            System.out.println("Node " + searchValue + " is not found.");
+            int choice = sc.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter the value to insert:");
+                    int value = sc.nextInt();
+                    tree.insertInBTS(value);
+                    break;
+
+                case 2:
+                    System.out.println("Pre-order traversal of the tree:");
+                    tree.preOrder();
+                    System.out.println();
+                    break;
+
+                case 3:
+                    System.out.println("Exiting...");
+                    sc.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid option. Please choose 1, 2, or 3.");
+            }
         }
     }
 }
