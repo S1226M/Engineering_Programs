@@ -53,6 +53,19 @@ class BinaryTree {
         preOrder(root);
     }
 
+    void postOrder(Node node){
+        if(node == null){
+            return;
+        }
+        postOrder(node.lptr);
+        postOrder(node.rptr);
+        System.out.println(node.info + " ");
+    }
+
+    void postOrder(){
+        postOrder(root);
+    }
+
 }
 
 public class BTSOperation_14_78 {
@@ -64,7 +77,8 @@ public class BTSOperation_14_78 {
             System.out.println("Choose an option:");
             System.out.println("1. Insert a node");
             System.out.println("2. Perform pre-order traversal");
-            System.out.println("3. Exit");
+            System.out.println("3. Perform post-order traversal");
+            System.out.println("4. Exit");
 
             int choice = sc.nextInt();
             switch (choice) {
@@ -81,6 +95,12 @@ public class BTSOperation_14_78 {
                     break;
 
                 case 3:
+                    System.out.println("Post-order traversal of the tree:");
+                    tree.postOrder();
+                    System.out.println();
+                    break;
+
+                case 4:
                     System.out.println("Exiting...");
                     sc.close();
                     return;
