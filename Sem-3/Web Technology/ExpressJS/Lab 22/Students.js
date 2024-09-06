@@ -49,5 +49,5 @@ mongoose.connect(conectionString).then(()=>{
     app.listen(4000,()=>{
         console.log("Serever is running on  port 4000")
     })
-    console.log("Your server is connecte dwith database")
+    console.log("Your server is connected with database")
 })
