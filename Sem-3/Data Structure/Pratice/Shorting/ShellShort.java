@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InsersationShort {
+public class ShellShort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -9,18 +9,21 @@ public class InsersationShort {
             System.out.print("Enter the element : "+(i+1));
             a[i] = sc.nextInt();
         }
-        //5,4,3,2,1,0
-        for(int i=0 ; i<= n-1 ; i++){
-            int j=i;
-            while(j>0 && a[j-1]>a[j]){
-                int temp = a[j-1];
-                a[j-1] = a[j];
-                a[j] = temp;
-                j--;
+
+        for(int gap = n/2 ; gap>=1 ; gap/=2){
+            for(int i = gap ; i < n ; i++){
+                for(int j = i-gap ; j>=0 ; j-=gap){
+                    if(a[j] > a[j+gap]){
+                        int temp = a[j];
+                        a[j] = a[j+gap];
+                        a[j+gap] = temp;
+                    }
+                }
             }
-        }    
+        }
+
         for(int i=0 ; i<n ; i++){
             System.out.print(a[i]+" ");
-        }  
+        }
     }
 }
