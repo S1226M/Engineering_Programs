@@ -9,6 +9,7 @@ CREATE TABLE STU_INFO
 
 INSERT INTO STU_INFO(RNO,NAME,BRANCH)
 VALUES
+
 (101 , 'Raju' , 'CE' ),
 (102 , 'Amit' , 'CE' ) ,
 (103 , 'Sanjay' , 'ME' ), 
@@ -16,7 +17,8 @@ VALUES
 (105 , 'Meera' , 'EE' ) ,
 (106 , 'Mahesh' , 'ME' )
 
-----------------------------TABLE 2-----------------------
+----------------------------TABLE 2-----------------------------
+
 CREATE TABLE RESULT
 (
 	RNO INT,
@@ -47,7 +49,8 @@ VALUES
 ('E05','Jay','E01') ,
 ('E06','Anjana','E04')
 
--------------------------------------------Part – A----------------------------
+-------------------------------------------Part ï¿½ A----------------------------
+
 --1. Combine information from student and result table using cross join or Cartesian product.
 SELECT * FROM STU_INFO CROSS JOIN RESULT
 
@@ -64,7 +67,6 @@ ON STU_INFO.Rno = RESULT.Rno
 SELECT * FROM STU_INFO RIGHT OUTER JOIN RESULT
 ON STU_INFO.Rno = RESULT.Rno
 
-
 --5. Perform the full outer join on Student and Result tables. 
 SELECT * FROM STU_INFO FULL OUTER JOIN RESULT
 ON STU_INFO.Rno = RESULT.Rno
@@ -73,12 +75,12 @@ ON STU_INFO.Rno = RESULT.Rno
 SELECT STU_INFO.RNO,STU_INFO.NAME,STU_INFO.BRANCH,RESULT.SPI FROM STU_INFO JOIN RESULT 
 ON STU_INFO.Rno = RESULT.Rno
 
---7. Display Rno, Name, Branch and SPI of CE branch’s student only.
+--7. Display Rno, Name, Branch and SPI of CE branchï¿½s student only.
 SELECT STU_INFO.RNO,STU_INFO.NAME,STU_INFO.BRANCH,RESULT.SPI FROM STU_INFO JOIN RESULT 
 ON STU_INFO.Rno = RESULT.Rno
 WHERE BRANCH = 'CE'
 
---8. Display Rno, Name, Branch and SPI of other than EC branch’s student only.
+--8. Display Rno, Name, Branch and SPI of other than EC branchï¿½s student only.
 SELECT STU_INFO.RNO,STU_INFO.NAME,STU_INFO.BRANCH,RESULT.SPI FROM STU_INFO JOIN RESULT 
 ON STU_INFO.Rno = RESULT.Rno
 WHERE BRANCH <> 'EC'
