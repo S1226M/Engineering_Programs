@@ -86,8 +86,7 @@ UPDATE STU_MASTER
 SET BKLOG = -1
 WHERE NAME = 'NEHA'
 
-
---> PART : B
+-------------------------------------------------------PART : B------------------------------------------
 
 CREATE TABLE Dept_DETAILS (
     Did INT PRIMARY KEY,
@@ -125,7 +124,7 @@ INSERT INTO Emp_DETAILS(Eid, Ename, Did, Cid, Salary, Experience) VALUES
 (2, 'Jane Smith', 2, 2, 75000.00, 8),
 (3, 'Mike Johnson', 3, 3, 60000.00, 3);
 
---> PART : C
+-------------------------------------------------PART : C-------------------------------------
 
 CREATE TABLE Country_INFO (
     Cid INT PRIMARY KEY,
