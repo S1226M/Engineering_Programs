@@ -1,4 +1,6 @@
-class ll {
+import java.util.Scanner;
+
+class DoublyLinkedList {
     class Node {
         int info;
         Node lptr;
@@ -13,7 +15,8 @@ class ll {
 
     private Node first = null;
 
-    void DLLIF(int x) {
+    // Insert a node at the front of the linked list
+    void insertFront(int x) {
         Node newNode = new Node(x);
         if (first == null) {
             first = newNode;
@@ -24,7 +27,8 @@ class ll {
         }
     }
 
-    void DLLIL(int x) {
+    // Insert a node at the end of the linked list
+    void insertEnd(int x) {
         Node newNode = new Node(x);
         if (first == null) {
             first = newNode;
@@ -38,15 +42,15 @@ class ll {
         }
     }
 
-    void DLLDP(int x) {
+    // Delete a node from the specified position
+    void deletePosition(int pos) {
         if (first == null) {
             System.out.println("The list is empty.");
             return;
         }
 
         Node temp = first;
-
-        if (x == 1) {
+        if (pos == 1) {
             if (first.rptr == null) {
                 first = null;
             } else {
@@ -55,13 +59,16 @@ class ll {
             }
             return;
         }
-        for (int i = 1; i < x && temp != null; i++) {
+
+        for (int i = 1; i < pos && temp != null; i++) {
             temp = temp.rptr;
         }
+
         if (temp == null) {
             System.out.println("Position out of bounds.");
             return;
         }
+
         if (temp.rptr != null) {
             temp.rptr.lptr = temp.lptr;
         }
@@ -70,8 +77,13 @@ class ll {
         }
     }
 
+    // Display all nodes
     void display() {
         Node temp = first;
+        if (temp == null) {
+            System.out.println("The list is empty.");
+            return;
+        }
         while (temp != null) {
             System.out.print(temp.info + " ");
             temp = temp.rptr;
@@ -82,17 +94,46 @@ class ll {
 
 public class DLL_13_72 {
     public static void main(String[] args) {
-        ll list = new ll();
-        list.DLLIF(40);
-        list.DLLIF(30);
-        list.DLLIF(20);
-        list.DLLIF(10);
-        list.display();
+        Scanner scanner = new Scanner(System.in);
+        DoublyLinkedList list = new DoublyLinkedList();
 
-        list.DLLIL(50);
-        list.display();
+        while (true) {
+            System.out.println("Menu:");
+            System.out.println("1. Insert node at the front");
+            System.out.println("2. Insert node at the end");
+            System.out.println("3. Delete node from specified position");
+            System.out.println("4. Display all nodes");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
 
-        list.DLLDP(3);
-        list.display();
+            int choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter value to insert at the front: ");
+                    int frontValue = scanner.nextInt();
+                    list.insertFront(frontValue);
+                    break;
+                case 2:
+                    System.out.print("Enter value to insert at the end: ");
+                    int endValue = scanner.nextInt();
+                    list.insertEnd(endValue);
+                    break;
+                case 3:
+                    System.out.print("Enter position to delete: ");
+                    int pos = scanner.nextInt();
+                    list.deletePosition(pos);
+                    break;
+                case 4:
+                    System.out.println("List contents:");
+                    list.display();
+                    break;
+                case 5:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice, please try again.");
+            }
+        }
     }
 }
