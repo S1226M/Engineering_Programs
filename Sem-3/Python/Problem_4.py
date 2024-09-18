@@ -1,0 +1,21 @@
+# fruit = []
+# f1 = input("enter the fruit 1 :")
+# fruit.append(f1)
+# f2 = input("enter the fruit 2 :")
+# fruit.append(f2)
+# f3 = input("enter the fruit 3 :")
+# fruit.append(f3)
+# f4 = input("enter the fruit 4 :")
+# fruit.append(f4)
+# print(fruit)
+
+marks = []
+m1 = int(input("Enter the mark 1 :"))
+marks.append(m1)
+m2 = int(input("Enter the mark 2 :"))
+marks.append(m2)
+m3 = int(input("Enter the mark 3 :"))
+marks.append(m3)
+print(marks)
+marks.sort()
+print(marks)
