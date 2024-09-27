@@ -1,5 +1,3 @@
-USE CSE_B_312
-
 CREATE TABLE City (
     CityID INT PRIMARY KEY,
     Name VARCHAR(100) UNIQUE,
@@ -30,7 +28,7 @@ INSERT INTO Village (VID, Name, CityID) VALUES
 (105, 'Bhesan', 5),
 (106, 'Dhoraji', 5);
 
---PART : A
+-------------------------------------PART : A---------------------------------------
 
 --1. Display all the villages of Rajkot city.  
 SELECT City.Name, Village.Name
@@ -87,6 +85,8 @@ SET BKLOG = -1
 WHERE NAME = 'NEHA'
 
 -------------------------------------------------------PART : B------------------------------------------
+---------------------------table of the lab 13 part b---------------------------------------------
+
 
 CREATE TABLE Dept_DETAILS (
     Did INT PRIMARY KEY,
@@ -125,6 +125,8 @@ INSERT INTO Emp_DETAILS(Eid, Ename, Did, Cid, Salary, Experience) VALUES
 (3, 'Mike Johnson', 3, 3, 60000.00, 3);
 
 -------------------------------------------------PART : C-------------------------------------
+
+--------------------------table of the lab 13 part c ---------------------------------
 
 CREATE TABLE Country_INFO (
     Cid INT PRIMARY KEY,
@@ -209,4 +211,3 @@ INSERT INTO Emp_INFO (Eid, Ename, Did, Cid, Salary, Experience) VALUES
 (3, 'Mike Johnson', 3, 3, 60000.00, 3),
 (4, 'Alice Brown', 4, 4, 45000.00, 2),
 (5, 'Bob Green', 5, 5, 40000.00, 4);
-
