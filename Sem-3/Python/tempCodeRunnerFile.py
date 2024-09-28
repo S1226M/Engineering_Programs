@@ -1,14 +1,8 @@
-s = "smit" # here we can itrate the string
-# for i in s:
-#     print(i)
-
-# t = [1,4,6,234,6,764]
-# for i in t:
-#     print(i)
-
-# l = [1,2,3]
-# for item in l:
-#     print(item)
-
-# else:
-#     print("Done")
+for i in range(1,n+1):
+#     if(i==1 or i==n):
+#         print("*"*n,end="")
+#     else:
+#         print("*",end="")     
+#         print(" "*(n-2),end="")     
+#         print("*",end="")
+#     print("")
