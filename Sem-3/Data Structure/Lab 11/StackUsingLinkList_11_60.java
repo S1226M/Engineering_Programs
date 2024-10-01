@@ -45,7 +45,7 @@ class LL {
         }
     }
 
-    // peek
+    // peep
     void findTheElement(int x) {
         Node last = first;
         int count = 1;
