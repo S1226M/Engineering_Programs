@@ -31,6 +31,7 @@ class Stackx{
         }
         System.out.println("");
     }
+
     int peep(int i){
         if(top-i+1<0){
             System.out.println("Stack is empty");
@@ -42,6 +43,7 @@ class Stackx{
             return arr[top-i+1];
         }
     }
+    
     void change(int i,int x){
         if(top-i+1<0){
             System.out.println("Stack is empty");
