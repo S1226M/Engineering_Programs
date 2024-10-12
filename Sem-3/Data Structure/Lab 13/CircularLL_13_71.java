@@ -90,6 +90,26 @@ public class CircularLL_13_71 {
         }
     }
 
+    public void changeAtPosition(int x ,  int position) {
+        int  count = 1;
+        Node temp = first;
+        while (temp != null) {
+            temp=temp.next;
+            count++;
+        }
+        if(position > count){
+            System.out.println("Position out of bounds");
+            return;
+        }
+        else{
+            Node temp1 = first;
+            for (int i = 1; i < position; i++) {
+                temp1 = temp1.next;
+            }
+            temp1.data = x;
+        }
+    }
+
     public static void main(String[] args) {
         CircularLL_13_71 l1 = new CircularLL_13_71();
         Scanner sc = new Scanner(System.in);
@@ -100,7 +120,8 @@ public class CircularLL_13_71 {
             System.out.println("2. Insert at last");
             System.out.println("3. Delete at position");
             System.out.println("4. Print list");
-            System.out.println("5. Exit");
+            System.out.println("5. Change at position");
+            System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = sc.nextInt();
 
@@ -125,6 +146,13 @@ public class CircularLL_13_71 {
                     l1.printData();
                     break;
                 case 5:
+                    System.out.print("Enter the position to change (0-based index): ");
+                    int positionChange = sc.nextInt();
+                    System.out.print("Enter the new value: ");
+                    int dataChange = sc.nextInt();
+                    l1.changeAtPosition(dataChange, positionChange);
+                    break;
+                case 6:
                     System.out.println("Exiting...");
                     sc.close();
                     return;
