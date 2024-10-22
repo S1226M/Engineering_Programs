@@ -51,7 +51,7 @@ ON City.CityID = Village.CityID
 GROUP BY City.Name
 HAVING COUNT(Village.CityID) > 1
 
---4. Display the city having no village. 
+--4. Display the city having no7l8 village. 
 SELECT City.Name
 FROM City
 FULL OUTER JOIN Village

@@ -57,7 +57,7 @@ Where PERSON.City = 'Jamnagar'
 SELECT PERSON.PersonName,PERSON.Salary,DEPT.DepartmentName
 from PERSON join DEPT
 ON PERSON.DepartmentID = DEPT.DepartmentID
-Where PERSON.City <> 'Jamnagar'
+Where PERSON.City <> 'RAJKOT'
 
 --5. Retrieve person’s name of the person who joined the Civil department after 1-Aug-2001. 
 SELECT PERSON.PersonName
@@ -103,3 +103,27 @@ wHERE City = 'Ahmedabad'
 SELECT PERSON.PersonName + 'lives in' + PERSON.City + 'and works in' + DEPT.DepartmentName + 'Department.'
 FROM PERSON JOIN DEPT
 ON PERSON.DepartmentID = DEPT.DepartmentID
+
+----------------------PART B ----------------------------------
+--1. Produce Output Like: <PersonName> earns <Salary> from <DepartmentName> department monthly. (In single column)
+SELECT PERSON.PersonName + ' earns ' + CAST(PERSON.Salary AS VARCHAR) + ' FROM ' + DEPT.DepartmentName + ' department monthly.' AS message
+FROM PERSON
+JOIN DEPT
+ON PERSON.DepartmentID = DEPT.DepartmentID;
+
+--2. Find city & department wise total, average & maximum salaries. 
+SELECT PERSON.City, DEPT.DepartmentName, 
+       SUM(PERSON.Salary) AS total_salary, 
+       AVG(PERSON.Salary) AS average_salary, 
+       MAX(PERSON.Salary) AS max_salary
+FROM PERSON
+JOIN DEPT
+ON PERSON.DepartmentID = DEPT.DepartmentID
+GROUP BY PERSON.City, DEPT.DepartmentName;
+
+--3. Find all persons who do not belong to any department. 
+SELECT PERSON.PersonName 
+FROM PERSON
+JOIN DEPT
+ON PERSON.DepartmentID = DEPT.DepartmentID
+WHERE Dept.DepartmentID is null

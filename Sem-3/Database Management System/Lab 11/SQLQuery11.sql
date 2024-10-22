@@ -95,3 +95,18 @@ SELECT STU_INFO.BRANCH,AVG(RESULT.SPI) FROM STU_INFO JOIN RESULT
 ON STU_INFO.Rno = RESULT.Rno
 WHERE STU_INFO.BRANCH IN ('CE','ME')
 GROUP BY STU_INFO.BRANCH
+
+---------------------Part B-------------------------
+--1. Display average result of each branch and sort them in ascending order by SPI. 
+SELECT STU_INFO.BRANCH, AVG(RESULT.SPI) AS avg_spi
+FROM STU_INFO JOIN RESULT
+ON STU_INFO.Rno = RESULT.Rno
+GROUP BY STU_INFO.BRANCH
+ORDER BY avg_spi ASC;
+
+--2. Display highest SPI from each branch and sort them in descending order. 
+SELECT STU_INFO.BRANCH, Max(RESULT.SPI) AS avg_spi
+FROM STU_INFO JOIN RESULT
+ON STU_INFO.Rno = RESULT.Rno
+GROUP BY STU_INFO.BRANCH
+ORDER BY avg_spi desc;

@@ -58,7 +58,7 @@ DELETE FROM AcademicData
 WHERE RNo = 104
 
 
---Part – B:
+--Part ï¿½ B:
 --1. Create a view that displays information of all students whose SPI is above 8.5
 CREATE VIEW STUDENT_INFODATA
 AS
@@ -69,7 +69,15 @@ WHERE SPI > 8.5
 CREATE VIEW STUDENT_INFOBKLOG
 AS
 SELECT * FROM STUDENT_INFO
-WHERE Bklog = 0 --3. Create a view Computerview that displays CE branch data only.CREATE VIEW ComputerviewAS SELECT * FROM STUDENT_INFOWHERE Branch = 'CE'--Part – C:
+WHERE Bklog = 0 
+
+--3. Create a view Computerview that displays CE branch data only.
+CREATE VIEW Computerview
+AS 
+SELECT * FROM STUDENT_INFO
+WHERE Branch = 'CE'
+
+--Part ï¿½ C:
 --1. Create a view Result_EC that displays the name and SPI of students with SPI less than 5 of branch EC.
 CREATE VIEW Result_EC
 AS
@@ -81,7 +89,7 @@ UPDATE Result_EC
 SET SPI = '4.90'
 WHERE Name = 'MAHESH'
 
---3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with ‘M’ and having bklogs more than 5.
+--3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with ï¿½Mï¿½ and having bklogs more than 5.
 CREATE VIEW Stu_Bklog
 AS
 SELECT RNo, Name, Bklog FROM STUDENT_INFO
