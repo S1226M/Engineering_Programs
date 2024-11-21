@@ -1,8 +1,7 @@
-for i in range(1,n+1):
-#     if(i==1 or i==n):
-#         print("*"*n,end="")
-#     else:
-#         print("*",end="")     
-#         print(" "*(n-2),end="")     
-#         print("*",end="")
-#     print("")
+t(marks,type(marks))
+print(marks["jainil"])
+print(marks.items())
+print(marks.keys())
+print(marks.values())
+marks.update({"smit":99 ,  "Bhavy":101})
+print(marks,type(marks))

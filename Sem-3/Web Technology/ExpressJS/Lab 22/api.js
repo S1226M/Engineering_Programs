@@ -7,7 +7,7 @@ const cors = require('cors');
 const connectionString = 'mongodb+srv://Smit:smit123@cluster0.nr60d.mongodb.net/Hospital_Management';
 mongoose.connect(connectionString).then(() => {
     const app = express();
-    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.urlencoded());
     app.use(bodyParser.json()); // To parse JSON bodies
     app.use(cors());
 
