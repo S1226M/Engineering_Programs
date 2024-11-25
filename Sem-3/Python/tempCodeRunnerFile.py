@@ -1,7 +1,7 @@
-t(marks,type(marks))
-print(marks["jainil"])
-print(marks.items())
-print(marks.keys())
-print(marks.values())
-marks.update({"smit":99 ,  "Bhavy":101})
-print(marks,type(marks))
+def avg():
+    a=(int(input("Enter the number a :")))
+    b=(int(input("Enter the number b :")))
+    c=(int(input("Enter the number c :")))
+    avg=(a+b+c)/3
+    print(avg)
+avg()
