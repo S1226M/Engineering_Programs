@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+  .form-container {
+    border: 2px solid #000; 
+  }
+  </style>
+  <body>
+    <div class="bg-info">
+      <div class="container bg-light border-dark form-container">
+        <h1 class="text-center">Registration Form</h1>
+        <div class="border"></div>
+        <br />
+        <div class="text-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatibus nam doloribus deleniti dicta temporibus. Debitis,
+            similique! Quidem placeat aut quisquam assumenda delectus a quae!
+            Impedit ab beatae autem minus magni.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="name"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="dob">Date of Birth:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="dob"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="address1">Address1:</label>
+              <textarea
+                class="form-control bg-body-secondary"
+                id="address1"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="address2">Address2:</label>
+              <textarea
+                class="form-control bg-body-secondary"
+                id="address2"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="city">City:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="city"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary pb-3">
+              <label>Phone Number:</label>
+              <div class="row">
+                <div class="col">
+                  <input type="checkbox" class="form-check-input" id="home" />
+                  <label class="form-check-label" for="home">Home</label>
+                  <input type="checkbox" class="form-check-input" id="cell" />
+                  <label class="form-check-label" for="cell">Cell</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="border"></div>
+        <br />
+
+        <div class="row mt-1 bg-dark-subtle">
+          <div class="text-center"><h1>Contact Details</h1></div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control bg-body-secondary"
+                id="email"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="business">Business Name:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="business"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="father">Father's Name:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="father"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="mother">Mother's Name:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="mother"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="other1">Other1:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="other1"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="other2">Other2:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="other2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3 bg-dark-subtle">
+          <div class="text-center"><h1>Other Information</h1></div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 mt-3">
+            <div class="col bg-body-secondary">
+              <label for="start">Start Date:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="start"
+              />
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="col bg-body-secondary">
+              <label for="end">End Date:</label>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                id="end"
+              />
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="col bg-body-secondary">
+              <label for="time">Time:</label>
+              <input
+                type="time"
+                class="form-control bg-body-secondary"
+                id="time"
+              />
+            </div>
+          </div>
+          <div class="col-8 mt-3">
+            <div class="col bg-body-secondary pb-4">
+              <label for="annualPayment">Annual Payment:</label>
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="col bg-body-secondary p-1">
+              <input
+                type="number"
+                class="form-control"
+                id="annualPayment"
+                style="margin-left: 50px; width: 100px"
+              />
+            </div>
+          </div>
+          <div class="col-8 mt-3">
+            <div class="col bg-body-secondary pb-4">
+              <label for="totalAnnualPayment">Total Annual Payment:</label>
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="col bg-body-secondary p-1">
+              <input
+                type="number"
+                class="form-control"
+                id="totalAnnualPayment"
+                style="margin-left: 50px; width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+            sequi incidunt nisi cumque voluptates maiores possimus itaque,
+            doloribus iste illo eius! Excepturi consectetur ipsam saepe illo
+            dolorum laboriosam at minima.
+          </p>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="fullName">Full Name:</label>
+              <input type="text" class="form-control bg-body-secondary" id="fullName" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="dobFinal">Paid via:</label>
+              <input type="text" class="form-control bg-body-secondary" id="dobFinal" />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="paidVia">Date</label>
+              <input type="text" class="form-control bg-body-secondary" id="paidVia" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col bg-body-secondary">
+              <label for="signature">Signature</label>
+              <input type="text" class="form-control bg-body-secondary" id="signature" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
