@@ -12,7 +12,7 @@ public class TakeSecondAndConvertInToHourMinAndSecond_12_9 {
             int min = (int)min1;//46
             double min2 = min1 - min;//0.66666..
             
-            double second1 = min2 * 60;
+            double second1 = min2 * 60;//39.9999
             int second = (int)(second1);
             System.out.println("Hour :"+hour+",Minutes:"+min+",Second:"+second);
         }
