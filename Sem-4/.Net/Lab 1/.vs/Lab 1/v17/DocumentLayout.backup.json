@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\Lab 1\\",
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2A92F44-72F1-48FB-B1B2-2C141CE90C3F}|Lab 1.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 1\\lab 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2A92F44-72F1-48FB-B1B2-2C141CE90C3F}|Lab 1.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2A92F44-72F1-48FB-B1B2-2C141CE90C3F}|Lab 1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\Lab 1\\Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\Lab 1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHsAAAAoAAAAAAAAAA==",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 1\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAwIUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T04:43:02.124Z",
               "EditorCaption": ""
