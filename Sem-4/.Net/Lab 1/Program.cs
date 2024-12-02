@@ -117,11 +117,21 @@ namespace Lab_1
             //    Console.WriteLine("Invalid number");
             //}
 
-            //9.Write a program to Swapping without using third variable. 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("a : " + (b));
-            Console.WriteLine("b : " + ())
-        }   
+            ////9.Write a program to Swapping without using third variable. 
+            //int a = Convert.ToInt32(Console.ReadLine()); // 1
+            //int b = Convert.ToInt32(Console.ReadLine()); // 2
+            //a = a + b;//3
+            //b = a - b;//1
+            //a = a - b;//2
+            //Console.WriteLine("a : " + (a));
+            //Console.WriteLine("b : " + (b));
+
+            //10.Write a program to find maximum numbers from given 3 numbers using ternary operator.
+            int a = Convert.ToInt32(Console.ReadLine()); 
+            int b = Convert.ToInt32(Console.ReadLine()); 
+            int c = Convert.ToInt32(Console.ReadLine());
+            int n = a > b ? (a > c ? a : c) : (b > c ? b : c);
+            Console.WriteLine(n);
+        }
     }
 }
