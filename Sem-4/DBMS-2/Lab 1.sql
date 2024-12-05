@@ -77,7 +77,18 @@ As
 Select * from Songs Where Song_id Between 101 And 105
 
 --19. Update a song name to ‘Jannat’ of song having song_id 101 in Fav_Songs view. 
-
+Update Fav_Songs 
+set Song_title = 'Jannat' where song_id = 101
 
 --20. Find all artists who have released an album in 2020.  
+Select * from Artists join Albums
+On Artists.Artist_id = Albums.Artist_id 
+Where Release_year = 2020
+
 --21. Retrieve all songs by Shreya Ghoshal and order them by duration.
+SELECT Song_title, Duration
+FROM Artists
+JOIN Albums ON Artists.Artist_id = Albums.Artist_id
+JOIN Songs ON Songs.Album_id = Albums.Album_id
+WHERE Artist_name = 'Shreya Ghoshal'
+ORDER BY Duration;
