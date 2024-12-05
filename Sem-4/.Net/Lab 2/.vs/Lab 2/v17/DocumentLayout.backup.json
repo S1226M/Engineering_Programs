@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 2\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 2\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|solutionrelative:staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 2\\bank_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|solutionrelative:bank_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 2\\candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8183FF3E-EE92-4102-9343-75CD01C6BCD6}|Lab 2.csproj|solutionrelative:candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Student.cs*",
+              "RelativeToolTip": "Student.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T05:41:04.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bank_Account.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Bank_Account.cs",
+              "RelativeDocumentMoniker": "Bank_Account.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Bank_Account.cs",
+              "RelativeToolTip": "Bank_Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T05:26:35.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Staff.cs",
+              "RelativeDocumentMoniker": "Staff.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Staff.cs",
+              "RelativeToolTip": "Staff.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:58:39.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Candidate.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Candidate.cs",
+              "RelativeDocumentMoniker": "Candidate.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Candidate.cs",
+              "RelativeToolTip": "Candidate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:44:51.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 2\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:27:11.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
