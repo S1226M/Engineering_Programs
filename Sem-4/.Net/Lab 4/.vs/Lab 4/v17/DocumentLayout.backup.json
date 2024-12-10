@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\areaofsrc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:areaofsrc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\areas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:areas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|d:\\engineering_programs\\sem-4\\.net\\lab 4\\sum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829D61F5-C0C3-4E78-90D7-CD6FFCBCB857}|Lab 4.csproj|solutionrelative:sum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Bank.cs",
+              "RelativeDocumentMoniker": "Bank.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Bank.cs*",
+              "RelativeToolTip": "Bank.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:12:08.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AreaOfSRC.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\AreaOfSRC.cs",
+              "RelativeDocumentMoniker": "AreaOfSRC.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\AreaOfSRC.cs",
+              "RelativeToolTip": "AreaOfSRC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:06:28.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hospital.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Hospital.cs",
+              "RelativeDocumentMoniker": "Hospital.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Hospital.cs",
+              "RelativeToolTip": "Hospital.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:59:48.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Areas.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Areas.cs",
+              "RelativeDocumentMoniker": "Areas.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Areas.cs",
+              "RelativeToolTip": "Areas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:37:57.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sum.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Sum.cs",
+              "RelativeDocumentMoniker": "Sum.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Sum.cs",
+              "RelativeToolTip": "Sum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:30:38.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\Lab 4\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:29:49.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
