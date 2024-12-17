@@ -11,6 +11,7 @@ namespace Lab_5
     {
         static void Main(string[] args)
         {
+            //Program-1
             //ArrayList s = new ArrayList();
             //s.Add("Aa");
             //s.Add("Bb");
@@ -25,6 +26,7 @@ namespace Lab_5
             //    Console.WriteLine(i);
             //}
 
+            //Program-2
             //List<string> list = new List<string>();
             //list.Add("A");
             //list.Add("D");
@@ -40,6 +42,7 @@ namespace Lab_5
             //    Console.WriteLine(i);
             //}
 
+            //Program-3
             //Stack stack = new Stack();
             //stack.Push(10);
             //stack.Push(20);
@@ -53,6 +56,7 @@ namespace Lab_5
             //    Console.WriteLine(i);
             //}
 
+            //Program-4
             //Queue queue = new Queue();
             //queue.Enqueue(1);
             //queue.Enqueue(2);
@@ -63,24 +67,33 @@ namespace Lab_5
             //Console.WriteLine(queue.Peek());
             //Console.WriteLine(queue.Contains(2));
 
-            Dictionary<int, string> d = new Dictionary<int, string>();
-            d.Add(1, "A");
-            d.Add(2, "B");
-            d.Add(3, "C");
-            d.Remove(3);
-            Console.WriteLine(d.ContainsKey(3));
-            Console.WriteLine(d.ContainsValue("C"));
-            d.Clear();
-            foreach (object i in d.Keys)
+            //Program-5
+            //Dictionary<int, string> d = new Dictionary<int, string>();
+            //d.Add(1, "A");
+            //d.Add(2, "B");
+            //d.Add(3, "C");
+            //d.Remove(3);
+            //Console.WriteLine(d.ContainsKey(3));
+            //Console.WriteLine(d.ContainsValue("C"));
+            //d.Clear();
+            //foreach (object i in d.Keys)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Program-6
+            Hashtable h1 = new Hashtable();
+            h1.Add(1, "abc");
+            h1.Add(2, "def");
+            h1.Add(3, "ghi");
+            h1.Remove(1);
+            Console.WriteLine(h1.ContainsKey(1));
+            Console.WriteLine(h1.ContainsValue("gxi"));
+            h1.Clear();
+            foreach (var x in h1.Values)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(x);
             }
-
-            Hashtable h = new Hashtable();
-            h.Add(1, "A");
-            h.Add(2, "B");
-            h.Add(3, "C");
-
         }
     }
 }
