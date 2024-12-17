@@ -18,6 +18,7 @@ namespace Lab_4
     {
         public override String HospitalDetails()
         {
+            console.writeline("appolo");
             return "Apollo";
         }
     }
