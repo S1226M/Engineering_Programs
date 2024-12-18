@@ -40,6 +40,8 @@ namespace Lab_2
             //Student s = new Student(23,"smit",5,6,10);
             //s.print();
 
+            //Question.10
+
 
         }
     }
