@@ -46,28 +46,41 @@ class LL{
         }
         first = prev;
     }
-    boolean isPelindrom(){
+    boolean isPalindrome() {
         Node temp = first;
-        int count = 1;
-        while(temp.link != null){
-            temp = temp.link;
-            count++;
-        }
+        java.util.Stack<Integer> stack = new java.util.Stack<>();
         
-    }
-    
+        while (temp != null) {
+            stack.push(temp.info);
+            temp = temp.link;
+        }
+        temp = first;
+        while (temp != null) {
+            if (temp.info != stack.pop()) {
+                return false;
+            }
+            temp = temp.link;
+        }
+        return true;
+    }    
 }
-
 public class ReverseLL {
     public static void main(String[] args) {
         LL list = new LL();
-        list.insertAtEnd(10);
-        list.insertAtEnd(20);
         list.insertAtEnd(30);
         list.insertAtEnd(20);
         list.insertAtEnd(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+
+        System.out.print("Original List: ");
         list.display();
+
         list.reverse();
+        System.out.print("Reversed List: ");
         list.display();
-    }    
+
+        boolean isPalindrome = list.isPalindrome();
+        System.out.println("Is Palindrome: " + isPalindrome);
+    }
 }
