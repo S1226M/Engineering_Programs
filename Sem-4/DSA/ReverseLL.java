@@ -34,7 +34,7 @@ class LL{
 
     void reverse() {
         if (first == null || first.link == null) {
-            return; // No reversal needed for empty or single-node lists
+            return;
         }
         Node prev = null;
         Node current = first;
@@ -44,7 +44,7 @@ class LL{
             prev = current;
             current = next;
         }
-        first = prev; // Update the head to the new head of the list
+        first = prev;
     }
     boolean isPelindrom(){
         Node temp = first;
