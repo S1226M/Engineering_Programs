@@ -1,0 +1,35 @@
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\appsettings.Development.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\appsettings.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.staticwebassets.runtime.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.staticwebassets.endpoints.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.exe
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.deps.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.runtimeconfig.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.dll
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\bin\Debug\net8.0\MVC Lab-6.1.pdb
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.AssemblyInfoInputs.cache
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.AssemblyInfo.cs
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.csproj.CoreCompileInputs.cache
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.MvcApplicationPartsAssemblyInfo.cache
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.RazorAssemblyInfo.cache
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.RazorAssemblyInfo.cs
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.sourcelink.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\scopedcss\bundle\MVC Lab-6.1.styles.css
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\scopedcss\projectbundle\MVC Lab-6.1.bundle.scp.css
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets.build.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets.development.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets\msbuild.MVC Lab-6.1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets\msbuild.MVC Lab-6.1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets\msbuild.build.MVC Lab-6.1.props
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MVC Lab-6.1.props
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MVC Lab-6.1.props
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.dll
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\refint\MVC Lab-6.1.dll
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.pdb
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\MVC Lab-6.1.genruntimeconfig.cache
+D:\Engineering_Programs\Sem-4\.Net\MVC Lab-6.1\obj\Debug\net8.0\ref\MVC Lab-6.1.dll
