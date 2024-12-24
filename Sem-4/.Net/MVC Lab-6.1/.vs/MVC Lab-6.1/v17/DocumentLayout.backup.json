@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Form\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Form\\Index.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Form\\Index.cshtml",
+              "RelativeToolTip": "Views\\Form\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T05:16:53.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FormController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\FormController.cs",
+              "RelativeToolTip": "Controllers\\FormController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T05:16:42.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\About\\Index.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T05:06:59.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AboutController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T05:06:47.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T04:55:22.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T04:55:13.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T04:47:29.821Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
