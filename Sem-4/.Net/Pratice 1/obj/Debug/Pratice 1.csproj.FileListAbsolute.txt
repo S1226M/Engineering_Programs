@@ -1,0 +1,7 @@
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\bin\Debug\Pratice 1.exe.config
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\bin\Debug\Pratice 1.exe
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\bin\Debug\Pratice 1.pdb
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\obj\Debug\Pratice 1.csproj.AssemblyReference.cache
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\obj\Debug\Pratice 1.csproj.CoreCompileInputs.cache
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\obj\Debug\Pratice 1.exe
+D:\Engineering_Programs\Sem-4\.Net\Pratice 1\obj\Debug\Pratice 1.pdb
