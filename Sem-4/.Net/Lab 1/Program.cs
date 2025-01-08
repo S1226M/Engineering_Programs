@@ -13,6 +13,15 @@ namespace Lab_1
     {
         static void Main(string[] args)
         {
+            //differance between this two
+            //string s2 = Console.ReadLine();
+            //int s = Console.Read();
+            //Console.WriteLine(s);
+            //Console.WriteLine(s2);
+            ConsoleKeyInfo s= Console.ReadKey();
+            Console.WriteLine(s);
+
+
             ////1.Write a program to print your name, address, contact number & city.
             //Console.WriteLine("Smit");
             //Console.WriteLine("Rajkot");
@@ -127,11 +136,11 @@ namespace Lab_1
             //Console.WriteLine("b : " + (b));
 
             //10.Write a program to find maximum numbers from given 3 numbers using ternary operator.
-            int a = Convert.ToInt32(Console.ReadLine()); 
-            int b = Convert.ToInt32(Console.ReadLine()); 
-            int c = Convert.ToInt32(Console.ReadLine());
-            int n = a > b ? (a > c ? a : c) : (b > c ? b : c);
-            Console.WriteLine(n);
+            //int a = Convert.ToInt32(Console.ReadLine()); 
+            //int b = Convert.ToInt32(Console.ReadLine()); 
+            //int c = Convert.ToInt32(Console.ReadLine());
+            //int n = a > b ? (a > c ? a : c) : (b > c ? b : c);
+            //Console.WriteLine(n);
         }
     }
 }
