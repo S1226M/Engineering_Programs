@@ -12,6 +12,7 @@ class LL{
 
     public void insertAtEnd(int x) {
         Node newNode = new Node(x);
+    
         if (first == null) {
             first = newNode;
             return;
