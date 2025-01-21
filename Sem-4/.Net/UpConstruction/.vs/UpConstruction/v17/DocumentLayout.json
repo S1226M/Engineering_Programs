@@ -1,0 +1,338 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\about\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\about\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\contact\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\contact\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\dropdown\\dropdown.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\dropdown\\dropdown.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\dropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\dropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\blog\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\blog\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\services\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\services\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\projects\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\projects\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|d:\\engineering_programs\\sem-4\\.net\\upconstruction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B30154F-B50B-4EEB-BFAF-692CB0C372C1}|UpConstruction.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DropDown.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\DropDown\\DropDown.cshtml",
+              "RelativeDocumentMoniker": "Views\\DropDown\\DropDown.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\DropDown\\DropDown.cshtml",
+              "RelativeToolTip": "Views\\DropDown\\DropDown.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T12:23:24.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DropDownController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\DropDownController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DropDownController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\DropDownController.cs",
+              "RelativeToolTip": "Controllers\\DropDownController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T12:23:09.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T12:18:06.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T12:08:24.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T04:40:30.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Home.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Home\\Home.cshtml",
+              "RelativeToolTip": "Views\\Home\\Home.cshtml",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAMwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T04:59:43.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\About\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\About\\About.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\About\\About.cshtml",
+              "RelativeToolTip": "Views\\About\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:20:30.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T12:25:25.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Contact\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contact\\Contact.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Contact\\Contact.cshtml",
+              "RelativeToolTip": "Views\\Contact\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T12:25:39.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Blog.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Blog\\Blog.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\Blog.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Blog\\Blog.cshtml",
+              "RelativeToolTip": "Views\\Blog\\Blog.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAWwP4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T12:18:22.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Services\\Services.cshtml",
+              "RelativeDocumentMoniker": "Views\\Services\\Services.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Services\\Services.cshtml",
+              "RelativeToolTip": "Views\\Services\\Services.cshtml",
+              "ViewState": "AgIAABABAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T11:58:58.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:21:49.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AboutController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T05:19:31.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Projects.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Projects\\Projects.cshtml",
+              "RelativeDocumentMoniker": "Views\\Projects\\Projects.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\Projects\\Projects.cshtml",
+              "RelativeToolTip": "Views\\Projects\\Projects.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAWwEUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T12:08:41.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T05:00:08.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T11:58:32.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:21:51.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T04:58:40.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-21T05:00:03.928Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
