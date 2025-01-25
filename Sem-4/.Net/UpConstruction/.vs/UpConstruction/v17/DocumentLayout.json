@@ -98,8 +98,7 @@
               "RelativeToolTip": "Views\\DropDown\\DropDown.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:23:24.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:23:24.084Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "Controllers\\DropDownController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:23:09.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:23:09.811Z"
             },
             {
               "$type": "Document",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "Controllers\\BlogController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:18:06.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:18:06.836Z"
             },
             {
               "$type": "Document",
@@ -137,8 +134,7 @@
               "RelativeToolTip": "Controllers\\ProjectsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:08:24.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:08:24.022Z"
             },
             {
               "$type": "Document",
@@ -150,8 +146,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T04:40:30.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T04:40:30.611Z"
             },
             {
               "$type": "Document",
@@ -163,8 +158,7 @@
               "RelativeToolTip": "Views\\Home\\Home.cshtml",
               "ViewState": "AgIAAMAAAAAAAAAAAAAAAMwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T04:59:43.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T04:59:43.276Z"
             },
             {
               "$type": "Document",
@@ -174,7 +168,7 @@
               "RelativeDocumentMoniker": "Views\\About\\About.cshtml",
               "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\UpConstruction\\Views\\About\\About.cshtml",
               "RelativeToolTip": "Views\\About\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-21T05:20:30.043Z",
               "EditorCaption": ""
@@ -189,8 +183,7 @@
               "RelativeToolTip": "Controllers\\ContactController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:25:25.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:25:25.323Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "Views\\Contact\\Contact.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:25:39.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:25:39.964Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "Views\\Blog\\Blog.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAWwP4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:18:22.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:18:22.58Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "Views\\Services\\Services.cshtml",
               "ViewState": "AgIAABABAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T11:58:58.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T11:58:58.461Z"
             },
             {
               "$type": "Document",
@@ -265,8 +255,7 @@
               "RelativeToolTip": "Views\\Projects\\Projects.cshtml",
               "ViewState": "AgIAADQAAAAAAAAAAAAWwEUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:08:41.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:08:41.517Z"
             },
             {
               "$type": "Document",
@@ -278,8 +267,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T05:00:08.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T05:00:08.419Z"
             },
             {
               "$type": "Document",
@@ -291,8 +279,7 @@
               "RelativeToolTip": "Controllers\\ServicesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:58:32.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T11:58:32.85Z"
             },
             {
               "$type": "Document",
