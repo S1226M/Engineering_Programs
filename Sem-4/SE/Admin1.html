@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Roles and Permissions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://source.unsplash.com/1600x900/?supermarket,store');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 15px;
+    }
+    .form-check-label {
+      font-size: 0.9rem;
+    }
+    .permissions-display {
+      font-size: 0.9rem;
+      color: #ffc107;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .Main {
+      background-image: url('./SUPER.jpg'); /* Path to your image */
+      background-size: cover; /* Ensures the image covers the entire container */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center; /* Centers the content horizontally */
+      align-items: center; /* Centers the content vertically */
+      overflow: hidden; /* Prevents scrolling if content overflows */
+    }
+    .btn{
+      background-color: rgb(0, 0, 0);
+      color: rgb(250, 234, 204);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="Main">
+    <div class="container my-5">
+      <header class="text-center mb-5">
+        <h1 class="display-4">Manage Roles and Permissions</h1>
+      </header>
+  
+      <!-- Roles and Permissions Section -->
+      <div class="card p-0">
+        <div class="card-header bg-secondary text-white text-center">
+          <h3>Select Role to Manage Permissions</h3>
+        </div>
+        <div class="card-body p-0">
+          <!-- Role List -->
+          <ul class="list-group">
+            <li class="list-group-item text-black d-flex justify-content-between align-items-center" data-role="Admin">
+              <span class="role-name">Admin</span>
+              <div class="permissions-display text-black" id="permissions-Admin">Permissions: Full Access</div>
+              <button class="btn btn-sm btn-light toggle-permissions" data-bs-toggle="modal" data-bs-target="#editPermissionsModal" data-role="Admin">Edit Permissions</button>
+            </li>
+            <li class="list-group-item bg-secondary-subtle text-black d-flex justify-content-between align-items-center" data-role="Staff">
+              <span class="role-name">Staff</span>
+              <div class="permissions-display text-black" id="permissions-Staff">Permissions: Manage Inventory</div>
+              <button class="btn btn-sm btn-light toggle-permissions" data-bs-toggle="modal" data-bs-target="#editPermissionsModal" data-role="Staff">Edit Permissions</button>
+            </li>
+            <li class="list-group-item text-black d-flex justify-content-between align-items-center" data-role="Customer">
+              <span class="role-name">Customer</span>
+              <div class="permissions-display text-black" id="permissions-Customer">Permissions: View Products</div>
+              <button class="btn btn-sm btn-light toggle-permissions" data-bs-toggle="modal" data-bs-target="#editPermissionsModal" data-role="Customer">Edit Permissions</button>
+            </li>
+            <li class="list-group-item bg-secondary-subtle d-flex justify-content-between align-items-center" data-role="Delivery Boy">
+              <span class="role-name">Delivery Boy</span>
+              <div class="permissions-display text-black" id="permissions-Delivery-Boy">Permissions: Manage Deliveries</div>
+              <button class="btn btn-sm btn-light toggle-permissions" data-bs-toggle="modal" data-bs-target="#editPermissionsModal" data-role="Delivery Boy">Edit Permissions</button>
+            </li>
+            <li class="list-group-item text-black d-flex justify-content-between align-items-center" data-role="Delivery Boy">
+              <span class="role-name">Other</span>
+              <div class="permissions-display text-black" id="permissions-Delivery-Boy">Permissions: Non</div>
+              <button class="btn btn-sm btn-light toggle-permissions" data-bs-toggle="modal" data-bs-target="#editPermissionsModal" data-role="Delivery Boy">Edit Permissions</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Popup for Permissions -->
+  <div class="modal fade" id="editPermissionsModal" tabindex="-1" aria-labelledby="editPermissionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title" id="editPermissionsModalLabel">Edit Permissions for: <span id="roleName"></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="permissionsForm">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="viewReports" value="View Reports">
+              <label class="form-check-label" for="viewReports">View Reports</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="manageInventory" value="Manage Inventory">
+              <label class="form-check-label" for="manageInventory">Manage Inventory</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handleOrders" value="Handle Orders">
+              <label class="form-check-label" for="handleOrders">Handle Orders</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="manageDeliveries" value="Manage Deliveries">
+              <label class="form-check-label" for="manageDeliveries">Manage Deliveries</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="fullAccess" value="Full Access">
+              <label class="form-check-label" for="fullAccess">Full Access</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="savePermissions">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentRole = "";
+
+      // Show modal for editing permissions
+      document.querySelectorAll(".toggle-permissions").forEach(button => {
+        button.addEventListener("click", () => {
+          currentRole = button.getAttribute("data-role");
+          document.getElementById("roleName").textContent = currentRole;
+
+          // Clear all checkboxes
+          document.querySelectorAll("#permissionsForm .form-check-input").forEach(input => input.checked = false);
+
+          // Pre-check some permissions (demo purposes)
+          const predefinedPermissions = {
+            "Admin": ["Full Access"],
+            "Staff": ["Manage Inventory"],
+            "Customer": ["View Products"],
+            "Delivery Boy": ["Manage Deliveries"]
+          };
+          const permissions = predefinedPermissions[currentRole] || [];
+          permissions.forEach(permission => {
+            const checkbox = document.querySelector(`#permissionsForm .form-check-input[value="${permission}"]`);
+            if (checkbox) checkbox.checked = true;
+          });
+        });
+      });
+
+      // Save permissions
+      document.getElementById("savePermissions").addEventListener("click", () => {
+        const selectedPermissions = Array.from(
+          document.querySelectorAll("#permissionsForm .form-check-input:checked")
+        ).map(input => input.value);
+
+        const display = document.getElementById(`permissions-${currentRole.replace(" ", "-")}`);
+        display.textContent = `Permissions: ${selectedPermissions.join(", ") || "None"}`;
+        const modal = bootstrap.Modal.getInstance(document.getElementById("editPermissionsModal"));
+        modal.hide();
+      });
+    });
+  </script>
+</body>
+</html>
