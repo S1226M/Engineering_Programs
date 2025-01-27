@@ -1,0 +1,6 @@
+in the form of a string
+linelinelineline by line
+in the form of a list
+in the form of a string
+line by line
+in the form of a list
