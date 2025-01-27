@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details Management - Supermarket Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid py-3">
+        <h1 class="mb-4">Customer Details Management</h1>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="card-title h5 mb-0">Customer Search</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="searchInput" class="form-label">Search Customers</label>
+                                <input type="text" class="form-control" id="searchInput" placeholder="Enter name, email, or phone">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="card-title h5 mb-0">Customer List</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action active" aria-current="true">
+                                John Doe
+                            </li>
+                            <li class="list-group-item list-group-item-action">Jane Smith</li>
+                            <li class="list-group-item list-group-item-action">Bob Johnson</li>
+                            <li class="list-group-item list-group-item-action">Alice Williams</li>
+                            <li class="list-group-item list-group-item-action">Charlie Brown</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="card-title h5 mb-0">Customer Details</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h3 class="h6">Personal Information</h3>
+                                <p><strong>Name:</strong> John Doe</p>
+                                <p><strong>Email:</strong> john.doe@example.com</p>
+                                <p><strong>Phone:</strong> (555) 123-4567</p>
+                                <p><strong>Address:</strong> 123 Main St, Anytown, AN 12345</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="h6">Account Information</h3>
+                                <p><strong>Customer ID:</strong> CUST-1001</p>
+                                <p><strong>Member Since:</strong> January 15, 2022</p>
+                                <p><strong>Loyalty Points:</strong> 2500</p>
+                                <p><strong>Membership Tier:</strong> Gold</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="h6">Preferences</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="prefOrganic" checked>
+                                        <label class="form-check-label" for="prefOrganic">
+                                            Prefers organic products
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="prefVegetarian">
+                                        <label class="form-check-label" for="prefVegetarian">
+                                            Vegetarian
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="prefEmailOffers" checked>
+                                        <label class="form-check-label" for="prefEmailOffers">
+                                            Receives email offers
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="prefSMSNotifications">
+                                        <label class="form-check-label" for="prefSMSNotifications">
+                                            Receives SMS notifications
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="h6">Purchase History</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Order ID</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-06-15</td>
+                                        <td>#1001</td>
+                                        <td>$75.99</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-06-10</td>
+                                        <td>#998</td>
+                                        <td>$42.50</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-06-05</td>
+                                        <td>#982</td>
+                                        <td>$89.75</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-05-28</td>
+                                        <td>#975</td>
+                                        <td>$63.25</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-05-20</td>
+                                        <td>#961</td>
+                                        <td>$55.00</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary me-2">Edit Customer Details</button>
+                        <button class="btn btn-outline-primary">View Full Purchase History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
