@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Roles and Permissions - Supermarket Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="mb-4">Manage Roles and Permissions</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="card-title h5 mb-0">User Roles</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">John Doe</h6>
+                                <small class="text-muted">john@example.com</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="badge bg-primary me-2">Cashier</span>
+                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#userRole1">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse mt-3" id="userRole1">
+                            <select class="form-select" aria-label="Change role">
+                                <option selected>Cashier</option>
+                                <option>Manager</option>
+                                <option>Stock Clerk</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">Jane Smith</h6>
+                                <small class="text-muted">jane@example.com</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="badge bg-success me-2">Manager</span>
+                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#userRole2">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse mt-3" id="userRole2">
+                            <select class="form-select" aria-label="Change role">
+                                <option>Cashier</option>
+                                <option selected>Manager</option>
+                                <option>Stock Clerk</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">Bob Johnson</h6>
+                                <small class="text-muted">bob@example.com</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="badge bg-info me-2">Stock Clerk</span>
+                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#userRole3">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse mt-3" id="userRole3">
+                            <select class="form-select" aria-label="Change role">
+                                <option>Cashier</option>
+                                <option>Manager</option>
+                                <option selected>Stock Clerk</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="card-title h5 mb-0">System Permissions</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-shield-check text-primary me-3 fs-4"></i>
+                            <div>
+                                <h6 class="mb-0">View Sales Reports</h6>
+                                <small class="text-muted">Access to view sales reports</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-box-seam text-success me-3 fs-4"></i>
+                            <div>
+                                <h6 class="mb-0">Manage Inventory</h6>
+                                <small class="text-muted">Ability to add, edit, and remove inventory items</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-arrow-return-left text-warning me-3 fs-4"></i>
+                            <div>
+                                <h6 class="mb-0">Process Refunds</h6>
+                                <small class="text-muted">Permission to process customer refunds</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-people text-info me-3 fs-4"></i>
+                            <div>
+                                <h6 class="mb-0">Modify User Roles</h6>
+                                <small class="text-muted">Can change roles and permissions of other users</small>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-end">
+            <button type="button" class="btn btn-primary">
+                <i class="bi bi-save me-2"></i>Save Changes
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
