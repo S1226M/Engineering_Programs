@@ -1,118 +1,129 @@
 -----------------------------------------------Table Create--------------------------------------
 -- Creating MST_User table
 CREATE TABLE MST_User (
-    UserID INT PRIMARY KEY IDENTITY(1,1),
-    UserName NVARCHAR(100) NOT NULL,
-    Password NVARCHAR(100) NOT NULL,
-    Email NVARCHAR(100) NOT NULL,
-    Mobile NVARCHAR(100) NOT NULL,
-    IsActive BIT NOT NULL DEFAULT 1,
-    IsAdmin BIT NOT NULL DEFAULT 0,
-    Created DATETIME NOT NULL DEFAULT GETDATE(),
-    Modified DATETIME NOT NULL
+    UserID		 INT PRIMARY KEY IDENTITY(1,1),
+    UserName	 NVARCHAR(100) NOT NULL,
+    Password	 NVARCHAR(100) NOT NULL,
+    Email		 NVARCHAR(100) NOT NULL,
+    Mobile		 NVARCHAR(100) NOT NULL,
+    IsActive	 BIT NOT NULL DEFAULT 1,
+    IsAdmin		 BIT NOT NULL DEFAULT 0,
+    Created      DATETIME NOT NULL DEFAULT GETDATE(),
+    Modified	 DATETIME NOT NULL
 );
 
 -- Creating MST_Quiz table
 CREATE TABLE MST_Quiz (
-    QuizID INT PRIMARY KEY IDENTITY(1,1),
-    QuizName NVARCHAR(100) NOT NULL,
-    TotalQuestions INT NOT NULL,
-    QuizDate DATETIME NOT NULL,
-    UserID INT NOT NULL,
-    Created DATETIME NOT NULL DEFAULT GETDATE(),
-    Modified DATETIME NOT NULL,
+    QuizID				INT PRIMARY KEY IDENTITY(1,1),
+    QuizName			NVARCHAR(100) NOT NULL,
+    TotalQuestions		INT NOT NULL,
+    QuizDate			DATETIME NOT NULL,
+    UserID				INT NOT NULL,
+    Created				DATETIME NOT NULL DEFAULT GETDATE(),
+    Modified			DATETIME NOT NULL,
     FOREIGN KEY (UserID) REFERENCES MST_User(UserID)
 );
 
 -- Creating MST_Question table
 CREATE TABLE MST_Question (
-    QuestionID INT PRIMARY KEY IDENTITY(1,1),
-    QuestionText NVARCHAR(MAX) NOT NULL,
-    QuestionLevelID INT NOT NULL,
-    OptionA NVARCHAR(100) NOT NULL,
-    OptionB NVARCHAR(100) NOT NULL,
-    OptionC NVARCHAR(100) NOT NULL,
-    OptionD NVARCHAR(100) NOT NULL,
-    CorrectOption NVARCHAR(100) NOT NULL,
-    QuestionMarks INT NOT NULL,
-    IsActive BIT NOT NULL DEFAULT 1,
-    UserID INT NOT NULL,
-    Created DATETIME NOT NULL DEFAULT GETDATE(),
-    Modified DATETIME NOT NULL,
+    QuestionID				INT PRIMARY KEY IDENTITY(1,1),
+    QuestionText			NVARCHAR(MAX) NOT NULL,
+    QuestionLevelID			INT NOT NULL,
+    OptionA					NVARCHAR(100) NOT NULL,
+    OptionB					NVARCHAR(100) NOT NULL,
+    OptionC					NVARCHAR(100) NOT NULL,
+    OptionD					NVARCHAR(100) NOT NULL,
+    CorrectOption			NVARCHAR(100) NOT NULL,
+    QuestionMarks			INT NOT NULL,
+    IsActive				BIT NOT NULL DEFAULT 1,
+    UserID					INT NOT NULL,
+    Created					DATETIME NOT NULL DEFAULT GETDATE(),
+    Modified				DATETIME NOT NULL,
     FOREIGN KEY (UserID) REFERENCES MST_User(UserID)
 );
 
 -- Creating MST_QuestionLevel table
 CREATE TABLE MST_QuestionLevel (
-    QuestionLevelID INT PRIMARY KEY IDENTITY(1,1),
-    QuestionLevel NVARCHAR(100) NOT NULL,
-    UserID INT NOT NULL,
-    Created DATETIME NOT NULL DEFAULT GETDATE(),
-    Modified DATETIME NOT NULL,
+    QuestionLevelID		INT PRIMARY KEY IDENTITY(1,1),
+    QuestionLevel		NVARCHAR(100) NOT NULL,
+    UserID				INT NOT NULL,
+    Created				DATETIME NOT NULL DEFAULT GETDATE(),
+    Modified			DATETIME NOT NULL,
     FOREIGN KEY (UserID) REFERENCES MST_User(UserID)
 );
 
 -- Creating MST_QuizWiseQuestions table
 CREATE TABLE MST_QuizWiseQuestions (
     QuizWiseQuestionsID INT PRIMARY KEY IDENTITY(1,1),
-    QuizID INT NOT NULL,
-    QuestionID INT NOT NULL,
-    UserID INT NOT NULL,
-    Created DATETIME NOT NULL DEFAULT GETDATE(),
-    Modified DATETIME NOT NULL,
+    QuizID				INT NOT NULL,
+    QuestionID			INT NOT NULL,
+    UserID				INT NOT NULL,
+    Created				DATETIME NOT NULL DEFAULT GETDATE(),
+    Modified			DATETIME NOT NULL,
     FOREIGN KEY (QuizID) REFERENCES MST_Quiz(QuizID),
     FOREIGN KEY (QuestionID) REFERENCES MST_Question(QuestionID),
     FOREIGN KEY (UserID) REFERENCES MST_User(UserID)
 );
 
------------------------------------------Procedure---------------------------------------------
+-----------------------------------<------Procedure------>---------------------------------------
 
 ------------------------------Stored Procedures for MST_User Table -----------------------------
 --Stored Procedures for MST_User Table Insert
-CREATE OR ALTER PROC PR_User_Insert
-    @UserName NVARCHAR(100),
-    @Email NVARCHAR(100),
-    @Password NVARCHAR(100),
-    @Modified DATETIME
+--EXEC PR_MST_User_Insert 'smit','abc','smitmaru1226@gmail.com','87800311198'
+CREATE OR ALTER PROCEDURE PR_MST_User_Insert
+    @UserName	NVARCHAR(100),
+    @Password	NVARCHAR(100),
+    @Email		NVARCHAR(100),
+    @Mobile		NVARCHAR(100)
 AS
 BEGIN
+	DECLARE @Modified DATETIME = GETDATE();
     INSERT INTO [dbo].[MST_User] 
     (
-        UserName,
-        Email,
-        Password,
-        Modified
+		UserName,
+		Password,
+		Email,	
+		Mobile,
+		Modified
     )
     VALUES
     (
         @UserName,
-        @Email,
-        @Password,
-        @Modified
-    )
-END
-
+		@Password,
+		@Email,
+		@Mobile,	
+		@Modified
+    );
+END;
 
 --Stored Procedures for MST_User Table Update
-CREATE OR ALTER PROC PR_User_Update
-@UserID INT,
-@UserName NVARCHAR(100),
-@Email NVARCHAR(100),
-@Password NVARCHAR(100),
-@Modified DATETIME
+--EXEC PR_User_Update '1','SAMIR','smitmaru','smitmaru','8780031119','1','0'
+CREATE OR ALTER PROC PR_MST_User_Update
+	@UserID		INT,
+	@UserName	NVARCHAR(100),
+	@Email		NVARCHAR(100),
+	@Password	NVARCHAR(100),
+	@Mobile		NVARCHAR(100),
+	@IsActive	BIT,
+    @IsAdmin	BIT
 AS
 BEGIN
+	DECLARE @Modified Datetime = Getdate()
 	UPDATE [dbo].[MST_User]
 	SET 
-		[dbo].[MST_User].[UserName] = @UserName,
-		[dbo].[MST_User].[Email] = @Email,
-		[dbo].[MST_User].[Password] = @Password,
-		[dbo].[MST_User].[Modified] = @Modified
-	WHERE [dbo].[MST_User].[UserID] = @UserID
+		[dbo].[MST_User].[UserName]		=	@UserName,
+		[dbo].[MST_User].[Email]		=	@Email,
+		[dbo].[MST_User].[Password]		=	@Password,
+		[dbo].[MST_User].[Mobile]		=	@Mobile,
+		[dbo].[MST_User].[IsActive]		=	@IsActive,
+		[dbo].[MST_User].[IsAdmin]		=	@IsAdmin,
+		[dbo].[MST_User].[Modified]		=	@Modified
+	WHERE [dbo].[MST_User].[UserID]		=	@UserID
 END
 
 --Stored Procedures for MST_User Table Delete
-CREATE OR ALTER PROC PR_User_Delete
+-- EXEC PR_MST_User_Delete 1
+CREATE OR ALTER PROC PR_MST_User_Delete
     @UserID INT
 AS
 BEGIN
@@ -121,46 +132,54 @@ BEGIN
 END
 
 --Stored Procedures for MST_User Table Select All
-CREATE OR ALTER PROC PR_User_SelectAll
+-- EXEC PR_MST_User_SelectAll
+CREATE OR ALTER PROC PR_MST_User_SelectAll
 AS
 BEGIN
 	SELECT 
-		[dbo].[MST_User].[UserID],
-		[dbo].[MST_User].[UserName],
-		[dbo].[MST_User].[Email],
-		[dbo].[MST_User].[Password],
-		[dbo].[MST_User].[Created],
-		[dbo].[MST_User].[Modified]
-	FROM [dbo].[MST_User]
-END
-
+		[dbo].[MST_User].[UserID],               
+		[dbo].[MST_User].[UserName],			
+		[dbo].[MST_User].[Password],			
+		[dbo].[MST_User].[Email],				
+		[dbo].[MST_User].[Mobile],
+		[dbo].[MST_User].[IsActive],
+		[dbo].[MST_User].[IsAdmin],
+		[dbo].[MST_User].[Created],				
+		[dbo].[MST_User].[Modified]				
+	FROM [dbo].[MST_User]						
+END												
+												
 --Stored Procedures for MST_User Table Select By Id
-CREATE OR ALTER PROC PR_User_SelectByID
+-- EXEC PR_MST_User_SelectByID 2
+CREATE OR ALTER PROC PR_MST_User_SelectByID
 @UserID INT
 AS
 BEGIN
 	SELECT 
-		[dbo].[MST_User].[UserID],
+		[dbo].[MST_User].[UserID],  
 		[dbo].[MST_User].[UserName],
-		[dbo].[MST_User].[Email],
 		[dbo].[MST_User].[Password],
-		[dbo].[MST_User].[Created],
+		[dbo].[MST_User].[Email],	
+		[dbo].[MST_User].[Mobile],
+		[dbo].[MST_User].[IsActive],
+		[dbo].[MST_User].[IsAdmin],
+		[dbo].[MST_User].[Created],	
 		[dbo].[MST_User].[Modified]
 	FROM [dbo].[MST_User]
 	WHERE [dbo].[MST_User].[UserID] = @UserID
 END
 
-
 -------------------------------Stored Procedures for MST_Quiz Table----------------------------
 --Stored Procedures for MST_Quiz Table Insert
-CREATE OR ALTER PROC PR_Quiz_Insert
-    @QuizName NVARCHAR(100),
-    @TotalQuestions INT,
-    @QuizDate DATETIME,
-    @UserID INT,
-    @Modified DATETIME
-AS
+--EXEC PR_MST_Quiz_Insert 'EAFKM',65,2,'2020-10-10'
+CREATE OR ALTER PROC PR_MST_Quiz_Insert
+    @QuizName			NVARCHAR(100),    	
+    @TotalQuestions		INT,	
+    @UserID				INT,								
+    @QuizDate			DATETIME				
+AS								
 BEGIN
+	DECLARE @Modified DATETIME = GETDATE()
     INSERT INTO [dbo].[MST_Quiz] 
     (
         QuizName,
@@ -180,26 +199,30 @@ BEGIN
 END
 
 --Stored Procedures for MST_Quiz Table Update
-CREATE OR ALTER PROC PR_Quiz_Update
-    @QuizID INT,
-    @QuizName NVARCHAR(100),
-    @TotalQuestions INT,
-    @QuizDate DATETIME,
-    @Modified DATETIME
+-- Exec PR_MST_Quiz_Update 9,'ASD',12,'2020-10-10',2
+CREATE OR ALTER PROC PR_MST_Quiz_Update
+    @QuizID				INT,
+    @QuizName			NVARCHAR(100),
+    @TotalQuestions		INT,
+    @QuizDate			DATETIME,
+	@UserID				INT
 AS
-BEGIN
+BEGIN 
+	DECLARE @Modified DATETIME = GETDATE()
     UPDATE [dbo].[MST_Quiz]
-    SET 
-        [dbo].[MST_Quiz].[QuizName] = @QuizName,
-        [dbo].[MST_Quiz].[TotalQuestions] = @TotalQuestions,
-        [dbo].[MST_Quiz].[QuizDate] = @QuizDate,
-        [dbo].[MST_Quiz].[Modified] = @Modified
-    WHERE [dbo].[MST_Quiz].[QuizID] = @QuizID
+    SET
+        [dbo].[MST_Quiz].[QuizName]			=	@QuizName,
+        [dbo].[MST_Quiz].[TotalQuestions]	=	@TotalQuestions,
+        [dbo].[MST_Quiz].[QuizDate]			=	@QuizDate,
+        [dbo].[MST_Quiz].[Modified]			=	@Modified,
+		[dbo].[MST_Quiz].[UserID]			=	@UserID
+    WHERE [dbo].[MST_Quiz].[QuizID]			=	@QuizID
 END
 
 --Stored Procedures for MST_Quiz Table Delete
-CREATE OR ALTER PROC PR_Quiz_Delete
-@QuizID INT
+-- EXEC PR_MST_Quiz_Delete 9
+CREATE OR ALTER PROC PR_MST_Quiz_Delete
+	@QuizID INT
 AS
 BEGIN
 	DELETE FROM [dbo].[MST_Quiz]
@@ -207,7 +230,9 @@ BEGIN
 END
 
 --Stored Procedures for MST_Quiz Table Select All
-CREATE OR ALTER PROC PR_Quiz_SelectAll
+-----------------------------------------------------------------------------------------
+EXEC PR_MST_Quiz_SelectAll
+CREATE OR ALTER PROC PR_MST_Quiz_SelectAll
 AS
 BEGIN
     SELECT 
@@ -218,18 +243,20 @@ BEGIN
         [dbo].[MST_Quiz].[Modified],
         COUNT([dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID]) AS TotalQuestions
     FROM [dbo].[MST_Quiz]
-    LEFT JOIN [dbo].[MST_QuizWiseQuestions] 
+    LEFT JOIN [dbo].[MST_QuizWiseQuestions]
         ON [dbo].[MST_Quiz].[QuizID] = [dbo].[MST_QuizWiseQuestions].[QuizID]
     GROUP BY 
+        [dbo].[MST_Quiz].[QuizDate],
         [dbo].[MST_Quiz].[QuizID],
         [dbo].[MST_Quiz].[QuizName],
-        [dbo].[MST_Quiz].[QuizDate],
         [dbo].[MST_Quiz].[Created],
         [dbo].[MST_Quiz].[Modified]
 END
+-----------------------------------------------------------------------------------------
 
 -- Stored Procedure for Selecting a Quiz by QuizID
-CREATE OR ALTER PROC PR_Quiz_SelectByID
+-- EXEC PR_MST_Quiz_SelectByID 1
+CREATE OR ALTER PROC PR_MST_Quiz_SelectByID
 @QuizID INT
 AS
 BEGIN
@@ -245,19 +272,21 @@ END
 
 ----------------------- Stored Procedures for MST_Question Table ------------------------------
 --Stored Procedures for MST_Question Table Insert
-CREATE OR ALTER PROC PR_Question_Insert
-    @QuestionText NVARCHAR(MAX),
-    @QuestionLevelID INT,
-    @OptionA NVARCHAR(100),
-    @OptionB NVARCHAR(100),
-    @OptionC NVARCHAR(100),
-    @OptionD NVARCHAR(100),
-    @CorrectOption NVARCHAR(100),
-    @QuestionMarks INT,
-    @UserID INT,
-    @Modified DATETIME
+-- EXEC PR_MST_Question_Insert 'EWFSD',1,'A','B','C','D','ANS',1,2
+CREATE OR ALTER PROC PR_MST_Question_Insert
+    @QuestionText			NVARCHAR(MAX),
+    @QuestionLevelID		INT,
+    @OptionA				NVARCHAR(100),
+    @OptionB				NVARCHAR(100),
+    @OptionC				NVARCHAR(100),
+    @OptionD				NVARCHAR(100),
+    @CorrectOption			NVARCHAR(100),
+    @QuestionMarks			INT,
+    @UserID					INT
 AS
 BEGIN
+	DECLARE @IsActive BIT = 1 , @Modified DATETIME = GETDATE()
+	
     INSERT INTO [dbo].[MST_Question] 
     (
         QuestionText,
@@ -268,6 +297,7 @@ BEGIN
         OptionD,
         CorrectOption,
         QuestionMarks,
+		IsActive,
         UserID,
         Modified
     )
@@ -281,6 +311,7 @@ BEGIN
         @OptionD,
         @CorrectOption,
         @QuestionMarks,
+		@IsActive,
         @UserID,
         @Modified
     )
@@ -288,46 +319,50 @@ END
 
 
 -- Stored Procedure for MST_Question Update
-CREATE OR ALTER PROC PR_Question_Update
-@QuestionID INT,
-@QuestionText NVARCHAR(MAX),
-@OptionA NVARCHAR(500),
-@OptionB NVARCHAR(500),
-@OptionC NVARCHAR(500),
-@OptionD NVARCHAR(500),
-@CorrectOption NVARCHAR(500),
-@QuestionLevelID INT,
-@UserID INT,
-@Modified DATETIME
+-- EXEC PR_MST_Question_Update 1,'TEXT','AB','BC','CD','DA','ABCDDCBA',5,5,2
+CREATE OR ALTER PROC PR_MST_Question_Update
+	@QuestionID			INT,
+	@QuestionText		NVARCHAR(MAX),
+	@OptionA			NVARCHAR(500),
+	@OptionB			NVARCHAR(500),
+	@OptionC			NVARCHAR(500),
+	@OptionD			NVARCHAR(500),
+	@CorrectOption		NVARCHAR(500),
+	@QuestionMarks		INT,
+	@QuestionLevelID	INT,
+	@UserID				INT
 AS
 BEGIN
+	DECLARE @Modified DATETIME = GETDATE()
     UPDATE [dbo].[MST_Question]
     SET 
-        [dbo].[MST_Question].[QuestionText] = @QuestionText,
-        [dbo].[MST_Question].[OptionA] = @OptionA,
-        [dbo].[MST_Question].[OptionB] = @OptionB,
-        [dbo].[MST_Question].[OptionC] = @OptionC,
-        [dbo].[MST_Question].[OptionD] = @OptionD,
-        [dbo].[MST_Question].[CorrectOption] = @CorrectOption, 
-        [dbo].[MST_Question].[QuestionLevelID] = @QuestionLevelID,
-        [dbo].[MST_Question].[UserID] = @UserID,
-        [dbo].[MST_Question].[Modified] = @Modified
-    WHERE [dbo].[MST_Question].[QuestionID] = @QuestionID
+        [dbo].[MST_Question].[QuestionText]			=	@QuestionText,
+        [dbo].[MST_Question].[OptionA]				=	@OptionA,
+        [dbo].[MST_Question].[OptionB]				=	@OptionB,
+        [dbo].[MST_Question].[OptionC]				=	@OptionC,
+        [dbo].[MST_Question].[OptionD]				=	@OptionD,
+        [dbo].[MST_Question].[CorrectOption]		=	@CorrectOption, 
+        [dbo].[MST_Question].[QuestionMarks]		=	@QuestionMarks,
+		[dbo].[MST_Question].[QuestionLevelID]		=	@QuestionLevelID,
+        [dbo].[MST_Question].[UserID]				=	@UserID,
+        [dbo].[MST_Question].[Modified]				=	@Modified
+    WHERE [dbo].[MST_Question].[QuestionID]			=	@QuestionID
 END
 
 
 -- Stored Procedure for MST_Question Delete
-CREATE OR ALTER PROC PR_Question_Delete
+-- EXEC PR_MST_Question_Delete 2
+CREATE OR ALTER PROC PR_MST_Question_Delete
 @QuestionID INT
 AS
 BEGIN
-    -- Deleting the Question based on QuestionID
     DELETE FROM [dbo].[MST_Question]
     WHERE [dbo].[MST_Question].[QuestionID] = @QuestionID
 END
 
 --Stored Procedures for MST_Question Select All
-CREATE OR ALTER PROC PR_Question_SelectAll
+-- EXEC PR_MST_Question_SelectAll
+CREATE OR ALTER PROC PR_MST_Question_SelectAll
 AS
 BEGIN
     SELECT 
@@ -351,8 +386,9 @@ BEGIN
 END
 
 -- Stored Procedure for MST_Question Select by ID
-CREATE OR ALTER PROC PR_Question_SelectByID
-@QuestionID INT
+EXEC PR_MST_Question_SelectByID 1
+CREATE OR ALTER PROC PR_MST_Question_SelectByID
+	@QuestionID INT
 AS
 BEGIN
     SELECT 
@@ -378,13 +414,13 @@ END
 
 ------------------------------- Stored Procedures for MST_QuestionLevel Table --------------------
 -- Stored Procedures for MST_QuestionLevel Table Insert
-CREATE OR ALTER PROC PR_QuestionLevel_Insert
-    @QuestionLevel NVARCHAR(100),
-    @UserID INT,
-    @Modified DATETIME
+-- EXEC PR_MST_QuestionLevel_Insert 5,2
+CREATE OR ALTER PROC PR_MST_QuestionLevel_Insert
+    @QuestionLevel		NVARCHAR(100),
+    @UserID				INT
 AS
 BEGIN
-    -- Inserting a new Question Level into MST_QuestionLevel table
+    DECLARE @Modified DATETIME = GETDATE()
     INSERT INTO [dbo].[MST_QuestionLevel] 
     (
         QuestionLevel,
@@ -399,15 +435,15 @@ BEGIN
     )
 END
 
-
 -- Stored Procedures for MST_QuestionLevel Table Update
-CREATE OR ALTER PROC PR_QuestionLevel_Update
-@QuestionLevelID INT,
-@QuestionLevel NVARCHAR(100),
-@UserID INT,
-@Modified DATETIME
+-- EXEC PR_MST_QuestionLevel_Update 1,10,2
+CREATE OR ALTER PROC PR_MST_QuestionLevel_Update
+		@QuestionLevelID	INT,
+		@QuestionLevel		NVARCHAR(100),
+		@UserID				INT
 AS
 BEGIN
+	DECLARE @Modified DATETIME = GETDATE()
     UPDATE [dbo].[MST_QuestionLevel]
     SET 
         [dbo].[MST_QuestionLevel].[QuestionLevel] = @QuestionLevel,
@@ -416,9 +452,9 @@ BEGIN
     WHERE [dbo].[MST_QuestionLevel].[QuestionLevelID] = @QuestionLevelID
 END
 
-
 -- Stored Procedure for MST_QuestionLevel Table Delete
-CREATE OR ALTER PROC PR_QuestionLevel_Delete
+-- EXEC PR_MST_QuestionLevel_Delete
+CREATE OR ALTER PROC PR_MST_QuestionLevel_Delete
 @QuestionLevelID INT
 AS
 BEGIN
@@ -426,9 +462,9 @@ BEGIN
     WHERE [dbo].[MST_QuestionLevel].[QuestionLevelID] = @QuestionLevelID
 END
 
-
 -- Stored Procedure for MST_QuestionLevel Table Selecting All
-CREATE OR ALTER PROC PR_QuestionLevel_SelectAll
+-- EXEC PR_MST_QuestionLevel_SelectAll
+CREATE OR ALTER PROC PR_MST_QuestionLevel_SelectAll
 AS
 BEGIN
     SELECT 
@@ -447,8 +483,9 @@ BEGIN
 END
 
 -- Stored Procedure for MST_QuestionLevel Table Selecte by ID
-CREATE OR ALTER PROC PR_QuestionLevel_SelectByID
-@QuestionLevelID INT
+-- EXEC PR_MST_QuestionLevel_SelectByID 1
+CREATE OR ALTER PROC PR_MST_QuestionLevel_SelectByID
+	@QuestionLevelID	INT
 AS
 BEGIN
     SELECT 
@@ -463,16 +500,16 @@ BEGIN
         [dbo].[MST_QuestionLevel].[QuestionLevelID] = @QuestionLevelID
 END
 
-
 -------------------- Stored Procedures for MST_QuizWiseQuestions Table -------------------------
 -- Stored Procedures for MST_QuizWiseQuestions Table Insert
-CREATE OR ALTER PROC PR_QuizWiseQuestions_Insert
+-- EXEC PR_MST_QuizWiseQuestions_Insert 1,1,2
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_Insert
     @QuizID INT,
     @QuestionID INT,
-    @UserID INT,
-    @Modified DATETIME
+    @UserID INT
 AS
 BEGIN
+    DECLARE @Modified DATETIME = GETDATE()
     INSERT INTO [dbo].[MST_QuizWiseQuestions] 
     (
         QuizID,
@@ -490,26 +527,28 @@ BEGIN
 END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Update
-CREATE OR ALTER PROC PR_QuizWiseQuestions_Update
-@QuizWiseQuestionsID INT,
-@QuizID INT,
-@QuestionID INT,
-@UserID INT,
-@Modified DATETIME
+--EXEC PR_MST_QuizWiseQuestions_Update 1,1,1,2
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_Update
+		@QuizWiseQuestionsID	INT,
+		@QuizID					INT,
+		@QuestionID				INT,
+		@UserID					INT
 AS
 BEGIN
+		DECLARE @Modified DATETIME = GETDATE()
 	UPDATE [dbo].[MST_QuizWiseQuestions]
 	SET 
-		[dbo].[MST_QuizWiseQuestions].[QuizID] = @QuizID,
-		[dbo].[MST_QuizWiseQuestions].[QuestionID] = @QuestionID,
-		[dbo].[MST_QuizWiseQuestions].[UserID] = @UserID,
-		[dbo].[MST_QuizWiseQuestions].[Modified] = @Modified
+		[dbo].[MST_QuizWiseQuestions].[QuizID]					=	@QuizID,
+		[dbo].[MST_QuizWiseQuestions].[QuestionID]				=	@QuestionID,
+		[dbo].[MST_QuizWiseQuestions].[UserID]					=	@UserID,
+		[dbo].[MST_QuizWiseQuestions].[Modified]				=	@Modified
 	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
-END
+END	
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Delete
-CREATE OR ALTER PROC PR_QuizWiseQuestions_Delete
-@QuizWiseQuestionsID INT
+-- EXEC PR_MST_QuizWiseQuestions_Delete
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_Delete
+	@QuizWiseQuestionsID INT
 AS
 BEGIN
 	DELETE FROM [dbo].[MST_QuizWiseQuestions]
@@ -517,7 +556,8 @@ BEGIN
 END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select All
-CREATE OR ALTER PROC PR_QuizWiseQuestions_SelectAll
+-- EXEC PR_MST_QuizWiseQuestions_SelectAll
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectAll
 AS
 BEGIN
 	SELECT 
@@ -535,8 +575,9 @@ BEGIN
 END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select By Id
-CREATE OR ALTER PROC PR_QuizWiseQuestions_SelectByID
-@QuizWiseQuestionsID INT
+-- EXEC PR_MST_QuizWiseQuestions_SelectByID 1
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectByID
+	@QuizWiseQuestionsID INT
 AS
 BEGIN
 	SELECT 
