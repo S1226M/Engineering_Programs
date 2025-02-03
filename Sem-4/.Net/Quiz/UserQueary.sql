@@ -230,29 +230,21 @@ BEGIN
 END
 
 --Stored Procedures for MST_Quiz Table Select All
------------------------------------------------------------------------------------------
-EXEC PR_MST_Quiz_SelectAll
+-- EXEC PR_MST_Quiz_SelectAll
 CREATE OR ALTER PROC PR_MST_Quiz_SelectAll
 AS
 BEGIN
     SELECT 
         [dbo].[MST_Quiz].[QuizID],
         [dbo].[MST_Quiz].[QuizName],
-        [dbo].[MST_Quiz].[QuizDate],
-        [dbo].[MST_Quiz].[Created],
-        [dbo].[MST_Quiz].[Modified],
-        COUNT([dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID]) AS TotalQuestions
-    FROM [dbo].[MST_Quiz]
-    LEFT JOIN [dbo].[MST_QuizWiseQuestions]
-        ON [dbo].[MST_Quiz].[QuizID] = [dbo].[MST_QuizWiseQuestions].[QuizID]
-    GROUP BY 
-        [dbo].[MST_Quiz].[QuizDate],
-        [dbo].[MST_Quiz].[QuizID],
-        [dbo].[MST_Quiz].[QuizName],
-        [dbo].[MST_Quiz].[Created],
+        [dbo].[MST_Quiz].[TotalQuestions],
+		[dbo].[MST_Quiz].[QuizDate],
+        [dbo].[MST_User].[UserName],
+		[dbo].[MST_User].[Created],
         [dbo].[MST_Quiz].[Modified]
+	From [dbo].[MST_Quiz] join [dbo].[MST_User]
+	On [dbo].[MST_Quiz].[UserID] = [dbo].[MST_User].[UserID]
 END
------------------------------------------------------------------------------------------
 
 -- Stored Procedure for Selecting a Quiz by QuizID
 -- EXEC PR_MST_Quiz_SelectByID 1
@@ -589,4 +581,45 @@ BEGIN
 		[dbo].[MST_QuizWiseQuestions].[Modified]
 	FROM [dbo].[MST_QuizWiseQuestions]
 	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
+END
+
+---------------------------------< ======= Dropdown queris ======= >---------------------------------------
+------------------Dropdown query for MST_User table--------------------
+CREATE OR ALTER PROC Dropdown_MST_User
+AS
+BEGIN
+	SELECT
+		[dbo].[MST_User].[UserID],
+		[dbo].[MST_User].[UserName]
+		FROM [dbo].[MST_User]
+END
+
+---------Dropdown query for MST_Quiz table---------
+CREATE OR ALTER PROC Dropdown_MST_Quiz
+AS
+BEGIN
+	SELECT
+		[dbo].[MST_Quiz].[QuizID],
+		[dbo].[MST_Quiz].[QuizName]
+		FROM [dbo].[MST_Quiz]
+END
+
+---------Dropdown query for MST_Question table---------
+CREATE OR ALTER PROC Dropdown_MST_Question
+AS
+BEGIN
+	SELECT
+		[dbo].[MST_Question].[QuestionID],
+		[dbo].[MST_Question].[QuestionText]
+		FROM [dbo].[MST_Question]
+END
+
+---------Dropdown query for MST_QuestionLevel table---------
+CREATE OR ALTER PROC Dropdown_MST_QuestionLevel
+AS
+BEGIN
+	SELECT
+		[dbo].[MST_QuestionLevel].[QuestionLevelID],
+		[dbo].[MST_QuestionLevel].[QuestionLevel]
+		FROM [dbo].[MST_QuestionLevel]
 END
