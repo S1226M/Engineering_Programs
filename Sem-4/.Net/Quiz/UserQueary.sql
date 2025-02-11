@@ -247,16 +247,18 @@ BEGIN
 END
 
 -- Stored Procedure for Selecting a Quiz by QuizID
--- EXEC PR_MST_Quiz_SelectByID 1
+-- EXEC PR_MST_Quiz_SelectByID 10
 CREATE OR ALTER PROC PR_MST_Quiz_SelectByID
 @QuizID INT
 AS
 BEGIN
-    SELECT 
+    SELECT
+		[dbo].[MST_Quiz].[UserID],
         [dbo].[MST_Quiz].[QuizID],
         [dbo].[MST_Quiz].[QuizName],
         [dbo].[MST_Quiz].[QuizDate],
         [dbo].[MST_Quiz].[Created],
+		[dbo].[MST_Quiz].[TotalQuestions],
         [dbo].[MST_Quiz].[Modified]
     FROM [dbo].[MST_Quiz]
     WHERE [dbo].[MST_Quiz].[QuizID] = @QuizID
@@ -406,7 +408,7 @@ END
 
 ------------------------------- Stored Procedures for MST_QuestionLevel Table --------------------
 -- Stored Procedures for MST_QuestionLevel Table Insert
--- EXEC PR_MST_QuestionLevel_Insert 5,2
+-- EXEC PR_MST_QuestionLevel_Insert 'Medium',4
 CREATE OR ALTER PROC PR_MST_QuestionLevel_Insert
     @QuestionLevel		NVARCHAR(100),
     @UserID				INT
@@ -445,7 +447,7 @@ BEGIN
 END
 
 -- Stored Procedure for MST_QuestionLevel Table Delete
--- EXEC PR_MST_QuestionLevel_Delete
+-- EXEC PR_MST_QuestionLevel_Delete 7
 CREATE OR ALTER PROC PR_MST_QuestionLevel_Delete
 @QuestionLevelID INT
 AS
@@ -560,11 +562,14 @@ BEGIN
 		[dbo].[MST_QuizWiseQuestions].[Created],
 		[dbo].[MST_QuizWiseQuestions].[Modified],
 		[dbo].[MST_Quiz].[QuizName],
+		[dbo].[MST_Quiz].[TotalQuestions],
 		[dbo].[MST_Question].[QuestionText]
 	FROM [dbo].[MST_QuizWiseQuestions]
 	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
 	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
 END
+exec PR_MST_Question_SelectAll
+exec PR_MST_Quiz_SelectAll
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select By Id
 -- EXEC PR_MST_QuizWiseQuestions_SelectByID 1
@@ -585,41 +590,49 @@ END
 
 ---------------------------------< ======= Dropdown queris ======= >---------------------------------------
 ------------------Dropdown query for MST_User table--------------------
+-- Exec Dropdown_MST_User
 CREATE OR ALTER PROC Dropdown_MST_User
 AS
 BEGIN
 	SELECT
-		[dbo].[MST_User].[UserID],
-		[dbo].[MST_User].[UserName]
-		FROM [dbo].[MST_User]
+		UserID,
+		UserName
+	FROM [dbo].[MST_User]
+	ORDER BY UserName ASC
 END
 
 ---------Dropdown query for MST_Quiz table---------
+-- Exec Dropdown_MST_Quiz
 CREATE OR ALTER PROC Dropdown_MST_Quiz
 AS
 BEGIN
 	SELECT
-		[dbo].[MST_Quiz].[QuizID],
-		[dbo].[MST_Quiz].[QuizName]
-		FROM [dbo].[MST_Quiz]
+		QuizID,
+		QuizName
+	FROM [dbo].[MST_Quiz]
+	ORDER BY QuizName ASC
 END
 
 ---------Dropdown query for MST_Question table---------
+-- Exec Dropdown_MST_Question
 CREATE OR ALTER PROC Dropdown_MST_Question
 AS
 BEGIN
 	SELECT
-		[dbo].[MST_Question].[QuestionID],
-		[dbo].[MST_Question].[QuestionText]
-		FROM [dbo].[MST_Question]
+		QuestionID,
+		QuestionText
+	FROM [dbo].[MST_Question]
+	ORDER BY QuestionText ASC
 END
 
 ---------Dropdown query for MST_QuestionLevel table---------
+-- Exec Dropdown_MST_QuestionLevel
 CREATE OR ALTER PROC Dropdown_MST_QuestionLevel
 AS
 BEGIN
 	SELECT
-		[dbo].[MST_QuestionLevel].[QuestionLevelID],
-		[dbo].[MST_QuestionLevel].[QuestionLevel]
-		FROM [dbo].[MST_QuestionLevel]
+		QuestionLevelID,
+		QuestionLevel
+	FROM [dbo].[MST_QuestionLevel]
+	ORDER BY QuestionLevel ASC
 END
