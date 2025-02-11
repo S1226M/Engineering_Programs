@@ -1,3 +1,8 @@
+Drop table MST_User
+Drop table MST_Quiz
+Drop table MST_Question
+Drop table MST_QuestionLevel
+Drop table MST_QuizWiseQuestions
 -----------------------------------------------Table Create--------------------------------------
 -- Creating MST_User table
 CREATE TABLE MST_User (
@@ -69,7 +74,7 @@ CREATE TABLE MST_QuizWiseQuestions (
 
 ------------------------------Stored Procedures for MST_User Table -----------------------------
 --Stored Procedures for MST_User Table Insert
---EXEC PR_MST_User_Insert 'smit','abc','smitmaru1226@gmail.com','87800311198'
+--EXEC PR_MST_User_Insert 'nihar','nihar@26','nihar126@gmail.com','6554953660'
 CREATE OR ALTER PROCEDURE PR_MST_User_Insert
     @UserName	NVARCHAR(100),
     @Password	NVARCHAR(100),
@@ -97,7 +102,7 @@ BEGIN
 END;
 
 --Stored Procedures for MST_User Table Update
---EXEC PR_User_Update '1','SAMIR','smitmaru','smitmaru','8780031119','1','0'
+--EXEC PR_MST_User_Update 1,'Smit','smitmaru1226@gmail.com','Smit@1226','8780031119','1','1'
 CREATE OR ALTER PROC PR_MST_User_Update
 	@UserID		INT,
 	@UserName	NVARCHAR(100),
@@ -122,7 +127,7 @@ BEGIN
 END
 
 --Stored Procedures for MST_User Table Delete
--- EXEC PR_MST_User_Delete 1
+-- EXEC PR_MST_User_Delete 3
 CREATE OR ALTER PROC PR_MST_User_Delete
     @UserID INT
 AS
@@ -150,7 +155,7 @@ BEGIN
 END												
 												
 --Stored Procedures for MST_User Table Select By Id
--- EXEC PR_MST_User_SelectByID 2
+-- EXEC PR_MST_User_SelectByID 1
 CREATE OR ALTER PROC PR_MST_User_SelectByID
 @UserID INT
 AS
@@ -171,7 +176,7 @@ END
 
 -------------------------------Stored Procedures for MST_Quiz Table----------------------------
 --Stored Procedures for MST_Quiz Table Insert
---EXEC PR_MST_Quiz_Insert 'EAFKM',65,2,'2020-10-10'
+--EXEC PR_MST_Quiz_Insert 'LinkList',30,3,'2025-10-10'
 CREATE OR ALTER PROC PR_MST_Quiz_Insert
     @QuizName			NVARCHAR(100),    	
     @TotalQuestions		INT,	
@@ -247,7 +252,7 @@ BEGIN
 END
 
 -- Stored Procedure for Selecting a Quiz by QuizID
--- EXEC PR_MST_Quiz_SelectByID 10
+-- EXEC PR_MST_Quiz_SelectByID 3
 CREATE OR ALTER PROC PR_MST_Quiz_SelectByID
 @QuizID INT
 AS
@@ -266,7 +271,9 @@ END
 
 ----------------------- Stored Procedures for MST_Question Table ------------------------------
 --Stored Procedures for MST_Question Table Insert
--- EXEC PR_MST_Question_Insert 'EWFSD',1,'A','B','C','D','ANS',1,2
+--EXEC PR_MST_Question_Insert 'Which linked list allows traversing in both directions?',1,'Singly', 'Doubly', 'Circular', 'Stack', 'Doubly', 2, 3;
+
+
 CREATE OR ALTER PROC PR_MST_Question_Insert
     @QuestionText			NVARCHAR(MAX),
     @QuestionLevelID		INT,
@@ -408,7 +415,7 @@ END
 
 ------------------------------- Stored Procedures for MST_QuestionLevel Table --------------------
 -- Stored Procedures for MST_QuestionLevel Table Insert
--- EXEC PR_MST_QuestionLevel_Insert 'Medium',4
+-- EXEC PR_MST_QuestionLevel_Insert 'Hard',3
 CREATE OR ALTER PROC PR_MST_QuestionLevel_Insert
     @QuestionLevel		NVARCHAR(100),
     @UserID				INT
