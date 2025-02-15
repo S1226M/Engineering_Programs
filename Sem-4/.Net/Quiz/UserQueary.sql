@@ -406,7 +406,8 @@ BEGIN
         [dbo].[MST_Question].[Created],
         [dbo].[MST_Question].[Modified],
         [dbo].[MST_QuestionLevel].[QuestionLevel],
-        [dbo].[MST_User].[UserName]
+        [dbo].[MST_User].[UserName],
+		[dbo].[MST_Question].[UserID]
     FROM [dbo].[MST_Question]
     INNER JOIN [dbo].[MST_QuestionLevel] ON [dbo].[MST_Question].[QuestionLevelID] = [dbo].[MST_QuestionLevel].[QuestionLevelID]
     INNER JOIN [dbo].[MST_User] ON [dbo].[MST_Question].[UserID] = [dbo].[MST_User].[UserID]
@@ -574,6 +575,7 @@ BEGIN
 	FROM [dbo].[MST_QuizWiseQuestions]
 	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
 	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
+	--INNER JOIN [dbo].[MST_User]  ON [dbo].[MST_User].[UserID] = [dbo].[MST_QuizWiseQuestions].[UserID]
 END
 exec PR_MST_Question_SelectAll
 exec PR_MST_Quiz_SelectAll
