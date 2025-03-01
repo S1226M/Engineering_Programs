@@ -75,6 +75,7 @@ CREATE TABLE MST_QuizWiseQuestions (
 ------------------------------Stored Procedures for MST_User Table -----------------------------
 --Stored Procedures for MST_User Table Insert
 --EXEC PR_MST_User_Insert 'nihar','nihar@26','nihar126@gmail.com','6554953660'
+select * from MST_User
 CREATE OR ALTER PROCEDURE PR_MST_User_Insert
     @UserName	NVARCHAR(100),
     @Password	NVARCHAR(100),
@@ -157,7 +158,7 @@ END
 --Stored Procedures for MST_User Table Select By Id
 -- EXEC PR_MST_User_SelectByID 1
 CREATE OR ALTER PROC PR_MST_User_SelectByID
-@UserID INT
+	@UserID INT
 AS
 BEGIN
 	SELECT 
@@ -174,6 +175,31 @@ BEGIN
 	WHERE [dbo].[MST_User].[UserID] = @UserID
 END
 
+--Store Procedure for MST_User Table Login
+Exec PR_MST_User_Login 'Smit','smit@1226'
+Create or Alter PROC PR_MST_User_Login
+	@UserName 	NVARCHAR(100),
+	@Password	NVARCHAR(100)
+As
+Begin
+	Select 
+		[dbo].[MST_User].[UserID],
+		[dbo].[MST_User].[UserName],
+		[dbo].[MST_User].[Mobile],
+		[dbo].[MST_User].[Email],
+		[dbo].[MST_User].[Password]
+	From [dbo].[MST_User]
+	Where 
+			[dbo].[MST_User].[UserName] = @UserName
+		And [dbo].[MST_User].[Password] = @Password
+End
+-----Where 
+	--(
+	--			[dbo].[MST_User].[UserName] = @UserName OR 
+	--			[dbo].[MST_User].[Email] = @UserName OR 
+	--			[dbo].[MST_User].[Mobile] = @UserName
+	--		)
+	--		And  [dbo].[MST_User].[Password] = @Password
 -------------------------------Stored Procedures for MST_Quiz Table----------------------------
 --Stored Procedures for MST_Quiz Table Insert
 --EXEC PR_MST_Quiz_Insert 'LinkList',30,3,'2025-10-10'
@@ -504,7 +530,7 @@ END
 
 -------------------- Stored Procedures for MST_QuizWiseQuestions Table -------------------------
 -- Stored Procedures for MST_QuizWiseQuestions Table Insert
--- EXEC PR_MST_QuizWiseQuestions_Insert 1,1,2
+-- EXEC PR_MST_QuizWiseQuestions_Insert 5,2,2
 CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_Insert
     @QuizID INT,
     @QuestionID INT,
@@ -565,17 +591,18 @@ BEGIN
 	SELECT 
 		[dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID],
 		[dbo].[MST_QuizWiseQuestions].[QuizID],
+		[dbo].[MST_Quiz].[QuizName],
 		[dbo].[MST_QuizWiseQuestions].[QuestionID],
 		[dbo].[MST_QuizWiseQuestions].[UserID],
+		[dbo].[MST_User].[UserName],
 		[dbo].[MST_QuizWiseQuestions].[Created],
 		[dbo].[MST_QuizWiseQuestions].[Modified],
-		[dbo].[MST_Quiz].[QuizName],
 		[dbo].[MST_Quiz].[TotalQuestions],
 		[dbo].[MST_Question].[QuestionText]
 	FROM [dbo].[MST_QuizWiseQuestions]
 	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
 	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
-	--INNER JOIN [dbo].[MST_User]  ON [dbo].[MST_User].[UserID] = [dbo].[MST_QuizWiseQuestions].[UserID]
+	INNER JOIN [dbo].[MST_User]  ON [dbo].[MST_User].[UserID] = [dbo].[MST_QuizWiseQuestions].[UserID]
 END
 exec PR_MST_Question_SelectAll
 exec PR_MST_Quiz_SelectAll
