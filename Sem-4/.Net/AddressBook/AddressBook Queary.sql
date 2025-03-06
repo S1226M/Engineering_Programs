@@ -40,7 +40,8 @@ create table [dbo].[AddressBook_City](
 ------------------------------------- <------ Store Procedure ---------> -------------------
 ------------------------------- User Table --------------------------------------
 -------------------------------------- Insert User -------------------------------------------------
--- Exec PR_Insert_User 'Harshil','999988880','HarshilYadav16@gmail.com'
+-- Exec PR_Insert_User 'ABC','9889899898','ABC16@gmail.com'
+Select * from AddressBook_User
 CREATE OR ALTER PROCEDURE PR_Insert_User
     @UserName		VARCHAR(100),
     @MobileNo		VARCHAR(50),
@@ -77,7 +78,7 @@ BEGIN
 END;
 
 -------------------------------------- Delete User -------------------------------------------------
--- Exec PR_User_Delete 3
+-- Exec PR_User_Delete 4
 Create Or ALTER PROCEDURE PR_User_Delete
     @UserID INT
 AS
@@ -92,6 +93,7 @@ Create Or ALTER PROCEDURE PR_User_SelectAll
 AS												  
 BEGIN
     SELECT 
+		[dbo].[AddressBook_User].[UserID],
 		[dbo].[AddressBook_User].[UserName],
 		[dbo].[AddressBook_User].[MobileNo],
 		[dbo].[AddressBook_User].[EmailID],
