@@ -74,7 +74,8 @@ CREATE TABLE MST_QuizWiseQuestions (
 
 ------------------------------Stored Procedures for MST_User Table -----------------------------
 --Stored Procedures for MST_User Table Insert
---EXEC PR_MST_User_Insert 'nihar','nihar@26','nihar126@gmail.com','6554953660'
+select * from MST_User
+--EXEC PR_MST_User_Insert 'azxcds','','ertyu126@gmail.com','9877654321'
 select * from MST_User
 CREATE OR ALTER PROCEDURE PR_MST_User_Insert
     @UserName	NVARCHAR(100),
