@@ -598,15 +598,28 @@ BEGIN
 		[dbo].[MST_User].[UserName],
 		[dbo].[MST_QuizWiseQuestions].[Created],
 		[dbo].[MST_QuizWiseQuestions].[Modified],
-		[dbo].[MST_Quiz].[TotalQuestions],
-		[dbo].[MST_Question].[QuestionText]
+		[dbo].[MST_Quiz].[TotalQuestions]
+		--[dbo].[MST_Question].[QuestionText]
 	FROM [dbo].[MST_QuizWiseQuestions]
 	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
-	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
+	--INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
 	INNER JOIN [dbo].[MST_User]  ON [dbo].[MST_User].[UserID] = [dbo].[MST_QuizWiseQuestions].[UserID]
+	Order By [dbo].[MST_Quiz].[QuizName]
 END
-exec PR_MST_Question_SelectAll
-exec PR_MST_Quiz_SelectAll
+
+--Create or Alter Proc PR_MST_QuizWiseQuestions_Question_SelectAll
+--As
+--Begin
+--	Select 
+--		[dbo].[MST_Question].[QuestionText],
+--		[dbo].[MST_Question].[OptionA],
+--		[dbo].[MST_Question].[OptionB],
+--		[dbo].[MST_Question].[OptionC],
+--		[dbo].[MST_Question].[OptionD],
+--		[dbo].[MST_Question].[CorrectOption]
+--	From [dbo].[MST_Question]
+--	Where [dbo].[MST_Question].[
+
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select By Id
 -- EXEC PR_MST_QuizWiseQuestions_SelectByID 1
