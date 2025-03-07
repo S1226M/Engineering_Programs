@@ -585,57 +585,41 @@ BEGIN
 END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select All
--- EXEC PR_MST_QuizWiseQuestions_SelectAll
-CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectAll
+-- EXEC PR_MST_QuizWiseQuestions_Quiz_SelectAll
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_Quiz_SelectAll
 AS
 BEGIN
-	SELECT 
-		[dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID],
-		[dbo].[MST_QuizWiseQuestions].[QuizID],
+	SELECT
+		[dbo].[MST_Quiz].[QuizID],
 		[dbo].[MST_Quiz].[QuizName],
-		[dbo].[MST_QuizWiseQuestions].[QuestionID],
-		[dbo].[MST_QuizWiseQuestions].[UserID],
-		[dbo].[MST_User].[UserName],
-		[dbo].[MST_QuizWiseQuestions].[Created],
-		[dbo].[MST_QuizWiseQuestions].[Modified],
-		[dbo].[MST_Quiz].[TotalQuestions]
-		--[dbo].[MST_Question].[QuestionText]
-	FROM [dbo].[MST_QuizWiseQuestions]
-	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
-	--INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
-	INNER JOIN [dbo].[MST_User]  ON [dbo].[MST_User].[UserID] = [dbo].[MST_QuizWiseQuestions].[UserID]
+        [dbo].[MST_User].[UserName]
+	FROM [dbo].[MST_Quiz] JOIN [dbo].[MST_User] ON [dbo].[MST_User].[UserID] = [dbo].[MST_Quiz].[UserID]
 	Order By [dbo].[MST_Quiz].[QuizName]
 END
 
---Create or Alter Proc PR_MST_QuizWiseQuestions_Question_SelectAll
---As
---Begin
---	Select 
---		[dbo].[MST_Question].[QuestionText],
---		[dbo].[MST_Question].[OptionA],
---		[dbo].[MST_Question].[OptionB],
---		[dbo].[MST_Question].[OptionC],
---		[dbo].[MST_Question].[OptionD],
---		[dbo].[MST_Question].[CorrectOption]
---	From [dbo].[MST_Question]
---	Where [dbo].[MST_Question].[
-
-
 -- Stored Procedures for MST_QuizWiseQuestions Table Select By Id
--- EXEC PR_MST_QuizWiseQuestions_SelectByID 1
+-- EXEC PR_MST_QuizWiseQuestions_SelectByID 5
 CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectByID
-	@QuizWiseQuestionsID INT
+	@QuizID INT
 AS
 BEGIN
-	SELECT 
+	SELECT
 		[dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID],
 		[dbo].[MST_QuizWiseQuestions].[QuizID],
+		[dbo].[MST_Quiz].[QuizName],
+		[dbo].[MST_Question].[QuestionText],
+		[dbo].[MST_Question].[OptionA],
+		[dbo].[MST_Question].[OptionB],
+		[dbo].[MST_Question].[OptionC],
+		[dbo].[MST_Question].[OptionD],
+		[dbo].[MST_Question].[CorrectOption],
 		[dbo].[MST_QuizWiseQuestions].[QuestionID],
 		[dbo].[MST_QuizWiseQuestions].[UserID],
 		[dbo].[MST_QuizWiseQuestions].[Created],
 		[dbo].[MST_QuizWiseQuestions].[Modified]
-	FROM [dbo].[MST_QuizWiseQuestions]
-	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
+	FROM [dbo].[MST_QuizWiseQuestions] join [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
+	Inner Join [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
+	WHERE [dbo].[MST_Quiz].[QuizID] = @QuizID
 END
 
 ---------------------------------< ======= Dropdown queris ======= >---------------------------------------
