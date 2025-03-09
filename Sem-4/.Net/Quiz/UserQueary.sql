@@ -572,7 +572,7 @@ BEGIN
 		[dbo].[MST_QuizWiseQuestions].[UserID]					=	@UserID,
 		[dbo].[MST_QuizWiseQuestions].[Modified]				=	@Modified
 	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
-END	
+END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Delete
 -- EXEC PR_MST_QuizWiseQuestions_Delete
@@ -598,7 +598,7 @@ BEGIN
 END
 
 -- Stored Procedures for MST_QuizWiseQuestions Table Select By Id
--- EXEC PR_MST_QuizWiseQuestions_SelectByID 5
+-- EXEC PR_MST_QuizWiseQuestions_SelectByID 11
 CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectByID
 	@QuizID INT
 AS
@@ -620,6 +620,29 @@ BEGIN
 	FROM [dbo].[MST_QuizWiseQuestions] join [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
 	Inner Join [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
 	WHERE [dbo].[MST_Quiz].[QuizID] = @QuizID
+END
+Delete From MST_QuizWiseQuestions Where QuizWiseQuestionsID = 18
+
+Exec PR_MST_QuizWiseQuestions_SelectByID_Second 11
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectByID_Second
+@QuizWiseQuestionsID INT
+AS
+BEGIN
+	SELECT 
+		[dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID],
+		[dbo].[MST_QuizWiseQuestions].[QuizID],
+		[dbo].[MST_Quiz].[QuizName],
+		[dbo].[MST_QuizWiseQuestions].[QuestionID],
+		[dbo].[MST_Question].[QuestionText],
+		[dbo].[MST_QuizWiseQuestions].[UserID],
+		[dbo].[MST_User].[UserName],
+		[dbo].[MST_QuizWiseQuestions].[Created],
+		[dbo].[MST_QuizWiseQuestions].[Modified]
+	FROM [dbo].[MST_QuizWiseQuestions]
+	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
+	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
+	INNER JOIN [dbo].[MST_User] ON [dbo].[MST_QuizWiseQuestions].[UserID]=[dbo].[MST_User].[UserID]
+	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
 END
 
 ---------------------------------< ======= Dropdown queris ======= >---------------------------------------
