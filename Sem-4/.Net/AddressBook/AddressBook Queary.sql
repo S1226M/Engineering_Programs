@@ -49,13 +49,13 @@ CREATE OR ALTER PROCEDURE PR_Insert_User
 AS
 BEGIN
     INSERT INTO [dbo].[AddressBook_User](
-		UserName, 
+		UserName,
 		MobileNo, 
 		EmailID
 	)
     VALUES (
 		@UserName, 
-		@MobileNo, 
+		@MobileNo,
 		@EmailID
 	);
 END;
@@ -385,3 +385,16 @@ BEGIN
     FROM [dbo].[AddressBook_City] join [dbo].[AddressBook_User] On [dbo].[AddressBook_City].[UserID] = [dbo].[AddressBook_User].[UserID]
     WHERE [dbo].[AddressBook_City].[CityID] = @CityID;
 END;
+
+
+---------Dropdown query for AddressBook_Country table---------
+-- Exec Dropdown_AddressBook_Country
+CREATE OR ALTER PROC Dropdown_AddressBook_Country
+AS
+BEGIN
+	SELECT
+		CountryID,
+		CountryName
+	FROM [dbo].[AddressBook_Country]
+	ORDER BY CountryName ASC
+END
