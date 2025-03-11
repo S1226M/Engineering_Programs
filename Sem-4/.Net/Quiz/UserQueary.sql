@@ -178,29 +178,34 @@ END
 
 --Store Procedure for MST_User Table Login
 Exec PR_MST_User_Login 'Smit','smit@1226'
-Create or Alter PROC PR_MST_User_Login
-	@UserName 	NVARCHAR(100),
-	@Password	NVARCHAR(100)
-As
-Begin
-	Select 
-		[dbo].[MST_User].[UserID],
-		[dbo].[MST_User].[UserName],
-		[dbo].[MST_User].[Mobile],
-		[dbo].[MST_User].[Email],
-		[dbo].[MST_User].[Password]
-	From [dbo].[MST_User]
-	Where 
-			[dbo].[MST_User].[UserName] = @UserName
-		And [dbo].[MST_User].[Password] = @Password
-End
------Where 
-	--(
-	--			[dbo].[MST_User].[UserName] = @UserName OR 
-	--			[dbo].[MST_User].[Email] = @UserName OR 
-	--			[dbo].[MST_User].[Mobile] = @UserName
-	--		)
-	--		And  [dbo].[MST_User].[Password] = @Password
+CREATE OR ALTER PROC PR_MST_User_Login
+    @UserName  NVARCHAR(100),
+    @Password  NVARCHAR(100)
+AS
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM [dbo].[MST_User] WHERE [UserName] = @UserName)
+    BEGIN
+        SELECT 'Invalid Username' AS ErrorMessage;
+        RETURN;
+    END
+
+    IF NOT EXISTS (SELECT 1 FROM [dbo].[MST_User] WHERE [UserName] = @UserName AND [Password] = @Password)
+    BEGIN
+        SELECT 'Incorrect Password' AS ErrorMessage;
+        RETURN;
+    END
+
+    -- If both username and password are correct, return user details
+    SELECT 
+        [UserID],
+        [UserName],
+        [Mobile],
+        [Email]
+    FROM [dbo].[MST_User]
+    WHERE [UserName] = @UserName AND [Password] = @Password;
+END
+
+
 -------------------------------Stored Procedures for MST_Quiz Table----------------------------
 --Stored Procedures for MST_Quiz Table Insert
 --EXEC PR_MST_Quiz_Insert 'LinkList',30,3,'2025-10-10'
@@ -295,6 +300,41 @@ BEGIN
     FROM [dbo].[MST_Quiz]
     WHERE [dbo].[MST_Quiz].[QuizID] = @QuizID
 END
+
+-- Exec PR_MST_Quiz_Search A
+CREATE OR ALTER PROCEDURE PR_MST_Quiz_Search
+    @QuizName       NVARCHAR(100) = NULL,
+    @TotalQuestions INT = NULL,
+    @QuizDate       DATETIME = NULL
+AS
+BEGIN
+    SELECT * , MST_User.UserName
+    FROM MST_Quiz join MST_User
+	On MST_Quiz.UserID = MST_User.UserID
+    WHERE (@QuizName IS NULL OR QuizName LIKE '%' + @QuizName + '%')
+      AND (@TotalQuestions IS NULL OR TotalQuestions = @TotalQuestions)
+      AND (@QuizDate IS NULL OR CAST(QuizDate AS DATE) = CAST(@QuizDate AS DATE));
+END;
+
+--QuizWiseQuestionQuiz Search
+-- exec PR_MST_Quiz_Search_QuizWiseQuestion '',Smit
+CREATE OR ALTER PROCEDURE PR_MST_Quiz_Search_QuizWiseQuestion
+    @QuizName  NVARCHAR(100) = NULL,
+    @UserName  NVARCHAR(100) = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        q.*,  -- Selecting all columns from MST_Quiz
+        u.UserName -- Explicitly selecting UserName from MST_User
+    FROM MST_Quiz q
+    JOIN MST_User u ON q.UserID = u.UserID
+    WHERE 
+        (@QuizName IS NULL OR q.QuizName LIKE '%' + @QuizName + '%')
+        AND (@UserName IS NULL OR u.UserName LIKE '%' + @UserName + '%');
+END;
+
 
 ----------------------- Stored Procedures for MST_Question Table ------------------------------
 --Stored Procedures for MST_Question Table Insert
@@ -528,6 +568,39 @@ BEGIN
     WHERE 
         [dbo].[MST_QuestionLevel].[QuestionLevelID] = @QuestionLevelID
 END
+
+--Question Filter
+Exec PR_MST_Question_Search 'What is a linked list?','',7
+CREATE OR ALTER PROCEDURE PR_MST_Question_Search
+    @QuestionText   NVARCHAR(100) = NULL,
+    @QuestionLevel  NVARCHAR(100) = NULL,
+    @QuestionMarks  INT = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        Q.QuestionID, 
+        Q.QuestionText, 
+        Q.QuestionLevelID, 
+        Q.OptionA, 
+        Q.OptionB, 
+        Q.OptionC, 
+        Q.OptionD, 
+        Q.CorrectOption, 
+        Q.QuestionMarks, 
+        Q.IsActive, 
+        Q.UserID, 
+        Q.Created, 
+        Q.Modified,
+		QL.QuestionLevel
+    FROM MST_Question Q
+    JOIN MST_QuestionLevel QL ON Q.QuestionLevelID = QL.QuestionLevelID
+    WHERE (@QuestionText IS NULL OR Q.QuestionText LIKE '%' + @QuestionText + '%')
+      AND (@QuestionLevel IS NULL OR QL.QuestionLevel LIKE '%' + @QuestionLevel + '%')
+      AND (@QuestionMarks IS NULL OR Q.QuestionMarks = @QuestionMarks);
+END;
+
 
 -------------------- Stored Procedures for MST_QuizWiseQuestions Table -------------------------
 -- Stored Procedures for MST_QuizWiseQuestions Table Insert
