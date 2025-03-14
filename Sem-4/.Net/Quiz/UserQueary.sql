@@ -718,6 +718,27 @@ BEGIN
 	WHERE [dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID] = @QuizWiseQuestionsID
 END
 
+Exec PR_MST_QuizWiseQuestions_SelectAll
+CREATE OR ALTER PROC PR_MST_QuizWiseQuestions_SelectAll
+AS
+BEGIN
+	SELECT
+		[dbo].[MST_QuizWiseQuestions].[QuizWiseQuestionsID],
+		[dbo].[MST_QuizWiseQuestions].[QuizID],
+		[dbo].[MST_Quiz].[QuizName],
+		[dbo].[MST_QuizWiseQuestions].[QuestionID],
+		[dbo].[MST_Question].[QuestionText],
+		[dbo].[MST_QuizWiseQuestions].[UserID],
+		[dbo].[MST_User].[UserName],
+		[dbo].[MST_QuizWiseQuestions].[Created],
+		[dbo].[MST_QuizWiseQuestions].[Modified]
+	FROM [dbo].[MST_QuizWiseQuestions]
+	INNER JOIN [dbo].[MST_Quiz] ON [dbo].[MST_QuizWiseQuestions].[QuizID] = [dbo].[MST_Quiz].[QuizID]
+	INNER JOIN [dbo].[MST_Question] ON [dbo].[MST_QuizWiseQuestions].[QuestionID] = [dbo].[MST_Question].[QuestionID]
+	INNER JOIN [dbo].[MST_User] ON [dbo].[MST_QuizWiseQuestions].[UserID]=[dbo].[MST_User].[UserID]
+END
+
+
 ---------------------------------< ======= Dropdown queris ======= >---------------------------------------
 ------------------Dropdown query for MST_User table--------------------
 -- Exec Dropdown_MST_User
