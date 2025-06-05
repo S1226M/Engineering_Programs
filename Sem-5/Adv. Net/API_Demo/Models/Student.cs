@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace API_Demo.Models;
 
 public partial class Student
 {
-    public int? Id { get; set; }
+    [Key]
+    public int Id { get; set; }
 
     public string? StudentName { get; set; }
 
