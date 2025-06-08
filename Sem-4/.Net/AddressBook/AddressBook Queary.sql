@@ -398,3 +398,18 @@ BEGIN
 	FROM [dbo].[AddressBook_Country]
 	ORDER BY CountryName ASC
 END
+
+------------------------------Table for the storing the filter dropdown Data---------
+Create Table [dbo].[FilterData](
+	DropDownFilterId int Primary Key Identity(1,1),
+	UserName varchar(100),
+	CountryName Varchar(100),
+	StateName varchar(100),
+	CityName varchar(100)
+)
+
+Create Proc PR_SELECT_FILTERDATE
+AS
+BEGIN
+	Select * from FilterData
+End
