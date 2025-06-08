@@ -1,11 +1,12 @@
-Create Table Student(
-	ID Int,
-	StudentName varchar(50),
-	StudentGender varchar(20),
-	Age	int,
-	Standard varchar(10),
-	FatherName varchar(50)
-)
+CREATE TABLE Student (
+	ID INT PRIMARY KEY,
+	StudentName VARCHAR(50),
+	StudentGender VARCHAR(20),
+	Age INT,
+	Standard VARCHAR(10),
+	FatherName VARCHAR(50)
+);
+
 
 Insert Into Student(ID, StudentName, StudentGender, Age, Standard, FatherName)
 VALUES
