@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Count_OF_Three_Demo.props" />
+</Project>

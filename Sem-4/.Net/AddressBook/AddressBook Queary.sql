@@ -359,13 +359,17 @@ BEGIN
     SELECT 
 		[dbo].[AddressBook_City].[CityID],
 		[dbo].[AddressBook_City].[StateID],
+		[dbo].[AddressBook_State].[StateName],
 		[dbo].[AddressBook_City].[CountryID],
+		[dbo].[AddressBook_Country].[CountryName],
 		[dbo].[AddressBook_City].[CityName],
 		[dbo].[AddressBook_City].[STDCode],
 		[dbo].[AddressBook_City].[PinCode],
 		[dbo].[AddressBook_City].[CreationDate],
 		[dbo].[AddressBook_User].[UserID]
     FROM [dbo].[AddressBook_City] join [dbo].[AddressBook_User] on [dbo].[AddressBook_City].[UserID] = [dbo].[AddressBook_User].[UserID]
+	join [dbo].[AddressBook_State] On [dbo].[AddressBook_State].[StateID] = [dbo].[AddressBook_City].[StateID]
+	join [dbo].[AddressBook_Country] On [dbo].[AddressBook_Country].[CountryID] = [dbo].[AddressBook_City].[CountryID]
 END;
 
 -------------------------------------- Select By Id City -------------------------------------------------
@@ -386,6 +390,19 @@ BEGIN
     WHERE [dbo].[AddressBook_City].[CityID] = @CityID;
 END;
 
+CREATE OR ALTER PROCEDURE [dbo].[PR_LOC_City_SelectById]
+    @CityID INT
+AS
+BEGIN
+    SELECT [dbo].[AddressBook_City].[CityID],
+	[dbo].[AddressBook_City].[CityName],
+	[dbo].[AddressBook_City].[StateID],
+	[dbo].[AddressBook_City].[CountryID]
+    FROM [dbo].[AddressBook_City]
+    WHERE [dbo].[AddressBook_City].[CityID] = @CityID
+END
+
+Exec PR_LOC_City_SelectById 4
 
 ---------Dropdown query for AddressBook_Country table---------
 -- Exec Dropdown_AddressBook_Country
@@ -399,17 +416,62 @@ BEGIN
 	ORDER BY CountryName ASC
 END
 
-------------------------------Table for the storing the filter dropdown Data---------
-Create Table [dbo].[FilterData](
-	DropDownFilterId int Primary Key Identity(1,1),
-	UserName varchar(100),
-	CountryName Varchar(100),
-	StateName varchar(100),
-	CityName varchar(100)
-)
+---------------- Cascade Drop Down Proceduure ---------------------------
 
-Create Proc PR_SELECT_FILTERDATE
+CREATE PROCEDURE [dbo].[PR_LOC_Country_SelectComboBox]
+AS 
+SELECT
+    CountryId,
+    CountryName
+FROM AddressBook_Country
+ORDER BY CountryName
+
+CREATE PROCEDURE [dbo].[PR_LOC_State_SelectComboBoxByCountryID]
+@CountryID INT
+AS 
+SELECT
+    [dbo].[AddressBook_State].[StateID],
+    [dbo].[AddressBook_State].[StateName]
+FROM [dbo].[AddressBook_State]
+WHERE [dbo].[AddressBook_State].[CountryID] = @CountryID
+
+----------------------------------------- Demo Count For All Three Country,State,City --------------------------------------
+Create Table CountOfThree(
+	ID int,
+	Total_Country int,
+	Total_State int,
+	Total_City int
+)
+DELETE FROM CountOfThree;
+INSERT INTO CountOfThree (ID, Total_Country, Total_State, Total_City)
+VALUES (1,0, 0, 0);
+Select * From CountOfThree
+
+Drop PROCEDURE PR_Count_Of_Three
+CREATE PROCEDURE PR_Count_Of_Three
 AS
 BEGIN
-	Select * from FilterData
-End
+    DECLARE @CountryCount INT;
+    DECLARE @StateCount INT;
+    DECLARE @CityCount INT;
+
+    SELECT @CountryCount = COUNT(CountryId) FROM AddressBook_Country;
+    SELECT @StateCount = COUNT(StateId) FROM AddressBook_State;
+    SELECT @CityCount = COUNT(CityId) FROM AddressBook_City;
+
+    UPDATE [dbo].[CountOfThree]
+    SET 
+        Total_Country = @CountryCount, 
+        Total_State = @StateCount, 
+        Total_City = @CityCount
+    WHERE [dbo].[CountOfThree].[ID] = 1;
+
+	Select 
+		[dbo].[CountOfThree].[Total_Country],
+		[dbo].[CountOfThree].[Total_State],
+		[dbo].[CountOfThree].[Total_City]
+	From [dbo].[CountOfThree]
+END;
+
+Exec PR_Count_Of_Three
+Select * From CountOfThree

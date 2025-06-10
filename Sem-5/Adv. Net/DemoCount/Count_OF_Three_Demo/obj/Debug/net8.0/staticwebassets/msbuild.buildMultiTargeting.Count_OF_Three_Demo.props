@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Count_OF_Three_Demo.props" />
+</Project>
