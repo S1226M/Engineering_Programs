@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\views\\countdemo\\countview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:views\\countdemo\\countview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\controllers\\countdemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:controllers\\countdemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\models\\countdemomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:models\\countdemomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\democount\\count_of_three_demo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C106CEE-57B4-45D5-8EFD-355BF0121E35}|Count_OF_Three_Demo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T16:16:20.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T08:01:44.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CountDemoModel.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Models\\CountDemoModel.cs",
+              "RelativeDocumentMoniker": "Models\\CountDemoModel.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Models\\CountDemoModel.cs",
+              "RelativeToolTip": "Models\\CountDemoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:56:00.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CountView.cshtml",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\CountDemo\\CountView.cshtml",
+              "RelativeDocumentMoniker": "Views\\CountDemo\\CountView.cshtml",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Views\\CountDemo\\CountView.cshtml",
+              "RelativeToolTip": "Views\\CountDemo\\CountView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T07:54:03.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CountDemoController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Controllers\\CountDemoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CountDemoController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\Controllers\\CountDemoController.cs",
+              "RelativeToolTip": "Controllers\\CountDemoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:53:40.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoCount\\Count_OF_Three_Demo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T07:52:30.951Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

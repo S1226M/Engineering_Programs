@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
+    "Method": "GetAllHospital",
+    "RelativePath": "api/HospitalAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
+    "Method": "InsertHospital",
+    "RelativePath": "api/HospitalAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hospital",
+        "Type": "CRUDAPIDemo.Models.HospitalMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
+    "Method": "GetHospitalById",
+    "RelativePath": "api/HospitalAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
+    "Method": "DeleteHospitalById",
+    "RelativePath": "api/HospitalAPI/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
+    "Method": "UpdateHospital",
+    "RelativePath": "api/HospitalAPI/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hospital",
+        "Type": "CRUDAPIDemo.Models.HospitalMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

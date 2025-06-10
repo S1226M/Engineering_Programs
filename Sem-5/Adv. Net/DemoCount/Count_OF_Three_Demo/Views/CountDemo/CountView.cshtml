@@ -1,0 +1,22 @@
+﻿﻿@using System.Data
+
+<table id="sample_1" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Total_Country</th>
+            <th>Total_State</th>
+            <th>Total_City</th>
+        </tr>
+    </thead>
+    <tbody id="sample_2">
+        <!-- Dynamic rows will be added here -->
+        @foreach (DataRow row in Model.Rows)
+        {
+            <tr>
+                <td>@row["Total_Country"]</td>
+                <td>@row["Total_State"]</td>
+                <td>@row["Total_City"]</td>
+            </tr>
+        }
+    </tbody>
+</table>
