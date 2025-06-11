@@ -5142,11 +5142,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smitm\\Downloads\\sem-4-main\\sem-4-main\\ADV .net\\Lab\\CRUDAPIDemo\\CRUDAPIDemo.csproj",
+      "projectUniqueName": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\CRUDAPIDemo.csproj",
       "projectName": "CRUDAPIDemo",
-      "projectPath": "C:\\Users\\smitm\\Downloads\\sem-4-main\\sem-4-main\\ADV .net\\Lab\\CRUDAPIDemo\\CRUDAPIDemo.csproj",
+      "projectPath": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\CRUDAPIDemo.csproj",
       "packagesPath": "C:\\Users\\smitm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smitm\\Downloads\\sem-4-main\\sem-4-main\\ADV .net\\Lab\\CRUDAPIDemo\\obj\\",
+      "outputPath": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
