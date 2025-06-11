@@ -56,7 +56,7 @@ namespace CRUDAPIDemo.Controllers
         {
             context.HospitalMasters.Add(hospital);
             context.SaveChanges();
-            return NoContent();
+            return CreatedAtAction(nameof(GetHospitalById), new { id = hospital.HospitalId }, hospital);
         }
         #endregion
 
