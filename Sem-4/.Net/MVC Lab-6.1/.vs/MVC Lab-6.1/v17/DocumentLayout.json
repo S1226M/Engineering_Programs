@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\hospital_data_consumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\hospital_data_consumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\addemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\addemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\models\\hospital_api_consumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:models\\hospital_api_consumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\addemployee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,11 +54,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FormController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\FormController.cs",
+              "RelativeToolTip": "Controllers\\FormController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Hospital_Data_ConsumeController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\Hospital_Data_ConsumeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Hospital_Data_ConsumeController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\Hospital_Data_ConsumeController.cs",
+              "RelativeToolTip": "Controllers\\Hospital_Data_ConsumeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:54:11.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEmployeeController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AddEmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AddEmployeeController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AddEmployeeController.cs",
+              "RelativeToolTip": "Controllers\\AddEmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AboutController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:57:31.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-31T05:50:29.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Hospital_API_ConsumeModel.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Models\\Hospital_API_ConsumeModel.cs",
+              "RelativeDocumentMoniker": "Models\\Hospital_API_ConsumeModel.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Models\\Hospital_API_ConsumeModel.cs",
+              "RelativeToolTip": "Models\\Hospital_API_ConsumeModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAywBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:52:52.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -39,20 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-31T05:50:29.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\AddEmployee\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AddEmployee\\Index.cshtml",
@@ -60,8 +196,7 @@
               "RelativeToolTip": "Views\\AddEmployee\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-31T05:17:50.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T05:17:50.433Z"
             }
           ]
         }
