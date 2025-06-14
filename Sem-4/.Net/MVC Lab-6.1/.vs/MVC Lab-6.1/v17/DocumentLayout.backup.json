@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\addemployee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\addemployee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|d:\\engineering_programs\\sem-4\\.net\\mvc lab-6.1\\views\\addemployee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0D53E15-13B1-4911-8535-36A023AB0C18}|MVC Lab-6.1.csproj|solutionrelative:views\\addemployee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T14:41:12.315Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,14 +45,14 @@
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-31T05:50:29.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-4\\.Net\\MVC Lab-6.1\\Views\\AddEmployee\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AddEmployee\\Index.cshtml",

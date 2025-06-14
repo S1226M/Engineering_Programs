@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Count_OF_Three_Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d85f14583dbb769685fe310be626b77fa3e983d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69b711b0029900e50d7581d9254e855c543309ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Count_OF_Three_Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Count_OF_Three_Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
