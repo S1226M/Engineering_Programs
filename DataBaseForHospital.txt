@@ -1,0 +1,147 @@
+Country  
+	CountryID		=>Primary, AutoInc  
+	CountryName  
+
+------------
+
+State  
+	StateID			=>Primary, AutoInc  
+	StateName  
+	CountryID		=>Foreign (Country)
+
+------------
+
+City  
+	CityID			=>Primary, AutoInc  
+	CityName 	
+	StateID			=>Foreign (State)
+
+------------
+
+Hospital  
+	HospitalID		=>Primary, AutoInc  
+	HospitalName  
+	HospitalType  
+	HospitalAddress  
+	CityID			=>Foreign (City)  
+	HospitalContectNo  
+	HospitalEmail  
+	EstablishedDate  
+	WebsiteURL  
+
+------------
+
+Department  
+	DepartmentID 		=>Primary, AutoInc  
+	DepartmentName  
+	HospitalID		=>Foreign (Hospital)
+
+------------
+
+Doctor  
+	DoctorID		=>Primary, AutoInc  
+	DoctorName  
+	DoctorPhotoURL  
+	ConsultationFee  
+	DoctorEmail  
+	DoctorContectNo  
+	DoctorGender	
+	DepartmentID	 	=>Foreign (Department)  
+	HospitalID		=>Foreign (Hospital)  
+	DoctorSpecialization  
+	DoctorExperienceYears  
+	AvailableTimeSlots  
+	Rating			=>Default(0.0)
+
+------------
+
+Medicine  
+	MedicineID		=>Primary, AutoInc  
+	MedicineName  
+	MedicineGenericName  
+	MedicineBrand  
+	MedicineCategory  
+	MedicineManufacturer  
+	MedicinePrice  
+	MedicineDescription  
+	MedicineDosage      		-----> (e.g., 500mg, 1Tablet)  
+	MedicineUnit       		-----> (e.g., tablets, ml, capsule)
+
+------------
+
+Payment  
+	PaymentID 		=>Primary, AutoInc  
+	UserID			=>Foreign (User)  
+	DoctorID		=>Foreign (Doctor)  
+	AppointmentID		=>Foreign (Appointment)  
+	PaymentUPI_ID  
+	PaymentAmount  
+	PaymentDate		=>Default(GETDATE())  
+	PaymentStatus       	=>Default('Pending') -----> (Success, Fail, Pending, Refund)  
+	PaymentMethod  
+	PaymentCurrency
+
+------------
+
+User  
+	UserID			=>Primary, AutoInc  
+	UserName  
+	UserEmail  
+	UserContactNo
+	UserRole		=>(Admin,Saff,Patient)
+	UserPassword
+	IsAdmin			=>Default(0)
+	IsStaff			=>Default(0)
+
+------------
+
+Appointment  
+	AppointmentID 		=>Primary, AutoInc  
+	UserID			=>Foreign (User)  
+	DoctorID		=>Foreign (Doctor)  
+	HospitalID		=>Foreign (Hospital)  
+	AppointmentDateTime  
+	AppointmentStatus  	=>Default('Scheduled') -----> (Scheduled, Completed, Cancelled, NoShow)  
+	Symptoms  
+	AppointmentCreatedDate  =>Default(GETDATE())  
+	AppointmentExpireDate
+
+------------
+
+Review  
+	ReviewID 		=>Primary, AutoInc  
+	UserID			=>Foreign (User)  
+	DoctorID / HospitalID	=>Foreign (Doctor or Hospital)  
+	Rating 			=>Default(0) (1–5)  
+	ReviewText  
+	ReviewDate 		=>Default(GETDATE())
+
+------------
+
+Prescription  
+	PrescriptionID 		=>Primary, AutoInc  
+	AppointmentID 		=>Foreign (Appointment)  
+	DoctorID 		=>Foreign (Doctor)  
+	UserID			=>Foreign (User)  
+	DatePrescribed 		=>Default(GETDATE())  
+	Notes
+
+------------
+
+AppointmentCancellationLog
+	LogID			=>PK
+	AppointmentID		=>FK
+	CanceledBy		=> (User, Doctor, Admin)
+	CancellationReason
+	CancellationDate	=>Default(GETDATE())
+
+------------
+Emergency
+	EmergencyID		=>PK
+	UserID 			=>FK
+	HospitalID 		=>FK
+	EmergencyType 
+	Description 
+	EmergencyStatus 
+	RequestTime 
+	ResponseTime 
