@@ -475,3 +475,30 @@ END;
 
 Exec PR_Count_Of_Three
 Select * From CountOfThree
+
+Create Table TotalCount(
+	totalCity int,
+	TotalCountry int, 
+	TotalState int
+)
+
+Create or ALTER   proc [dbo].[PR_LOC_TotalCount]
+as
+  declare  @TotalCity INT,
+   @TotalCountry INT,
+   @TotalState INT
+begin
+select @TotalCity=Count(CityID) from AddressBook_City
+
+select @TotalCountry = Count(CountryID) from AddressBook_City
+
+select @TotalState = Count(StateID)  from AddressBook_City
+
+delete from TotalCount
+ 
+insert into TotalCount(totalCity, TotalCountry, TotalState) 
+values (@TotalCity, @TotalCountry, @TotalState)
+
+select * from TotalCount
+end
+Exec [dbo].[PR_LOC_TotalCount]
