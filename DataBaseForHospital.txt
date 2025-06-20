@@ -50,8 +50,16 @@ Doctor
 	HospitalID		=>Foreign (Hospital)  
 	DoctorSpecialization  
 	DoctorExperienceYears  
-	AvailableTimeSlots  
 	Rating			=>Default(0.0)
+
+------------
+
+DoctorAvailableTimeSlots  
+	SlotID			=>Primary, AutoInc  
+	DoctorID		=>Foreign (Doctor)  
+	DayOfWeek  		-----> (e.g., Monday)  
+	StartTime  		-----> (e.g., 09:00)  
+	EndTime    		-----> (e.g., 12:00)
 
 ------------
 
@@ -60,12 +68,30 @@ Medicine
 	MedicineName  
 	MedicineGenericName  
 	MedicineBrand  
-	MedicineCategory  
-	MedicineManufacturer  
-	MedicinePrice  
 	MedicineDescription  
 	MedicineDosage      		-----> (e.g., 500mg, 1Tablet)  
-	MedicineUnit       		-----> (e.g., tablets, ml, capsule)
+	MedicinePrice  
+	CategoryID		=>Foreign (MedicineCategory)  
+	UnitID			=>Foreign (MedicineUnit)  
+	ManufacturerID		=>Foreign (MedicineManufacturer)
+
+------------
+
+MedicineCategory  
+	CategoryID		=>Primary, AutoInc  
+	CategoryName
+
+------------
+
+MedicineUnit  
+	UnitID			=>Primary, AutoInc  
+	UnitName		-----> (e.g., ml, tablet, capsule)
+
+------------
+
+MedicineManufacturer  
+	ManufacturerID		=>Primary, AutoInc  
+	ManufacturerName
 
 ------------
 
@@ -87,10 +113,10 @@ User
 	UserID			=>Primary, AutoInc  
 	UserName  
 	UserEmail  
-	UserContactNo
-	UserRole		=>(Admin,Saff,Patient)
-	UserPassword
-	IsAdmin			=>Default(0)
+	UserContactNo  
+	UserRole		=>(Admin, Staff, Patient)  
+	UserPassword  
+	IsAdmin			=>Default(0)  
 	IsStaff			=>Default(0)
 
 ------------
@@ -108,10 +134,20 @@ Appointment
 
 ------------
 
-Review  
+DoctorReview  
 	ReviewID 		=>Primary, AutoInc  
 	UserID			=>Foreign (User)  
-	DoctorID / HospitalID	=>Foreign (Doctor or Hospital)  
+	DoctorID		=>Foreign (Doctor)  
+	Rating 			=>Default(0) (1–5)  
+	ReviewText  
+	ReviewDate 		=>Default(GETDATE())
+
+------------
+
+HospitalReview  
+	ReviewID 		=>Primary, AutoInc  
+	UserID			=>Foreign (User)  
+	HospitalID		=>Foreign (Hospital)  
 	Rating 			=>Default(0) (1–5)  
 	ReviewText  
 	ReviewDate 		=>Default(GETDATE())
@@ -128,20 +164,21 @@ Prescription
 
 ------------
 
-AppointmentCancellationLog
-	LogID			=>PK
-	AppointmentID		=>FK
-	CanceledBy		=> (User, Doctor, Admin)
-	CancellationReason
+AppointmentCancellationLog  
+	LogID			=>Primary, AutoInc  
+	AppointmentID		=>Foreign (Appointment)  
+	CanceledBy		=> (User, Doctor, Admin)  
+	CancellationReason  
 	CancellationDate	=>Default(GETDATE())
 
 ------------
-Emergency
-	EmergencyID		=>PK
-	UserID 			=>FK
-	HospitalID 		=>FK
-	EmergencyType 
-	Description 
-	EmergencyStatus 
-	RequestTime 
-	ResponseTime 
+
+Emergency  
+	EmergencyID		=>Primary, AutoInc  
+	UserID 			=>Foreign (User)  
+	HospitalID 		=>Foreign (Hospital)  
+	EmergencyType  
+	Description  
+	EmergencyStatus  
+	RequestTime  
+	ResponseTime  
