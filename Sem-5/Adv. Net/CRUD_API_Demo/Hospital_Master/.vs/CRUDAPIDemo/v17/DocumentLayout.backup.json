@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\hospitalapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\hospitalapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\middleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:middleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\doctorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\doctorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\hospitalmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\hospitalmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\patientapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\patientapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\exceptionhandlenew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:exceptionhandlenew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\hospitalmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\hospitalmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\doctorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\doctorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\crudapidemo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:crudapidemo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\patientapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\patientapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\hospitalmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\hospitalmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\controllers\\hospitalapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:controllers\\hospitalapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|d:\\engineering_programs\\sem-5\\adv. net\\crud_api_demo\\hospital_master\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896B72B5-F498-4D22-910D-773F342B4DC5}|CRUDAPIDemo.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,24 +58,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PatientAPIController.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\PatientAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PatientAPIController.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\PatientAPIController.cs",
-              "RelativeToolTip": "Controllers\\PatientAPIController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:39:34.37Z",
+              "WhenOpened": "2025-06-16T15:47:09.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorAPIController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\DoctorAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorAPIController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\DoctorAPIController.cs",
+              "RelativeToolTip": "Controllers\\DoctorAPIController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:09:22.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Middleware.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Middleware.cs",
+              "RelativeDocumentMoniker": "Middleware.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Middleware.cs",
+              "RelativeToolTip": "Middleware.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T02:51:52.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HospitalMaster.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalMaster.cs",
+              "RelativeDocumentMoniker": "Models\\HospitalMaster.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalMaster.cs",
+              "RelativeToolTip": "Models\\HospitalMaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:48:34.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionhandleNew.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\ExceptionhandleNew.cs",
+              "RelativeDocumentMoniker": "ExceptionhandleNew.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\ExceptionhandleNew.cs",
+              "RelativeToolTip": "ExceptionhandleNew.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T04:01:03.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T03:46:35.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HospitalManagementContext.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalManagementContext.cs",
+              "RelativeDocumentMoniker": "Models\\HospitalManagementContext.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalManagementContext.cs",
+              "RelativeToolTip": "Models\\HospitalManagementContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:44:55.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HospitalAPIController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\HospitalAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HospitalAPIController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\HospitalAPIController.cs",
+              "RelativeToolTip": "Controllers\\HospitalAPIController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:48:32.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:04:45.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CRUDAPIDemo.http",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\CRUDAPIDemo.http",
+              "RelativeDocumentMoniker": "CRUDAPIDemo.http",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\CRUDAPIDemo.http",
+              "RelativeToolTip": "CRUDAPIDemo.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-20T03:51:44.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Patient.cs",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "Models\\Patient.cs",
@@ -72,80 +205,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Models\\Doctor.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\Doctor.cs",
-              "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA5wAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:04:45.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HospitalAPIController.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\HospitalAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HospitalAPIController.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\HospitalAPIController.cs*",
-              "RelativeToolTip": "Controllers\\HospitalAPIController.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:32.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:47:09.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HospitalManagementContext.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalManagementContext.cs",
-              "RelativeDocumentMoniker": "Models\\HospitalManagementContext.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalManagementContext.cs",
-              "RelativeToolTip": "Models\\HospitalManagementContext.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAkwCgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:44:55.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorAPIController.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\DoctorAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DoctorAPIController.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\DoctorAPIController.cs",
-              "RelativeToolTip": "Controllers\\DoctorAPIController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwC8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:09:22.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HospitalMaster.cs",
-              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalMaster.cs",
-              "RelativeDocumentMoniker": "Models\\HospitalMaster.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Models\\HospitalMaster.cs",
-              "RelativeToolTip": "Models\\HospitalMaster.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "PatientAPIController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\PatientAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientAPIController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Controllers\\PatientAPIController.cs",
+              "RelativeToolTip": "Controllers\\PatientAPIController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwE4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:34.099Z",
+              "WhenOpened": "2025-06-16T16:39:34.37Z",
               "EditorCaption": ""
             }
           ]
