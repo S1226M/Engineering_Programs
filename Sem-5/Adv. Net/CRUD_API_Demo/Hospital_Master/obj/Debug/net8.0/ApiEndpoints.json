@@ -79,6 +79,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CRUDAPIDemo.Controllers.DoctorAPIController",
+    "Method": "GetFailure",
+    "RelativePath": "api/DoctorAPI/failure",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CRUDAPIDemo.Controllers.HospitalAPIController",
     "Method": "GetAllHospital",
     "RelativePath": "api/HospitalAPI",

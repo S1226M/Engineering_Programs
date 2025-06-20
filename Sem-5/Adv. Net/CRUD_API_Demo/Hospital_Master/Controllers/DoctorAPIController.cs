@@ -13,6 +13,12 @@ namespace CRUDAPIDemo.Controllers
             context = _context;
         }
 
+        [HttpGet("failure")]
+        public IActionResult GetFailure()
+        {
+            throw new Exception("This is a failure message from the middleware.");
+        }
+
         #region GetAllDoctors
         [HttpGet]
         public IActionResult GetAllDoctor()
@@ -73,7 +79,7 @@ namespace CRUDAPIDemo.Controllers
         }
             #endregion
 
-            #region DeleteDoctorById
+        #region DeleteDoctorById
             [HttpDelete("{id}")]
             public IActionResult DeleteDoctorById(int id)
             {

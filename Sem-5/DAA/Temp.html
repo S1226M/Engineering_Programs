@@ -1,0 +1,32 @@
+<!--  Write a JavaScript that uses a loop that searches a word in sentence held in an array, 
+returning the index of the word. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = (prompt("Enter elment of arr:"));// Number of elements in the array
+        
+        arr = new Array(n);
+        for(let i =0;i<n;i++){
+            arr[i] = prompt("Enter elment of :",i)//string
+        }
+        
+        let x = prompt("Enter a word wich serch:");
+        let found = 0;
+        for(let i =0;i<n;i++){
+            if(arr[i] === x){
+                document.writeln("Word found at index :",i);
+                found++;
+            }
+        }
+        if(found == 0){
+            document.writeln("Word not found in arry.");
+        }
+    </script>
+</body>
+</html>

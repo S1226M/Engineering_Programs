@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/DoctorAPI/failure": {
+      "get": {
+        "tags": [
+          "DoctorAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/DoctorAPI": {
       "get": {
         "tags": [

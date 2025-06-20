@@ -1,3 +1,4 @@
+using CRUDAPIDemo;
 using CRUDAPIDemo.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +21,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<Middleware>();
+app.UseMiddleware<ExceptionhandleNew>();
 
 app.UseHttpsRedirection();
 
@@ -28,3 +31,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
