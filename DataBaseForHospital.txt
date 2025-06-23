@@ -73,7 +73,6 @@ Medicine
 	MedicinePrice  
 	CategoryID		=>Foreign (MedicineCategory)  
 	UnitID			=>Foreign (MedicineUnit)  
-	ManufacturerID		=>Foreign (MedicineManufacturer)
 
 ------------
 
@@ -86,12 +85,6 @@ MedicineCategory
 MedicineUnit  
 	UnitID			=>Primary, AutoInc  
 	UnitName		-----> (e.g., ml, tablet, capsule)
-
-------------
-
-MedicineManufacturer  
-	ManufacturerID		=>Primary, AutoInc  
-	ManufacturerName
 
 ------------
 
