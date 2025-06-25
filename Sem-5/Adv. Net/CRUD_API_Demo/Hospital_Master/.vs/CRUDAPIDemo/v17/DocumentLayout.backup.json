@@ -70,8 +70,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:47:09.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:47:09.789Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Controllers\\DoctorAPIController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:09:22.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:09:22.345Z"
             },
             {
               "$type": "Document",
@@ -94,7 +92,7 @@
               "RelativeDocumentMoniker": "Middleware.cs",
               "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\CRUD_API_Demo\\Hospital_Master\\Middleware.cs",
               "RelativeToolTip": "Middleware.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T02:51:52.737Z",
               "EditorCaption": ""
@@ -109,8 +107,7 @@
               "RelativeToolTip": "Models\\HospitalMaster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:34.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:48:34.099Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "ExceptionhandleNew.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T04:01:03.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T04:01:03.05Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-20T03:46:35.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:46:35.52Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "Models\\HospitalManagementContext.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:44:55.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:44:55.059Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "Controllers\\HospitalAPIController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:32.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:48:32.247Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "Models\\Doctor.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAzwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:04:45.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:04:45.36Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "CRUDAPIDemo.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-20T03:51:44.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:51:44.022Z"
             },
             {
               "$type": "Document",
@@ -200,8 +191,7 @@
               "RelativeToolTip": "Models\\Patient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:05:25.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:05:25.097Z"
             },
             {
               "$type": "Document",
@@ -213,8 +203,7 @@
               "RelativeToolTip": "Controllers\\PatientAPIController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAQwE4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:39:34.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:39:34.37Z"
             }
           ]
         }
