@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<time.h>
 void InsertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
