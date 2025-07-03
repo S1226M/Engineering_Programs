@@ -1,0 +1,35 @@
+command: 
+	enable
+	configure terminal
+the below commands will create a vlan with number 10 and its name will be B.Tech
+command:
+ 	vlan 10 
+	name B.Tech
+	exit
+
+the below command will create a vlan with number 20 and its name will be MCA
+command:
+	vlan 20
+	name MCA
+	exit
+
+command:
+	interface range fa0/1
+	switchport mode access
+	switchport mode vlan 10
+	exit
+
+command:
+ 	interface range f0a/2
+	switchport mode access
+	switchport mode vlan 20
+	exit
+
+configure trunk port between switches for both switches will do the below
+configuration
+it will set the device connection on the interface fa0/3 to trunk
+command:
+	interface range fa0/3
+	switchport mode trunk
+	exit
+	
