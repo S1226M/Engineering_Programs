@@ -52,7 +52,31 @@ public class VogelsApproximationProblem {
         return new Object[]{penaltyCol, penaltyRow};
     }
 
-    public void FinalArr(int cost[][], int Supply[], int Demand[], int result[]) {
+    public static int TotalSupply(int Supply[]) {
+        int total = 0;
+        for (int s : Supply) {
+            total += s;
+        }
+        return total;
+    }
+
+    public static int TotalDemand(int Demand[]) {
+        int total = 0;
+        for (int d : Demand) {
+            total += d;
+        }
+        return total;
+    }
+
+    public void FinalArr(int cost[][], int Supply[], int Demand[], int result[], int TotalDemand, int TotalSupply) {
+        while (TotalDemand != TotalSupply) {
+            int[] penaltyCol = FindColPenalty(cost);
+            int[] penaltyRow = FindRowPenalty(cost);
+
+            int maxColPenalty = Arrays.stream(penaltyCol).max().orElse(0);
+            int maxRowPenalty = Arrays.stream(penaltyRow).max().orElse(0);
+            int maxPenalty = Math.max(maxColPenalty, maxRowPenalty);
+        }
 
     }
 
@@ -79,5 +103,7 @@ public class VogelsApproximationProblem {
         result[0] = penaltyRow;
         result[1] = penaltyCol;
 
+        int TotalSupply = TotalSupply(Supply);
+        int TotalDemand = TotalDemand(Demand);
     }
 }
