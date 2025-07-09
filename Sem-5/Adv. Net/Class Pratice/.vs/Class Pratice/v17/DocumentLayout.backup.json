@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5BF5B9B1-ADBD-488A-BCAD-A1DF9229CD8E}|Class Pratice.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5BF5B9B1-ADBD-488A-BCAD-A1DF9229CD8E}|Class Pratice.csproj|d:\\engineering_programs\\sem-5\\adv. net\\class pratice\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BF5B9B1-ADBD-488A-BCAD-A1DF9229CD8E}|Class Pratice.csproj|solutionrelative:department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5BF5B9B1-ADBD-488A-BCAD-A1DF9229CD8E}|Class Pratice.csproj|d:\\engineering_programs\\sem-5\\adv. net\\class pratice\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BF5B9B1-ADBD-488A-BCAD-A1DF9229CD8E}|Class Pratice.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,17 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Department.cs",
+              "RelativeDocumentMoniker": "Department.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Department.cs",
+              "RelativeToolTip": "Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:23:32.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Student.cs",
               "RelativeDocumentMoniker": "Student.cs",
               "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Student.cs",
               "RelativeToolTip": "Student.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA8AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T04:29:07.076Z",
               "EditorCaption": ""
@@ -39,9 +56,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAowHUAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\Class Pratice\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAAAGIBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T04:28:33.714Z",
               "EditorCaption": ""
