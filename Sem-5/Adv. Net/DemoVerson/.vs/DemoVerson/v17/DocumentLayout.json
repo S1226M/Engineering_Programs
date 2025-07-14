@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demoverson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demoverson\\swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|solutionrelative:swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demoverson\\controllers\\employeev2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|solutionrelative:controllers\\employeev2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demoverson\\controllers\\employeev1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|solutionrelative:controllers\\employeev1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demoverson\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1685745A-1885-4C72-BBFB-602912E07EE8}|DemoVerson.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SwaggerDefaultValues.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\SwaggerDefaultValues.cs",
+              "RelativeDocumentMoniker": "SwaggerDefaultValues.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\SwaggerDefaultValues.cs",
+              "RelativeToolTip": "SwaggerDefaultValues.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T08:04:47.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T08:00:39.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:51:18.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeV2Controller.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\EmployeeV2Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeV2Controller.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\EmployeeV2Controller.cs",
+              "RelativeToolTip": "Controllers\\EmployeeV2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:45:13.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeV1Controller.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\EmployeeV1Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeV1Controller.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoVerson\\Controllers\\EmployeeV1Controller.cs",
+              "RelativeToolTip": "Controllers\\EmployeeV1Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:44:24.543Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
