@@ -1,20 +1,37 @@
 #include <stdio.h>
 #include <time.h>
 
-int binarySearch(int arr[], int l, int r, int x) {
-    if (r >= l) {
-        int mid = l + (r - l) / 2;
+void heapify(int arr[], int n, int i) {
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
 
-        if (arr[mid] == x)
-            return mid;
+    if (left < n && arr[left] > arr[largest])
+        largest = left;
 
-        if (arr[mid] > x)
-            return binarySearch(arr, l, mid - 1, x);
+    if (right < n && arr[right] > arr[largest])
+        largest = right;
 
-        return binarySearch(arr, mid + 1, r, x);
+    if (largest != i) {
+        int temp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = temp;
+
+        heapify(arr, n, largest);
     }
+}
 
-    return -1;
+void heapSort(int arr[], int n) {
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(arr, n, i);
+
+    for (int i = n - 1; i >= 0; i--) {
+        int temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+
+        heapify(arr, i, 0);
+    }
 }
 
 void printArray(int arr[], int len){
@@ -24,11 +41,11 @@ void printArray(int arr[], int len){
     printf("\n");
 }
 
-void main() {
+void main(){
     FILE *fp;
     clock_t start, end;
+    int n, userChoice;
     int arr[100000];
-    int n, userChoice, x;
 
     printf("1.best case\n2.worst case\n3.average case\n");
     scanf("%d", &userChoice);
@@ -57,21 +74,10 @@ void main() {
 
     fclose(fp);
 
-    printf("Enter element to search: ");
-    scanf("%d", &x);
-
     start = clock();
-    int result = binarySearch(arr, 0, n - 1, x);
+    heapSort(arr, n);
     end = clock();
 
-    printArray(arr, n);
-
-    if (result != -1) {
-        printf("Element found at index %d\n", result);
-    } else {
-        printf("Element not found in the array\n");
-    }
-
     double cpuTime = ((double)(end - start)) / CLOCKS_PER_SEC;
-    printf("Time taken by Binary Search: %f seconds\n", cpuTime);
+    printf("Time taken by Heap Sort: %f seconds\n", cpuTime);
 }
