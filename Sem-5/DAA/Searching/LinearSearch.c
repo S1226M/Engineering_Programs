@@ -1,43 +1,69 @@
 #include <stdio.h>
 #include <time.h>
-#define size 100000
-int readArrayFromFile(const char *filename, int arr[], int n)
-{
-    FILE *f = fopen(filename, "r");
-    if (!f)
-    {
-        printf("Cant Open file %s", filename);
-        return 0;
+
+int linearSearch(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x)
+            return i;
     }
-    for (int i = 0; i < n; i++)
-    {
-        fscanf(f, "%d", &arr[i]);
-    }
-    fclose(f);
-    return 1;
+    return -1;
 }
 
-void main()
-{
-    int arr[size];
-    clock_t start, end;
-    int target;
-    printf("Enter the element to be searched: ");
-    scanf("%d", &target);
-    double time_taken;
-    if (readArrayFromFile("D:/DAA/DAA/Arrays/worst_case_100000.txt", arr, size))
-    {
-        start = clock();
-        for (int i = 0; i < size; i++)
-        {
-            if (arr[i] == target)
-            {
-                printf("Element found at index %d\n", i);
-                break;
-            }
-        }
-        end = clock();
-        time_taken = ((double)(end - start) / CLOCKS_PER_SEC) * 1000;
-        printf("Best time case is %lf", time_taken);
+void printArray(int arr[], int len){
+    for(int i = 0; i < len; i++){
+        printf("%d\t", arr[i]);
     }
+    printf("\n");
+}
+
+void main() {
+    FILE *fp;
+    clock_t start, end;
+    int arr[100000];
+    int n, userChoice, x;
+
+    printf("1.best case\n2.worst case\n3.average case\n");
+    scanf("%d", &userChoice);
+
+    switch (userChoice) {
+        case 1:
+            fp = fopen("best.txt", "r");
+            break;
+        case 2:
+            fp = fopen("worst.txt", "r");
+            break;
+        case 3:
+            fp = fopen("average.txt", "r");
+            break;
+        default:
+            printf("Enter valid number!!!\n");
+            return;
+    }
+    
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        fscanf(fp, "%d", &arr[i]);
+    }
+
+    fclose(fp);
+
+    printf("Enter element to search: ");
+    scanf("%d", &x);
+
+    start = clock();
+    int result = linearSearch(arr, n, x);
+    end = clock();
+
+    printArray(arr, n);
+
+    if (result != -1) {
+        printf("Element found at index %d\n", result);
+    } else {
+        printf("Element not found in the array\n");
+    }
+
+    double cpuTime = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken by Linear Search: %f seconds\n", cpuTime);
 }
