@@ -8,17 +8,18 @@ app.use(express.json());
 
 // SQL Server Configuration
 const config = {
-  server: 'LAPTOP-H4KQ788T\\SQLEXPRESS', // ← Your server from SSMS
-  database: 'CSE_4A_ASP_NET',            // ← Your database name
+  server: 'LAPTOP-H4KQ788T',       // Only machine name
+  database: 'CSE_4A_ASP_NET',
   options: {
-    trustServerCertificate: true
+    trustServerCertificate: true,
+    instanceName: 'SQLEXPRESS'     // 👈 add instanceName here
   },
   authentication: {
     type: 'ntlm',
     options: {
-      domain: 'LAPTOP-H4KQ788T',
-      userName: 'smitm',
-      password: '' // Leave blank for Windows Auth if your backend user is already logged in
+      domain: 'WORKGROUP',         // as per your `systeminfo`
+      userName: 'smitm',           // as per `whoami` (`laptop-h4kq788t\smitm`)
+      password: 'smit123'
     }
   }
 };
