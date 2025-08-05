@@ -12,14 +12,12 @@ public class MaxMinAverageWithoutArray {
             return;
         }
 
-        // Initialize variables
         System.out.print("Enter number 1: ");
         int num = sc.nextInt();
         int max = num;
         int min = num;
         int sum = num;
 
-        // Loop starts from 2 since 1st value already taken
         for (int i = 2; i <= n; i++) {
             System.out.print("Enter number " + i + ": ");
             num = sc.nextInt();
