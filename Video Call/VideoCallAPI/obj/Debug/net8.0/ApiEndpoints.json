@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "HospitalHubVideoCall_API.Controllers.VideoSDKController",
+    "Method": "CreateMeeting",
+    "RelativePath": "api/VideoSDK/create-meeting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HospitalHubVideoCall_API.Models.CreateMeetingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalHubVideoCall_API.Controllers.VideoSDKController",
+    "Method": "GetToken",
+    "RelativePath": "api/VideoSDK/token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalHubVideoCall_API.Controllers.VideoSDKController",
+    "Method": "ValidateMeeting",
+    "RelativePath": "api/VideoSDK/validate-meeting/{meetingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meetingId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
