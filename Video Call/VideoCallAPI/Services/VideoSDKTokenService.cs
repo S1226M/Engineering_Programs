@@ -1,17 +1,31 @@
 ﻿using System;
-using Jose;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
-public static class VideoSDKTokenService
+namespace YourNamespace.Services
 {
-    public static string GenerateToken(string apiKey, string secret)
+    public class VideoSDKTokenService
     {
-        var payload = new
-        {
-            apikey = apiKey,
-            permissions = new[] { "allow_join", "allow_mod" },
-            exp = DateTimeOffset.UtcNow.AddHours(2).ToUnixTimeSeconds()
-        };
+        private readonly string _apiKey = "03dc1b4a-303c-4ee0-bd9d-5530ca30c4a4";
+        private readonly string _secretKey = "65c41582a85f0543a0d174e051ae4feb93240edd2af98bd4c627985cb5a68228";
 
-        return JWT.Encode(payload, System.Text.Encoding.UTF8.GetBytes(secret), JwsAlgorithm.HS256);
+        public string GenerateToken()
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Issuer = _apiKey,
+                Expires = DateTime.UtcNow.AddHours(24),
+                SigningCredentials = credentials
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
     }
 }

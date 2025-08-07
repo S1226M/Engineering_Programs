@@ -5,63 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/VideoSDK/token": {
+    "/api/VideoSDK": {
       "get": {
         "tags": [
           "VideoSDK"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/VideoSDK/create-meeting": {
-      "post": {
-        "tags": [
-          "VideoSDK"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateMeetingRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateMeetingRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateMeetingRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/VideoSDK/validate-meeting/{meetingId}": {
-      "get": {
-        "tags": [
-          "VideoSDK"
-        ],
-        "parameters": [
-          {
-            "name": "meetingId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -71,26 +18,5 @@
       }
     }
   },
-  "components": {
-    "schemas": {
-      "CreateMeetingRequest": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "hostName": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
-  }
+  "components": { }
 }
