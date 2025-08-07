@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Video Call\\VideoCallAPI\\videoCall.csproj": {}
+    "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\videoCall.csproj": {}
   },
   "projects": {
-    "D:\\Video Call\\VideoCallAPI\\videoCall.csproj": {
+    "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\videoCall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Video Call\\VideoCallAPI\\videoCall.csproj",
+        "projectUniqueName": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\videoCall.csproj",
         "projectName": "videoCall",
-        "projectPath": "D:\\Video Call\\VideoCallAPI\\videoCall.csproj",
+        "projectPath": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\videoCall.csproj",
         "packagesPath": "C:\\Users\\smitm\\.nuget\\packages\\",
-        "outputPath": "D:\\Video Call\\VideoCallAPI\\obj\\",
+        "outputPath": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.13.0, )"
             },
             "jose-jwt": {
               "target": "Package",

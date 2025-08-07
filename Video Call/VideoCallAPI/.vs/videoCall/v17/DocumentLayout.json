@@ -1,38 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Video Call\\VideoCallAPI\\",
+  "WorkspaceRootPath": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\controllers\\videosdkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\controllers\\videosdkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:controllers\\videosdkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\video call\\videocallapi\\services\\videosdktokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\services\\videosdktokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:services\\videosdktokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\models\\createmeetingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:models\\createmeetingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|d:\\engineering_programs\\video call\\videocallapi\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2EB1DE76-7E73-40F8-9938-F942CD5A5467}|videoCall.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +50,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "eslint.config.js",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\eslint.config.js",
+              "RelativeDocumentMoniker": "eslint.config.js",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\eslint.config.js",
+              "RelativeToolTip": "eslint.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-07T12:19:19.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateMeetingRequest.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Models\\CreateMeetingRequest.cs",
+              "RelativeDocumentMoniker": "Models\\CreateMeetingRequest.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Models\\CreateMeetingRequest.cs",
+              "RelativeToolTip": "Models\\CreateMeetingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T12:17:49.237Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-06T17:09:12.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-06T17:07:43.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.md",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-08-06T17:07:35.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "package.json",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-06T17:07:19.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\appsettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\appsettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-06T16:07:24.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "VideoSDKTokenService.cs",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\Services\\VideoSDKTokenService.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Services\\VideoSDKTokenService.cs",
               "RelativeDocumentMoniker": "Services\\VideoSDKTokenService.cs",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\Services\\VideoSDKTokenService.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Services\\VideoSDKTokenService.cs",
               "RelativeToolTip": "Services\\VideoSDKTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAsAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T16:06:54.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "VideoSDKController.cs",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\Controllers\\VideoSDKController.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Controllers\\VideoSDKController.cs",
               "RelativeDocumentMoniker": "Controllers\\VideoSDKController.cs",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\Controllers\\VideoSDKController.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Controllers\\VideoSDKController.cs",
               "RelativeToolTip": "Controllers\\VideoSDKController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAcwCwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T16:04:56.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Video Call\\VideoCallAPI\\Program.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Video Call\\VideoCallAPI\\Program.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T15:41:23.209Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "package.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T17:07:19.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-06T17:07:35.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "D:\\Engineering_Programs\\Video Call\\VideoCallAPI\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-06T17:07:43.882Z"
             }
           ]
         }
