@@ -8,6 +8,7 @@ public class BinarySearch {
         int arr[] = new int[n];
         for(int i=0 ; i<n ; i++){
             arr[i] = sc.nextInt();
+            
         }
 
         System.out.println("Which element would you like to find");
