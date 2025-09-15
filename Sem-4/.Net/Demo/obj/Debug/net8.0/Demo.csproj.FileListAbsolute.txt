@@ -28,12 +28,6 @@ D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\scopedcss\projectbundle
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.build.json
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.development.json
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets\msbuild.Demo.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets\msbuild.Demo.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets\msbuild.build.Demo.props
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Demo.props
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Demo.props
-D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\Demo.csproj.Up2Date
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\Demo.dll
@@ -41,3 +35,8 @@ D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\refint\Demo.dll
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\Demo.pdb
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\Demo.genruntimeconfig.cache
 D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\ref\Demo.dll
+D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Engineering_Programs\Sem-4\.Net\Demo\obj\Debug\net8.0\staticwebassets.build.json.cache
