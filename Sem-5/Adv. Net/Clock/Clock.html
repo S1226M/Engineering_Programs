@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Clock</title>
+  <style>
+    /* --- Simple, clean styling --- */
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(1200px 1200px at 80% 20%, #1f2937 0%, var(--bg) 60%);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    .clock-card {
+      width: min(92vw, 680px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 28px 28px 22px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(255,255,255,0.03);
+    }
+    .row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .time {
+      font-variant-numeric: tabular-nums; /* perfect digits alignment */
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: clamp(40px, 9vw, 84px);
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: .35em;
+    }
+    .ampm {
+      font-size: clamp(12px, 2.2vw, 16px);
+      color: var(--accent);
+      border: 1px solid rgba(34,211,238,0.35);
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 1px;
+    }
+    .date {
+      color: var(--muted);
+      font-size: clamp(14px, 2.4vw, 18px);
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .btn {
+      appearance: none;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 10px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform .06s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn[aria-pressed="true"], .btn:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.24);
+    }
+    .tz {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <main class="clock-card" role="group" aria-label="Digital clock">
+    <div class="row">
+      <div>
+        <div class="time" aria-live="polite" aria-atomic="true">
+          <span id="hours">00</span><span>:</span><span id="minutes">00</span><span>:</span><span id="seconds">00</span>
+          <span id="ampm" class="ampm" hidden>AM</span>
+        </div>
+        <div id="date" class="date">—</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="toggleFormat" class="btn" aria-pressed="false" title="Toggle 12/24 hour format">24‑hour</button>
+      <button id="toggleSeconds" class="btn" aria-pressed="true" title="Show/Hide seconds">Seconds: On</button>
+      <span id="tz" class="tz"></span>
+    </div>
+  </main>
+
+  <script>
+    // === Digital Clock ===
+    // Options state
+    const state = {
+      use24h: true,
+      showSeconds: true,
+    };
+
+    // DOM references
+    const elHours = document.getElementById('hours');
+    const elMinutes = document.getElementById('minutes');
+    const elSeconds = document.getElementById('seconds');
+    const elAmPm = document.getElementById('ampm');
+    const elDate = document.getElementById('date');
+    const elTz = document.getElementById('tz');
+
+    const elToggleFormat = document.getElementById('toggleFormat');
+    const elToggleSeconds = document.getElementById('toggleSeconds');
+
+    // Helper: pad number with leading zero
+    const pad2 = n => String(n).padStart(2, '0');
+
+    // Render current date/time based on state
+    function renderNow() {
+      const now = new Date();
+
+      let hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      // 12h conversion
+      let ampmLabel = hours >= 12 ? 'PM' : 'AM';
+      if (!state.use24h) {
+        hours = hours % 12 || 12; // 0 -> 12
+      }
+
+      elHours.textContent = pad2(hours);
+      elMinutes.textContent = pad2(minutes);
+
+      if (state.showSeconds) {
+        elSeconds.parentElement.style.display = '';
+        elSeconds.textContent = pad2(seconds);
+      } else {
+        elSeconds.parentElement.style.display = 'none';
+      }
+
+      // AM/PM badge visibility
+      if (state.use24h) {
+        elAmPm.hidden = true;
+      } else {
+        elAmPm.hidden = false;
+        elAmPm.textContent = ampmLabel;
+      }
+
+      // Date string (e.g., Wed, 27 Aug 2025)
+      elDate.textContent = now.toLocaleDateString(undefined, {
+        weekday: 'short', day: '2-digit', month: 'short', year: 'numeric'
+      });
+
+      // Time zone friendly name
+      try {
+        const tzName = Intl.DateTimeFormat(undefined, { timeZoneName: 'short' })
+          .formatToParts(now)
+          .find(p => p.type === 'timeZoneName')?.value || '';
+        elTz.textContent = tzName;
+      } catch {
+        elTz.textContent = '';
+      }
+    }
+
+    // Tick every second
+    renderNow();
+    setInterval(renderNow, 1000);
+
+    // UI interactions
+    elToggleFormat.addEventListener('click', () => {
+      state.use24h = !state.use24h;
+      elToggleFormat.setAttribute('aria-pressed', String(!JSON.parse(elToggleFormat.getAttribute('aria-pressed'))));
+      elToggleFormat.textContent = state.use24h ? '24‑hour' : '12‑hour';
+      renderNow();
+    });
+
+    elToggleSeconds.addEventListener('click', () => {
+      state.showSeconds = !state.showSeconds;
+      elToggleSeconds.setAttribute('aria-pressed', String(!JSON.parse(elToggleSeconds.getAttribute('aria-pressed'))));
+      elToggleSeconds.textContent = `Seconds: ${state.showSeconds ? 'On' : 'Off'}`;
+      renderNow();
+    });
+  </script>
+</body>
+</html>

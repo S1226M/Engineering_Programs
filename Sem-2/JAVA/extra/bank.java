@@ -22,7 +22,7 @@ class bankdetails{
     void bankvariable(){
     }
 
-}`
+}
 public class bank { 
     public static void main(String[] args) {
         bankdetails b1=new bankdetails();

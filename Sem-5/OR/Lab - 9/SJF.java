@@ -29,7 +29,6 @@ public class SJF {
             WT[i] = TAT[i] - BT[i];
         }
 
-
         System.out.println("BT\t"+"CT\t"+"TAT\t"+"WT\t");
         for(int i=0 ; i<2 ; i++){
             System.out.println(BT[i]+"\t"+CT[i]+"\t"+TAT[i]+"\t"+WT[i]);
