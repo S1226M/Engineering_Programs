@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeypress="event(event)" onkeyup="bg()" id="keyboard"> 
+    <script type="text/javascript">
+        function event(e){
+            document.body.style.backgroundColor="white"
+            console.log(e.key)
+            if(e.key=='a'||e.key=='e'||e.key=='i'||e.key=='o'||e.key=='u'){
+                console.log("vowel pressed")
+            }
+        }
+        function bg(){
+            document.body.style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html>

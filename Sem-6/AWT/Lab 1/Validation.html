@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="submitBtn(event)">
+        User name:<input type="text" id="userName"><br><br>
+        Password:<input type="password" id="pass"><br><br>
+        Repeat Password:<input type="password" id="rpass"><br><br>
+        Date Of Birth:<input type="date" id="dob"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script type="text/javascript">
+
+        function submitBtn(event) {
+            event.preventDefault();
+
+            let name = document.getElementById('userName').value;
+
+            let pattern1 = /^[a-zA-Z0-9_]{8,}$/;
+            if (!pattern1.test(name)) {
+                alert("Username must be minimum 8 characters");
+                return;
+            }
+
+            let password = document.getElementById('pass').value;
+            if (password.length < 8 || password.length > 12) {
+                alert('Password length must be between 8 - 12 characters');
+                return;
+            }
+            let pattern2 = '^(?=.*[0-9])(?=.*[!@#$%^&*]).{8,12}$';
+            let r2 = new RegExp(pattern2);
+            if (!r2.test(password)) {
+                alert('Password must contain at least 1 digit & 1 special character');
+                return;
+            }
+
+            let rpassword = document.getElementById('rpass').value;
+            if (password !== rpassword) {
+                alert("Please enter same password");
+                return;
+            }
+
+            let age = calcage();
+            console.log("Age is: " + age);
+            alert("Form Submitted Successfully!");
+        }
+
+        function calcage() {
+            let DOB = document.getElementById('dob').value;
+            DOB = new Date(DOB);
+            let today = new Date();
+            let age = today.getFullYear() - DOB.getFullYear();
+            let monthDiff = today.getMonth() - DOB.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < DOB.getDate())) {
+                age--;
+            }
+            return age;
+        }
+    </script>
+</body>
+</html>

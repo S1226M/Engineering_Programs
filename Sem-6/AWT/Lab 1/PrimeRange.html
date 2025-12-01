@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let n1 = Number(prompt("Enter Number 1"));
+        let n2 = Number(prompt("Enter Number 2"));
+        let count = 0;
+        for(let i = n1; i <= n2; i++){
+            count = 0;
+            for(let j=2 ; j<i ; j++){
+                if(i%j == 0){
+                    count++;
+                }
+            }
+            if(count == 0){
+                document.write(i+"<br>");
+            }
+        } 
+    </script>
+</body>
+</html>
