@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Example</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter name">
+    <button onclick="Add()">Add</button>
+    <button onclick="Update()">Update</button>
+    <button onclick="DeleteByID()">Delete</button>
+    <br><br>
+    <input type="number" id="id" placeholder="Enter ID to Update/Delete">
+    <h3>Output:</h3>
+    <div id="result"></div>
+
+<script>
+
+    let arr = [];
+    let currentID = 1;
+    
+    function render() {
+        let html = "<table border='1'><tr><th>ID</th><th>Name</th></tr>";
+        arr.forEach(item => {
+            html += `<tr><td>${item.id}</td><td>${item.name}</td></tr>`;
+        });
+        html += "</table>";
+        document.getElementById("result").innerHTML = html;
+    }
+
+    function Add() {
+        let name = document.getElementById("name").value;
+        if(name.trim() === ""){
+            alert("Please enter a name");
+            return;
+        }
+        arr.push({ id: currentID++, name: name });
+        render();
+    }
+
+    function Update() {
+        let id = parseInt(document.getElementById("id").value);
+        let newName = document.getElementById("name").value;
+        let item = arr.find(x => x.id === id);
+        if(!item){
+            alert("ID not found for update");
+            return;
+        }
+        item.name = newName;
+        render();
+    }
+
+    function DeleteByID() {
+        let id = parseInt(document.getElementById("id").value);
+        arr = arr.filter(item => item.id !== id);
+        render();
+    }
+
+</script>
+
+</body>
+</html>

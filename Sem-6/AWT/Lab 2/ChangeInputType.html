@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button type="submit" onclick="ChangeType()">Submit</button>
+    <script type="text/javascript">
+        let a = document.getElementsByTagName("input")[0]
+        function ChangeType(){
+            if(a.type == 'text'){
+                a.type='date'
+            }
+            else if(a.type == 'date'){
+                a.type='text'
+            }
+        }
+    </script>
+</body>
+</html>
