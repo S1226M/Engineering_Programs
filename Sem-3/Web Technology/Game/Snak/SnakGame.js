@@ -22,7 +22,7 @@ var velocityY = 0;
 // Snake body
 var snakeBody = [];
 
-window.onload = function() {
+window.onload = function () {
     board = document.getElementById("board");
     board.height = rows * blockSize;
     board.width = cols * blockSize;
