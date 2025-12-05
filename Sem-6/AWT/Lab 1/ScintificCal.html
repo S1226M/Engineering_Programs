@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function power(base, exponent) {
+            return Math.pow(base, exponent);
+        }
+
+        function squareRoot(number) {
+            return Math.sqrt(number);
+        }
+
+        function log(number) {
+            return Math.log(number);
+        }
+
+        function scientificCalculator() {
+            let choice = prompt("1. Power\n2. Square Root\n3. log");
+
+            let result;
+            switch (choice) {
+                case '1':
+                    let base = parseFloat(prompt("Enter base number:"));
+                    let exponent = parseFloat(prompt("Enter exponent:"));
+                    result = power(base, exponent);
+                    break;
+                case '2':
+                    let numberForSqrt = parseFloat(prompt("Enter number for square root:"));
+                    result = squareRoot(numberForSqrt);
+                    break;
+                case '3':
+                    let numberForLog = parseFloat(prompt("Enter number for log:"));
+                    result = log(numberForLog);
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+            alert(`Result: ${result}`);
+        }
+        scientificCalculator();
+
+    </script>
+
+</body>
+</html>
