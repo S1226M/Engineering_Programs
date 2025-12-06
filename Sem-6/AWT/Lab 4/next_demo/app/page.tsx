@@ -8,9 +8,7 @@ export default function Home() {
         <Link href="/home" className="text-decoration-none text-primary fw-semibold">
           Home
         </Link>
-
         <span className="text-secondary">|</span>
-
         <Link href="/about" className="text-decoration-none text-primary fw-semibold">
           About
         </Link>
