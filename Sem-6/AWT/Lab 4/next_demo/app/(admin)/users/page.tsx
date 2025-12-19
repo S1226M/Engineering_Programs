@@ -17,10 +17,10 @@ function Users() {
         <div className="card-header d-flex justify-content-between align-items-center">
           <h5 className="mb-0">All Users</h5>
           <div className="input-group" style={{ width: '300px' }}>
-            <input 
-              type="text" 
-              className="form-control" 
-              placeholder="Search users..." 
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search users..."
             />
             <button className="btn btn-outline-secondary" type="button">
               <i className="bi bi-search"></i> Search
@@ -47,18 +47,16 @@ function Users() {
                     <td>{user.name}</td>
                     <td>{user.email}</td>
                     <td>
-                      <span className={`badge ${
-                        user.role === 'Admin' ? 'bg-danger' : 
-                        user.role === 'Moderator' ? 'bg-warning' : 
-                        'bg-secondary'
-                      }`}>
+                      <span className={`badge ${user.role === 'Admin' ? 'bg-danger' :
+                        user.role === 'Moderator' ? 'bg-warning' :
+                          'bg-secondary'
+                        }`}>
                         {user.role}
                       </span>
                     </td>
                     <td>
-                      <span className={`badge ${
-                        user.status === 'Active' ? 'bg-success' : 'bg-secondary'
-                      }`}>
+                      <span className={`badge ${user.status === 'Active' ? 'bg-success' : 'bg-secondary'
+                        }`}>
                         {user.status}
                       </span>
                     </td>
@@ -79,7 +77,7 @@ function Users() {
               </tbody>
             </table>
           </div>
-          
+
           <nav aria-label="Page navigation">
             <ul className="pagination justify-content-center">
               <li className="page-item disabled">
