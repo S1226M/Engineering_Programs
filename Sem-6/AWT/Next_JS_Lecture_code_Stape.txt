@@ -1,0 +1,63 @@
+========================== Next JS Edit code ===================
+
+step1 :- create a file named page.tsx in /users/edit/[id] folder
+
+step2 :- design a edit page.tsx
+
+step3 :- get parameter from the dynamic route
+async function EditUser({params}:{params: Promis<{id: number}>})
+
+step4 :- extract the id from the params
+const {id} = await params;
+
+step5 :- fatch the old data
+const data = await prisma.users.findFirst({where :{id,}})
+
+step6 :- set old value in form using defaultValue property
+
+step7 :- add a hidden id fild in the ford
+<input
+ 	type="hidden"
+ 	name="id"
+ 	defaultValue={data?.id as any as string}
+/>
+step8 :- create a server action named editUser.tsx in /action folder
+
+
+=============================== Next JS Validation Code ======================
+//explain use of useActionState hook(unit 1 Question)
+//Demonstrate validation in NextJS (unit 5 question)
+
+step 1 :- render add from in client side using "use client"(/app/users/add/page.tsx)
+step 2 :- define a FormStatus and export it in saveUser.ts(server action) file
+export type FormStatus ={
+   hasError: Boolean;
+   message: String;
+}
+step 3 :- take formAction and formData as parameter in server action and return FormStatus
+function saveUSer(
+   formStatus: FormStatus;
+   formData: FormData;
+); Promise<FormStatus>
+step 4 :- return formStatus form try and catch in server action
+try{
+  await prisma.users.create({data});
+  return {hasError: false , message: "User Added"}
+}catch(error: any){
+  return {hasError: false , message: "Some Error Occured while adding user"}
+}
+step 5 :- define initial state in page.tsx
+const initialStatus: FormStatus = {
+  hasError: false,
+  message:""
+}
+step 6 :- const [state, saveUserFn, isPending] = UseActionState(
+  saveUSer,
+  initialStatus
+);
+step 7:- call saveUSerFn from form action
+<form action={saveUSerFn}>
+step 8:- you will have access to server state with "state" variable
+
+MCQ ---->
+what is the Diffrence between parse and safe parse
