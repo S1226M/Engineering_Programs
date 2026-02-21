@@ -10,7 +10,7 @@ builder.Services.AddSwaggerGen();           // Fixes 'AddSwaggerGen' error
 
 // DB Context Registration
 builder.Services.AddDbContext<DemoBackendApiContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 var app = builder.Build();
 

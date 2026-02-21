@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demobackendexam\\demoapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demobackendexam\\demoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|d:\\engineering_programs\\sem-5\\adv. net\\demobackendexam\\demoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1E16C8A-70A0-F414-2FEA-4E08FE201087}|DemoAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T18:42:02.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-21T18:31:54.809Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,20 +62,20 @@
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T18:19:40.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Engineering_Programs\\Sem-5\\Adv. Net\\DemoBackendExam\\DemoAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T18:16:10.653Z",
               "EditorCaption": ""
