@@ -161,3 +161,4 @@ D:\Engineering_Programs\Sem-5\Adv. Net\DemoBackendExam\DemoAPI\obj\Debug\net10.0
 D:\Engineering_Programs\Sem-5\Adv. Net\DemoBackendExam\DemoAPI\obj\Debug\net10.0\DemoAPI.genruntimeconfig.cache
 D:\Engineering_Programs\Sem-5\Adv. Net\DemoBackendExam\DemoAPI\obj\Debug\net10.0\ref\DemoAPI.dll
 D:\Engineering_Programs\Sem-5\Adv. Net\DemoBackendExam\DemoAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\Engineering_Programs\Sem-5\Adv. Net\DemoBackendExam\DemoAPI\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
