@@ -37,10 +37,44 @@ select CustomerID , sum(freight) as total_freight from sales.salesorderheader gr
 -- customer. Return customerid, average and sum of the subtotal. Grouped the result on customerid and salespersonid. 
 -- Sort the result on customerid column in descending order.
 SELECT 
-	customerid, 
-	salespersonid, 
+	customerid,
+	salespersonid,
 	AVG(subtotal) AS avg_subtotal,
-	SUM(subtotal) AS sum_subtotal 
+	SUM(subtotal) AS sum_subtotal
 FROM sales.salesorderheader 
 GROUP BY customerid, salespersonid
 ORDER BY customerid DESC;
+
+-- 9. From the following table write a query in SQL to retrieve total quantity of each productid which are 
+-- in shelf of 'A' or 'C' or 'H'. Filter the results for sum quantity is more than 500. Return productid 
+-- and sum of the quantity. Sort the results according to the productid in ascending order.
+select productid , sum(quantity) as total_quentity 
+from production.productinventory 
+where Shelf in ('A','C','H') 
+group by ProductID 
+having sum(quantity) > 500
+
+-- 10. From the following table write a query in SQL to find the total quentity for a group of locationid multiplied by 10.
+SELECT SUM(quantity) AS total_quantity
+FROM production.productinventory
+GROUP BY (locationid * 10);
+
+-- 11. From the following tables write a query in SQL to find the persons whose last name starts with 
+--letter 'L'. Return BusinessEntityID, FirstName, LastName, and PhoneNumber. Sort the result on lastname and firstname.
+select p1.BusinessEntityID , p2.FirstName , p2.LastName , p1.PhoneNumber
+from Person.PersonPhone as p1
+inner join Person.Person as p2
+on	p1.BusinessEntityID = p2.BusinessEntityID
+where p2.LastName like 'L%'
+order by p2.LastName,p2.FirstName asc
+
+-- 12. From the following table write a query in SQL to find the sum of subtotal column. Group the 
+-- sum on distinct salespersonid and customerid. Rolls up the results into subtotal and running total. 
+-- Return salespersonid, customerid and sum of subtotal column i.e. sum_subtotal.
+SELECT salespersonid, customerid, sum(subtotal) AS sum_subtotal
+FROM sales.salesorderheader s 
+GROUP BY ROLLUP (salespersonid, customerid);
+
+-- 13. From the following table write a query in SQL to find the sum of the quantity of all combination of group 
+-- of distinct locationid and shelf column. Return locationid, shelf and sum of quantity as TotalQuantity.
+
