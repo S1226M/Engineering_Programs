@@ -77,4 +77,20 @@ GROUP BY ROLLUP (salespersonid, customerid);
 
 -- 13. From the following table write a query in SQL to find the sum of the quantity of all combination of group 
 -- of distinct locationid and shelf column. Return locationid, shelf and sum of quantity as TotalQuantity.
+select LocationID , Shelf , SUM(Quantity) from production.productinventory
+group by LocationID , Shelf
+
+-- 14. From the following table write a query in SQL to find the sum of the quantity with subtotal for each 
+-- locationid. Group the results for all combination of distinct locationid and shelf column. Rolls up the 
+--results into subtotal and running total. Return locationid, shelf and sum of quantity as TotalQuantity.
+
+
+
+
+-- 34. From the following table write a query in SQL to find those persons who ` and 
+-- the value of salesytd except 0. Return first name, last name,row number as 'Row Number',
+-- 'Rank', 'Dense Rank' and NTILE as 'Quartile', salesytd and postalcode. Order the output on postalcode column.
+Select ROW_NUMBER over (), PP.FirstName , PP.LastName from Sales.SalesPerson as SP
+inner join Person.Person as PP on SP.BusinessEntityID = PP.BusinessEntityID
+inner join Person.Address as PA on SP.BusinessEntityID = PA.AddressID
 
